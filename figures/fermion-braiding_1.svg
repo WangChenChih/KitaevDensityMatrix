@@ -27,13 +27,13 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="2.4851323"
-     inkscape:cx="144.66031"
-     inkscape:cy="143.65433"
-     inkscape:window-width="1205"
-     inkscape:window-height="1003"
-     inkscape:window-x="-3"
-     inkscape:window-y="22"
-     inkscape:window-maximized="0"
+     inkscape:cx="144.45911"
+     inkscape:cy="143.85552"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <metadata
      id="metadata1">
@@ -60,8 +60,8 @@
        refY="0"
        orient="auto-start-reverse"
        inkscape:stockid="Concave triangle arrow"
-       markerWidth="0.6"
-       markerHeight="0.6"
+       markerWidth="1.5"
+       markerHeight="1.5"
        viewBox="0 0 1 1"
        inkscape:isstock="true"
        inkscape:collect="always"
@@ -79,8 +79,8 @@
        refY="0"
        orient="auto-start-reverse"
        inkscape:stockid="Concave triangle arrow"
-       markerWidth="0.6"
-       markerHeight="0.6"
+       markerWidth="1.5"
+       markerHeight="1.5"
        viewBox="0 0 1 1"
        inkscape:isstock="true"
        inkscape:collect="always"
@@ -244,7 +244,7 @@
        fill="#000000"
        fill-opacity="1"
        id="g7712"
-       transform="matrix(3.89498,0,0,3.89421,-477.00353,-392.1325)"
+       transform="matrix(3.89498,0,0,3.89421,-485.38659,-387.6325)"
        style="stroke-width:0">
       <g
          transform="translate(148.712,134.765)"
@@ -266,7 +266,7 @@
        ns1:scale="3.8946004199794646"
        ns1:alignment="middle center"
        ns1:inkscapeversion="1.4.2"
-       transform="matrix(3.8946,0,0,3.8946,47.636707,72.009881)"
+       transform="matrix(3.8946,0,0,3.8946,37,65.999026)"
        ns1:jacobian_sqrt="3.8946">
       <defs
          id="defs9501">
@@ -304,7 +304,7 @@
        ns1:scale="3.8946004199794646"
        ns1:alignment="middle center"
        ns1:inkscapeversion="1.4.2"
-       transform="matrix(3.8946,0,0,3.8946,152.02804,76.622014)"
+       transform="matrix(3.8946,0,0,3.8946,160.00049,65.999513)"
        ns1:jacobian_sqrt="3.8946">
       <defs
          id="defs5107">
@@ -342,7 +342,7 @@
        ns1:scale="3.8946004199794646"
        ns1:alignment="middle center"
        ns1:inkscapeversion="1.4.2"
-       transform="matrix(3.8946,0,0,3.8946,104.32874,167.42334)"
+       transform="matrix(3.8946,0,0,3.8946,95.001947,170.42334)"
        ns1:jacobian_sqrt="3.8946">
       <defs
          id="defs6455">
@@ -372,12 +372,12 @@
     </g>
     <path
        style="fill:none;stroke:#4ea0f6;stroke-width:2;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:1.60025;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
-       d="M 115.011,175.64458 V 132.15023"
+       d="M 115.011,175.64458 V 138.18613"
        id="path1"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#f64e4e;stroke-width:2;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:1.60025;stroke-opacity:1;marker-end:url(#marker13)"
-       d="m 65.4375,86.25 c 40.6875,40.875 86.4375,0 86.4375,0"
+       d="m 65.4375,86.25 c 40.6875,40.875 78.59084,2.414358 78.59084,2.414358"
        id="path12"
        sodipodi:nodetypes="cc" />
   </g>
