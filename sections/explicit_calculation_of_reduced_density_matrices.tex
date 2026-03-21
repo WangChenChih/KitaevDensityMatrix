@@ -1,0 +1,27 @@
+\section{Explicit Calculation of Reduced Density Matrices}\label{appendix:reduced-density0matrix}
+We follow the general reduced density matrix of a simply-connected region $A$ and continue to carry out the partial trace explicitly to derive the reduced density matrix. Instead of isolating $\prod_{p\in A}\lr{\mathds{1}+W_p}$ at the beginning, it is clearer to see what terms survive after tracing out the environment if we include the whole part of the density matrix while calculating the trace. Both $\mathcal{P}^{(p)}$ and $\mathcal{P}^{(p)}_A$ are projectors, and $\mathcal{P}^{(p)}$ is a projector onto a subspace of the Hilbert space to which $\mathcal{P}^{(p)}_A$ projects. From this observation, we can duplicate the projector $\mathcal{P}^{(p)}_A$ as a redundant term: $\mathcal{P}^{(p)} = \mathcal{P}^{(p)}\mathcal{P}^{(p)}_A$. Therefore, the reduced density matrix of a simply-connected region $A$ can be written as
+\begin{align*}
+\rho_A &= \frac{1}{2^{N-N_p+2}}\Tr_{\overline{A}}\lrm{\mathcal{P}^{(p)}_A\mathcal{P}^{(p)}\sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D}\Sigma_\mathfrak{D}} \\
+&= 
+\frac{1}{2^{N+2}}\mathcal{P}_A^{(p)} \sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D} \Tr_{\overline{A}}\lrm{\prod_{p}\lr{\mathds{1}+W_p}\Sigma_\mathfrak{D}}
+\end{align*}
+After that, we investigate what terms can survive after the following trace,
+\begin{align*}
+    &\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\Tr_{\overline{A}}\lrm{\prod_{p}\lr{\mathds{1} + W_p}\Sigma_{\mathfrak{D}}}\\
+=&
+2\sum'_{\mathcal{A}}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}} \Tr_{\overline{A}}\lrm{ \lr{\prod_{p\in\mathcal{A}}W_p }\Sigma_{\mathfrak{D}}}
+\end{align*}
+As a reminder, we denote by $\mathcal{A}$ the sets of plaqettes as defined in \eqref{equ.lattice-Stokes}. Since only two types of terms survive after taking the trace, which are those with (i) $\mathcal{A}\subset A$ and $[\mathfrak{D}]\subset A$ and (ii) $\mathcal{A}\oplus\mathfrak{P}\subset A$ and $[\mathfrak{D}\oplus\mathfrak{D}_Z]\subset A$, respectively. Both give the same contribution. The reduced density matrix is therefore
+\begin{align*}
+&2\sum'_{\mathcal{A}}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}} \Tr_{\overline{A}}\lrm{ \lr{\prod_{p\in\mathcal{A}}W_p } \Sigma_{\mathfrak{D}}} \\
+=& 2\prod_{p\in A}\lr{\mathds{1}+W_p}\lrm{ 2\sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}} 
+}
+\Tr_{\overline{A}}\lr{\mathds{1}_{\overline{A}}} \\
+=& \mathcal{P}^{(p)}_A 2^{N-N^A+N^A_p+2} \sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}
+\end{align*}
+Substituting this result back into the density matrix, we finally have
+\begin{equation}\label{GeneralReducedDensityMatrix_first.e}
+  \rho_A = \frac{1}{2^{N^A-N^A_p}}\mathcal{P}^{(p)}_A \sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_\mathfrak{D} \Sigma_{\mathfrak{D}}
+\end{equation}
+The result is in agreement with \eqref{equ.red-den-mat-sim-con}, which has been verified to be properly normalized and to yield correct expectation values for observables.
+
