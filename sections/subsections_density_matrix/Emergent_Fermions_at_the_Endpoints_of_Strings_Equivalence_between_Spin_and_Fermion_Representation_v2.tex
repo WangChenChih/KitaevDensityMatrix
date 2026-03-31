@@ -37,21 +37,29 @@ in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit
 \end{equation}
 This clearly illustrated a picture: the Majorana fermion representation is identical to the spin, or Pauli string, representation, and the Majorana fermions can be seen as emerging from the endpoints of those Pauli strings defined by \eqref{equ.string-operator-def}~\cite{Kitaev, fermion-and-string, string-net, Photons-and-electrons-as-emergent-phenomena-string, PRD-string-wen-quantum-order}. First, we exploit the fact that the spin degree of freedom can be fractionalized into Majorana fermions, which allows us to solve the model analytically. Conversely, to represent everything in terms of spins, as our primary goal in this work, we must \textit{glue} the fractionalized degrees of freedom back via string operators defined in the spin language. 
 
-\alert{modify}
-
 A fact implied by Eqn.~\eqref{eq.W_absorb} is that every operator $\mathcal{S}_\mathfrak{D}$ depends only on the equivalence class $[\mathfrak{D}]$ the configuration $\mathfrak{D}$ belongs to. In other words, the following operators with different configurations, which share the same set of endpoints, are identical.
 \[
 \mathcal{S}\lr{\wordfig{0.5}{figures/ij_segment.pdf}} = \mathcal{S}\lr{\wordfig{0.75}{figures/ij_curve.pdf}} = \mathcal{S}\lr{\wordfig{0.8}{figures/ij_segment_1_loop.pdf}} = \cdots
 \]
-
+From the property of string operators $\Sigma_\mathfrak{D}$, we can directly prove the following equation
+\begin{equation}\label{eq.S-rep-swap}
+    \lsegment{i}{l}\lsegment{k}{ij} = -\lsegment{i}{j}\lsegment{k}{il},
+\end{equation}
+which can be represented pictorially as follows
 \[
-\lsegment{i}{l}\lsegment{k}{ij} = -\lsegment{i}{j}\lsegment{k}{il}
+\mathcal{S}\lr{\wordfig{1.5}{figures/fermion-braiding_1.pdf}} = -\mathcal{S}\lr{\wordfig{1.5}{figures/fermion-braiding_2.pdf}}.
 \]
+The physical meaning of this equation is that the endpoints of strings obey fermion statistics~\cite{fermion-and-string}. The mathematical operation of this equation is equivalent to exchanging the positions of string-endpoints at sites $i$ and $k$. It turns out that an additional phase of $-1$ is accumulated after the swap, analogous to what happens when two fermions are exchanged. In fact, if we identify the operator $\lsegment{j}{i}$ of a single string $\overleftarrow{ji}$ pointing from $i$ to $j$ with the hopping operator $ic_jc_i$, which is actually the Majorana representation of the string $\mathcal{M}_{\overleftarrow{ji}}\propto ic_jc_i$, of Majorana fermions hopping from $i$ to $j$, then the above equation is equivalent to the following Majorana representation
 \[
-(ic_ic_l)(ic_kc_i)(ic_ic_j) = - (ic_ic_j)(ic_kc_i)(-ic_ic_l)
+(ic_ic_l)(ic_kc_i)(ic_ic_j) = - (ic_ic_j)(ic_kc_i)(ic_ic_l),
 \]
-\[
-\mathcal{S}\lr{\wordfig{2}{figures/fermion-braiding_1.pdf}} = -\mathcal{S}\lr{\wordfig{2}{figures/fermion-braiding_2.pdf}}
-\]
+or equivalently
+\begin{equation}\label{eq.M-rep_swap}
+    \mathcal{M}_{\overleftarrow{il}} \mathcal{M}_{\overleftarrow{kij}}
+    =
+    -\mathcal{M}_{ij}
+    \mathcal{M}_{kil}.
+\end{equation}
+Comparing \eqref{eq.M-rep_swap} with \eqref{eq.S-rep-swap} shows the identity between the $\mathcal{S}$-representation and the Majorana representation.
 
 
