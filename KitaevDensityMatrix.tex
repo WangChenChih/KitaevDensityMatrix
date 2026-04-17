@@ -47,6 +47,8 @@ floatfix,
 \usepackage{mathrsfs}
 \usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=blue,breaklinks=true]{hyperref}
 \usepackage[ruled,vlined,]{algorithm2e} 
+\usepackage[normalem]{ulem} % [normalem] keeps \emph as italics
+
 \DontPrintSemicolon
 
 \usepackage{amsfonts,amssymb}
@@ -162,7 +164,7 @@ We give an exact form of the density matrix of the spin-1/2 Kitaev spin liquid r
 \maketitle
 %%%%%%%%%%%%%%%%%%%%%%%%%% title %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\tableofcontents
+\tableofcontents
 
 %%%%%%%%%%%%%%%%%%%%%%%%% main text %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -174,7 +176,7 @@ We give an exact form of the density matrix of the spin-1/2 Kitaev spin liquid r
 \input{sections/acknowledgements}
 
 \appendix
-
+\input{sections/string_and_fermion_parity}
 \input{sections/explicit_calculation_of_reduced_density_matrices}
 \input{sections/fermion_representation_of_the_density_matrix}
 \input{sections/pick_proof}
