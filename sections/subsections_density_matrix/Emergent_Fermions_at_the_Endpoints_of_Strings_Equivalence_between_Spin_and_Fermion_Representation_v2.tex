@@ -1,9 +1,16 @@
 \subsection{Emergent Fermions at the Endpoints of Strings -- Equivalence between Spin and Fermion Representation}\label{sec:Emergent-Fermions-at-the-Endpoints}
-In Appendix \ref{appendix:Majorana-derivation}, we will give another way of deriving the ground state density matrix of the Kitaev model, which starts from the Majorana representation. We will see in equation \eqref{equ.Majorana-density-matrix} that the ground state density matrix can also be represented as
+
+\textcolor{red}{The first paragraph should be high level explaination first then detail descriptions later.}
+
+\valert{
+The form of~\eqref{equ.density-matrix} manifests a pattern that the density matrix can be seen as a composition of strings. 
+}
+
+Starting from the Majorana representation, the ground state density matrix can also be represented as
 \[
   \rho = 2^{N-1}\mathcal{P}_G\prod_{\anglelr{ij}}\lr{\frac{\mathds{1}+\hat{u}_{ij}}{2}}\rho_F\mathcal{P}_G
 \]
-where $\rho_F$ is the density matrix of the Kitaev ground state in the Majorana fermion representation and $\mathcal{P}_G$ is the Gutzwiller projection \cite{burnell-nayak, projector-1, projector-2}. The Majorana density matrix $\rho_F$ can be constructed from a starting point similar to equation \eqref{equ.rho-starting} we have used at the very beginning
+where $\rho_F$ is the density matrix of the Kitaev ground state in the Majorana fermion representation. Details of the derivation are presented in Appendix \ref{appendix:Majorana-derivation}. The Majorana density matrix $\rho_F$ can be constructed from a starting point similar to \eqref{equ.rho-starting} that we have used in the beginning.
 \begin{equation}\label{equ.rho-F}
     \rho^F = \frac{1}{2^{N/2}}\sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D}\mathcal{M}_\mathfrak{D}
 \end{equation}
@@ -11,13 +18,17 @@ where
 \begin{equation}\label{equ.V-rep-def}
     \mathcal{M}_\mathfrak{D} \equiv \prod_{\anglelr{ij}\in\mathfrak{D}}ic_jc_i
 \end{equation}
-In each dimer $\anglelr{ij}$ of the above product, the site $i$ belongs to sublattice $A$ and $j$ to sublattice $B$. The denominator of the normalization coefficient is $2^{N/2}$ instead of $2^N$ because a normal fermion $f$ is defined by two $c$-Majorana fermions $c_1$ and $c_2$ as $f=\frac{1}{2}(c_1+ic_2)$ and $f^\dagger=\frac{1}{2}(c_1-ic_2)$. Therefore, the total number of physical degrees of freedom of a system composed of $N$ Majorana fermions is $2^{N/2}$ instead of $2^N$. To manifest the similarity between the spin density matrix \eqref{equ.density-matrix}, we define a set of operators $\mathcal{S}_{\mathfrak{D}}$ for each operator that corresponds to an edge configuration
+In each dimer $\anglelr{ij}$ of the above product, the site $i$ belongs to sublattice $A$ and $j$ to sublattice $B$. The denominator of the normalization coefficient is $2^{N/2}$ instead of $2^N$ because a normal fermion $f$ is defined by two $c$-Majorana fermions
+%
+%$c_1$ and $c_2$ as $f=\frac{1}{2}(c_1+ic_2)$ and $f^\dagger=\frac{1}{2}(c_1-ic_2)$. Therefore, the total number of physical degrees of freedom of a system composed of $N$ Majorana fermions is $2^{N/2}$ instead of $2^N$
+%
+. To manifest the similarity between the spin density matrix \eqref{equ.density-matrix}, we define a set of operators $\mathcal{S}_{\mathfrak{D}}$ for each operator that corresponds to an edge configuration
 \begin{equation}\label{equ.S-def}
-    \mathcal{S}_\mathfrak{D} \equiv \mathcal{P}_{\mrm{topo}}\mathcal{P}^{(p)}\Sigma_\mathfrak{D}
+    \mathcal{S}_\mathfrak{D} \equiv \mathcal{P}^{(p)}\Sigma_\mathfrak{D}
 \end{equation}
-Given equation \eqref{equ.Sigma-representation} and the fact that $[\mathcal{P}_G,\Sigma_{\mathfrak{D}}]=0$, the set of operators $\lrg{\mathcal{S}_{\mathfrak{D}}}$ also forms a representation of the algebra of edge configurations $\anglelr{\lrg{\mathfrak{D}},\oplus}$, 
+Given equation \eqref{equ.Sigma-representation} and the fact that $[\mathcal{P}_G,\Sigma_{\mathfrak{D}}]=0$, the set of operators $\lrg{\mathcal{S}_{\mathfrak{D}}}$ also forms a representation of the algebra of edge configurations $\anglelr{\lrg{\mathfrak{D}},\ominus}$, 
 \begin{equation}\label{equ.U-rep-algebra}
-    \mathcal{S}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}'} = g(\mathfrak{D},\mathfrak{D}')\mathcal{S}_{\mathfrak{D}\oplus\mathfrak{D}'}.
+    \mathcal{S}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}'} = g(\mathfrak{D},\mathfrak{D}')\mathcal{S}_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
 With the string representation \eqref{equ.S-def} and \eqref{equ.U-rep-algebra}, The form of the density matrix in Eq.~\eqref{equ.density-matrix} becomes
 \begin{equation}\label{equ.rho-U}
@@ -33,11 +44,11 @@ The first two products completely consist of $\hat{u}_{ij}$'s, which commute wit
 \[\mathcal{P}^{(p)} \to \prod_{ p}\lr{\frac{\mathds{1} + \prod_{\anglelr{ij}\in p}\hat{u}_{ij}}{2}}\]
 in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit{those edges of the plaquette $p$}.}. Therefore, they will not contribute to the phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$ at all. So, we know that the anti-commutation relations among $c$-Majorana fermions are encoded in the phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$. In view of this, we find that the set of operators $\mathcal{M}_\mathfrak{D}$ defined by equation \eqref{equ.V-rep-def} also forms a projective representation of the edge configuration algebra and shares the same phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$ with the representation $\mathcal{S}$
 \begin{equation}\label{equ.V-rep-algebra}
-    \mathcal{M}_{\mathfrak{D}}\mathcal{M}_{\mathfrak{D}'} = g(\mathfrak{D},\mathfrak{D}')\mathcal{M}_{\mathfrak{D}\oplus\mathfrak{D}'}
+    \mathcal{M}_{\mathfrak{D}}\mathcal{M}_{\mathfrak{D}'} = g(\mathfrak{D},\mathfrak{D}')\mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'}
 \end{equation}
 This clearly illustrated a picture: the Majorana fermion representation is identical to the spin, or Pauli string, representation, and the Majorana fermions can be seen as emerging from the endpoints of those Pauli strings defined by \eqref{equ.string-operator-def}~\cite{Kitaev, fermion-and-string, string-net, Photons-and-electrons-as-emergent-phenomena-string, PRD-string-wen-quantum-order}. First, we exploit the fact that the spin degree of freedom can be fractionalized into Majorana fermions, which allows us to solve the model analytically. Conversely, to represent everything in terms of spins, as our primary goal in this work, we must \textit{glue} the fractionalized degrees of freedom back via string operators defined in the spin language. 
 
-A fact implied by Eqn.~\eqref{eq.W_absorb} is that every operator $\mathcal{S}_\mathfrak{D}$ depends only on the equivalence class $[\mathfrak{D}]$ the configuration $\mathfrak{D}$ belongs to. In other words, the following operators with different configurations, which share the same set of endpoints, are identical.
+A fact implied by \eqref{eq.W_absorb} is that every operator $\mathcal{S}_\mathfrak{D}$ depends only on the equivalence class $[\mathfrak{D}]$ the configuration $\mathfrak{D}$ belongs to. In other words, the following operators with different configurations, which share the same set of endpoints, are identical.
 \[
 \mathcal{S}\lr{\wordfig{0.5}{figures/ij_segment.pdf}} = \mathcal{S}\lr{\wordfig{0.75}{figures/ij_curve.pdf}} = \mathcal{S}\lr{\wordfig{0.8}{figures/ij_segment_1_loop.pdf}} = \cdots
 \]
@@ -57,8 +68,8 @@ or equivalently
 \begin{equation}\label{eq.M-rep_swap}
     \mathcal{M}_{\overleftarrow{il}} \mathcal{M}_{\overleftarrow{kij}}
     =
-    -\mathcal{M}_{ij}
-    \mathcal{M}_{kil}.
+    -\mathcal{M}_{\overleftarrow{ij}}
+    \mathcal{M}_{\overleftarrow{kil}}.
 \end{equation}
 Comparing \eqref{eq.M-rep_swap} with \eqref{eq.S-rep-swap} shows the identity between the $\mathcal{S}$-representation and the Majorana representation.
 

@@ -1,4 +1,4 @@
-\subsection{Even Number of Sites}\label{sec:EE-calculation-even}
+\subsection{Entanglement Entropy and its Separability}\label{sec:EE-calculation-even}
 As we have discussed in Section~\ref{sec:Emergent-Fermions-at-the-Endpoints}, there is a clear correspondence, manifested by \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}, between operators $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$. In the subregion, after tracing out the environment, a similar relation is still there between $\mathcal{S}^{(A)}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$ for all $\mathfrak{D}\subset A$. Due to the equivalence of the representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ in the region $A$, plus the similarity of the forms of \eqref{equ.red-DM-new} and \eqref{equ.rho-F-reduced}, the entanglement entropy of the spin system $S_A = \Tr_A\rho_A\ln\rho_A$ can be calculated through the Majorana density matrix \eqref{equ.rho-F-reduced} as an alternative. Inspired by this insight, we first observe that both representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ consist of traceless operators and the identity. Therefore, their trace satisfies 
 \begin{equation}\label{equ.U-V-trace-relation}
     \left\{
@@ -8,7 +8,7 @@ As we have discussed in Section~\ref{sec:Emergent-Fermions-at-the-Endpoints}, th
 \end{aligned}
 \right.
 \end{equation}
-where $\Tr_{A,F}$ stands for taking the trace over the $c$-Majorana fermion space in the region $A$. Given that the two representations are identical, the following identity holds for an arbitrary analytic function $f$: 
+where $\Tr_{A,F}$ stands for taking the trace over the $c$-Majorana fermion space in the region $A$. For simplicity, we assume the subregion $A$ contains an even number of lattice sites $N^A$. Cases with an odd number of lattice sites will be discussed in later sections. Given that the two representations are identical, the following identity holds for an arbitrary analytic function $f$: 
 \begin{equation}\label{equ.identity}
     \Tr_A f(\{\mathcal{S}^{(A)}\}) = \frac{1}{2^{N^A/2 - N^A_p}}\Tr_{A,F} f(\lrg{\mathcal{M}})
 \end{equation}
@@ -17,7 +17,7 @@ Given this property, we can define a function
     &f(\lrg{W}) \\
     \equiv& \lrm{\frac{1}{2^{N^A-N^A_p}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_\mathfrak{D}W_{\mathfrak{D}}}\ln\lrm{\frac{1}{2^{N^A-N^A_p}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_\mathfrak{D}W_{\mathfrak{D}}}
 \end{align*}
-where $W$ stands for an arbitrary representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\oplus}$. With this, we further define the following two functions to compute the entanglement entropy.
+where $W$ stands for an arbitrary representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$. With this, we further define the following two functions to compute the entanglement entropy.
 \[
 \left\{
 \begin{aligned}
