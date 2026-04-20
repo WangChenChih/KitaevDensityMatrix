@@ -1,6 +1,10 @@
 \subsection{Origin of Degeneracy}\label{sec:origin_of_degeneracy}
 
-So far, we have had a better understanding of the block-diagonal structure of $\rho_A$, and now we are going to discuss the origin of the degeneracy in the entanglement spectrum, as well as another point of view of the contribution of the gauge field to the entanglement entropy. Based on the block-diagonal structure \eqref{equ.rho-block-diagonal-structure} of $\rho_A$ and the fact that $\zeta$-operators can relate different blocks to prove them identical, we then conclude that there are 
+\valert{
+With the block-diagonal structure of $\rho_A$, we discuss the microscopic origin of the degeneracy in the entanglement spectrum by proving that all the blocks are identical. The object that relates these blocks is the global Wilson operator, which also gives the topological entropy. 
+}
+
+Based on the block-diagonal structure \eqref{equ.rho-block-diagonal-structure} of $\rho_A$ and the fact that $\zeta$-operators can relate different blocks to prove them identical, we then conclude that there are 
 \[2^{L-1} = 2^{\abs{\de A}/2 - 1}\] 
 identical blocks in $\rho_A$. The reason why we only have the number $2^{L-1}$ instead of $2^L$, which is the number of blocks in \eqref{equ.rho-block-diagonal-structure}, is that $\zeta$-operators can only relate blocks with the same parity of the set of quantum numbers $\lrg{\xi}$, so the number of blocks, $2^L$, is actually twice the number of identical blocks. The factor $2^{-1}$ arising from the fixed parity of quantum numbers can also be understood as originating from the exact 1-form Wilson symmetry~\cite{PRX-ent-high}, which is $[\Tilde{W}_h,H] = [\Tilde{W}_v,H] = [W_p,H]=0\;\forall p$. After tracing out the environment $\overline{A}$, the global Wilson operator in the sense of merely the subregion $A$ becomes a string with two endpoints attached to the boundary of $A$, and commutes with $\rho_A$ at the same time. The two endpoints of the Wilson operator can flip the residual $\mathbb{Z}_2$ gauge field at the boundary, playing a role in relating different blocks of $\rho_A$. This is completely the same as the $\zeta$-operators. Based on the block-diagonal structure of $\rho_A$, it can be expressed as
 \begin{equation}\label{equ.block-rho-final}
@@ -27,6 +31,6 @@ Similar to equation \eqref{equ.block-rho-final}, every $\mathcal{S}$-operator ca
 \end{equation}
 where $\{\mathcal{M}^{(n)}_\mathfrak{D}\}$ is a set of identical blocks of $\mathcal{S}^{(A)}_{\mathfrak{D}}$. To ensure that expression \eqref{equ.U-V-block-relation} satisfies rule \eqref{equ.U-rep-algebra}, we also have to implement such an algebraic rule on every block $\mathcal{M}^{(n)}_{\mathfrak{D}}$, 
 \[
-\mathcal{M}^{(n)}_{\mathfrak{D}}\mathcal{M}^{(n)}_{\mathfrak{D}'} = g(\mathfrak{D},\mathfrak{D}')\mathcal{M}^{(n)}_{\mathfrak{D}\ominus\mathfrak{D}'}
+\mathcal{M}^{(n)}_{\mathfrak{D}}\mathcal{M}^{(n)}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{M}^{(n)}_{\mathfrak{D}\ominus\mathfrak{D}'}
 \]
 This is reminiscent of \eqref{equ.V-rep-algebra}, which shows that the $\mathcal{M}$-representation is identical to $\mathcal{S}$. Based on this, we then state that those blocks $\mathcal{M}^{(n)}_{\mathfrak{D}}$ in \eqref{equ.U-V-block-relation} are nothing but $\mathcal{M}$-operators defined in \eqref{equ.V-rep-def}. In short, the gauge-field degree of freedom is actually the number of identical blocks of string operators represented by spins, and each identical block depicts the physics of free Majorana fermions. This precisely reflects the fractionalization of the spin degree of freedom into gauge-field and matter sectors, with the matter sector further fractionalizing into deconfined Majorana fermions.

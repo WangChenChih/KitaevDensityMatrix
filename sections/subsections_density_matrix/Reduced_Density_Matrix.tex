@@ -1,9 +1,14 @@
 \subsection{Reduced Density Matrix}\label{sec:density-matrix-reduced}
-Information about many-body entanglement of a state is encoded in reduced density matrices $\rho_A$, which implies the entanglement properties between the subregion $A$ and its environment $\overline{A}$, i.e., the rest of the system. In the previous sections, we have rigorously obtained the exact form of the density matrix of the Kitaev ground state. We further find that it is straightforward to get the reduced density matrix $\rho_A$ by tracing out the environment directly $\rho_A = \Tr_{\overline{A}}\rho$. Despite the rigorous derivation of how to carry out the trace shown in Appendix~\ref{appendix:reduced-density0matrix}, there is also an intuitive way to get the reduced density matrix. Following the logic of the previous discussion, the property of a reduced density matrix is pretty much the same as the density matrix of the whole system, since both are designed to give the expectation values of observables in the way that $\anglelr{\mathcal{O}_A}=\Tr\lr{\rho\mathcal{O}_A}=\Tr_A\lr{\rho_A\mathcal{O}_A}$, for any observable $\mathcal{O}_A$ with support $A$. As we know, in the Kitaev model, observables possessing finite expectation values are string operators. Therefore, the reduced density matrix can be expressed in terms of string operators $\Sigma_\mathfrak{D}$, with $\mathfrak{D}$ entirely inside $A$, accompanied by their expectation values $\mathfrak{C}_\mathfrak{D}$,
+
+\valert{
+Information about the many-body entanglement of a state is encoded in the reduced density matrix $\rho_A$, knowing which is the first step in investigating the entanglement structure. Here, we introduce an intuitive approach to obtain the reduced density matrix, where the identity between the spin representation and the Majorana-fermion representation is demonstrated again, similar to the previous section. Nevertheless, we also provide a rigorous derivation of how to carry out the trace directly in Appendix~\ref{appendix:reduced-density0matrix}. 
+}
+
+The property of a reduced density matrix is pretty much the same as the density matrix of the entire system, since both are designed to give the expectation values of observables in the way that $\anglelr{\mathcal{O}_A}=\Tr\lr{\rho\mathcal{O}_A}=\Tr_A\lr{\rho_A\mathcal{O}_A}$, for any observable $\mathcal{O}_A$ with support $A$. In the Kitaev model, observables possessing finite expectation values are string operators. Therefore, the reduced density matrix can be expressed in terms of string operators $\Sigma_\mathfrak{D}$, with $\mathfrak{D}$ entirely inside $A$, accompanied by their expectation values $\mathfrak{C}_\mathfrak{D}$,
 \begin{equation}\label{equ.rho-A-raw-guess}
     \rho_A \propto\sum_{\mathfrak{D}\subset A}\mathfrak{C}_\mathfrak{D} \Sigma_\mathfrak{D}
 \end{equation}
-After that, the equivalent configurations can be sorted in the same way as in the previous section, then the summation can be rewritten as a summing of equivalent classes with the projector $\mathcal{P}^{(p)}_A$ of dimension $2^{N^A-N^A_p}$, which only includes plaquettes inside $A$,
+The equivalent configurations can be sorted in the same way as in the previous section, then the summation can be rewritten as a summing of equivalent classes with the projector $\mathcal{P}^{(p)}_A$ of dimension $2^{N^A-N^A_p}$, which only includes plaquettes inside $A$,
 \begin{equation}\label{equ.p-proj-A}
     \mathcal{P}^{(p)}_A = \prod_{p\in A}\lr{\frac{\mathds{1}+W_p}{2}}
 \end{equation}
@@ -23,7 +28,7 @@ Therefore, the final form of the reduced density matrix is as follows.
 \end{equation}
 The form \eqref{equ.red-den-mat-sim-con} is the same as the density matrix \eqref{equ.density-matrix} as we anticipated. Along a similar line, we can also define a set of $\mathcal{S}$-operators
 \begin{equation}\label{equ.U-A-def}
-    \mathcal{S}^{(A)}_\mathfrak{D} \equiv \mathcal{P}^{(A)}\Sigma_\mathfrak{D}
+    \mathcal{S}^{(A)}_\mathfrak{D} \equiv \mathcal{P}^{(p)}_A\Sigma_\mathfrak{D}
 \end{equation}
 supported on the subregion $A$. With these newly defined operators, the reduced density matrix becomes
 \begin{equation}\label{equ.red-DM-new}
@@ -31,7 +36,7 @@ supported on the subregion $A$. With these newly defined operators, the reduced 
 \end{equation}
 The form of the reduced density matrix above implies that the physical picture of Majorana fermions emerging at the endpoints of string operators still holds in any simply-connected subregion $A$, and it can be verified that $\mathcal{S}^{(A)}$-operators also satisfy a relation
 \begin{equation}\label{equ.U-A-rep-algebra}
-    \mathcal{S}^{(A)}_{\mathfrak{D}}\mathcal{S}^{(A)}_{\mathfrak{D}'} = g(\mathfrak{D},\mathfrak{D}')\mathcal{S}^{(A)}_{\mathfrak{D}\ominus\mathfrak{D}'},
+    \mathcal{S}^{(A)}_{\mathfrak{D}}\mathcal{S}^{(A)}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{S}^{(A)}_{\mathfrak{D}\ominus\mathfrak{D}'},
 \end{equation}
 which is the same as \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}. The reduced density matrix of Majorana fermions in the region $A$ also possesses the same form 
 \begin{equation}\label{equ.rho-F-reduced}

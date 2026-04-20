@@ -1,6 +1,6 @@
 \subsection{Density Matrix of the Kitaev Ground State on a Torus}\label{sec:density-matrix-calculate}
 
-\textcolor{red}{Can you provide a high level description of how to use the tools you had defined previously to get this part of the calculation done? What's the trick? What is the logical stepping stone for you to get the results before you enter the detail description.}
+%\textcolor{red}{Can you provide a high level description of how to use the tools you had defined previously to get this part of the calculation done? What's the trick? What is the logical stepping stone for you to get the results before you enter the detail description.}
 
 \valert{
 With the concepts of edge configurations and equivalence classes, all terms in the same class contribute the same weight to the density matrix and can be grouped. The cleaner form of the density matrix obtained by means of the grouping is presented at the end of the section, which will be demonstrated to encode the fermion feature, giving a clearer physical picture of the analysis of the entanglement structure.
@@ -34,7 +34,9 @@ with $\mathcal{A}$ denoting different sets of plaqette configurations defined in
 \]
 To make the trace equal to $1$, we require $C = 2^{-N+N_p}$. In the end, we obtain the exact form of the density matrix
 \begin{equation}\label{equ.density-matrix}
-    \rho =  \frac{1}{2^{N-N_p}}\mathcal{P}^{(p)}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}
+    \rho =  \frac{1}{2^{N-N_p}}\mathcal{P}^{(p)}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}.
 \end{equation}
-Because $[W_p,\Sigma_\mathfrak{D}]=0\;\forall p,\mathfrak{D}$, the projector $\mathcal{P}^{(p)}$ commutes with the summation part consisting of string operators. This is also a manifestation of the separability of the $c$-Majorana fermion sector from the gauge sector, which will be elucidated in later sections.
+As indicated in Section~\ref{sec:density-matrix-whole}, there is a one-to-one correspondence between sets of endpoints and equivalence classes. The sum in \eqref{equ.density-matrix} can also be understood as summing over sets of endpoints. This implies that the details of the strings are smeared out, and only the information of their endpoints remains important. All the information about the details of strings is grouped and stored in the projector $\mathcal{P}^{(p)}$. The separation between the string details and endpoints manifests the separability of the matter sector from the gauge sector.
+
+%Because $[W_p,\Sigma_\mathfrak{D}]=0\;\forall p,\mathfrak{D}$, the projector $\mathcal{P}^{(p)}$ commutes with the summation part consisting of string operators. This is also a manifestation of the separability of the $c$-Majorana fermion sector from the gauge sector, which will be elucidated in later sections.
 

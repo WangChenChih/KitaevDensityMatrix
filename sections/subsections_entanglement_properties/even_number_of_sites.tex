@@ -1,5 +1,14 @@
 \subsection{Entanglement Entropy and its Separability}\label{sec:EE-calculation-even}
-As we have discussed in Section~\ref{sec:Emergent-Fermions-at-the-Endpoints}, there is a clear correspondence, manifested by \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}, between operators $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$. In the subregion, after tracing out the environment, a similar relation is still there between $\mathcal{S}^{(A)}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$ for all $\mathfrak{D}\subset A$. Due to the equivalence of the representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ in the region $A$, plus the similarity of the forms of \eqref{equ.red-DM-new} and \eqref{equ.rho-F-reduced}, the entanglement entropy of the spin system $S_A = \Tr_A\rho_A\ln\rho_A$ can be calculated through the Majorana density matrix \eqref{equ.rho-F-reduced} as an alternative. Inspired by this insight, we first observe that both representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ consist of traceless operators and the identity. Therefore, their trace satisfies 
+
+\valert{
+In this section, the entanglement entropy of the Kitaev ground state is calculated using the density matrix and the algebras of strings obtained earlier, which reproduces the result proposed by~\cite{Yao-Qi} that it can be separated into the gauge $S_A^G$ and the matter $S_A^F$ contribution. The derivation reveals that the fermion part reflects the equivalence between representations $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$, while the gauge part $S^G_A$ arises from the difference between the spaces supporting these two identical representations.
+
+%The derivation of the entanglement entropy reveals that the fermion part $S^F_A$ reflects the equivalence of representations $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$, and the gauge part $S^G_A$ arises from the difference between the spaces supporting these two identical representations. In particular, the separability of the gauge and fermion degrees of freedom relies on two crucial properties, $[W_p, W_{p'}]=0\;\forall p,p'$ and $[W_p,\Sigma_{\mathfrak{D}}]=0\; \forall p,\mathfrak{D}$. The latter guarantees the decomposition of the spin system into gauge and matter sectors controlled by $W_p$ and $\Sigma_\mathfrak{D}$, respectively, whereas the former implies the gauge has no dynamics. 
+}
+
+%As we have discussed in Section~\ref{sec:Emergent-Fermions-at-the-Endpoints}, there is a clear correspondence, manifested by \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}, between operators $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$. In the subregion, after tracing out the environment, a similar relation is still there between $\mathcal{S}^{(A)}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$ for all $\mathfrak{D}\subset A$. 
+
+Due to the equivalence of the representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ in the region $A$, plus the similarity of the forms of \eqref{equ.red-DM-new} and \eqref{equ.rho-F-reduced}, the entanglement entropy of the spin system $S_A = \Tr_A\rho_A\ln\rho_A$ can be calculated using the Majorana density matrix \eqref{equ.rho-F-reduced} as an alternative. Inspired by this insight, we first observe that both representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ consist of traceless operators and the identity. Therefore, their trace satisfies 
 \begin{equation}\label{equ.U-V-trace-relation}
     \left\{
 \begin{aligned}
@@ -42,26 +51,26 @@ With this, the terms in parentheses of the last line of the above derivation can
 \end{equation}
 This formula shows that the entanglement entropy can be separated into the fermion part $S^F_A$ and the gauge part, $S^G_A$, in agreement with the result obtained in \cite{Yao-Qi}.
 
-Here, we summarize our discussion on the origin of the gauge part $S^G_A$ of the entanglement entropy. From our derivation, the gauge part of the entanglement entropy arises from the difference in the dimension of the physical spin Hilbert space and the Hilbert space of the Majorana fermions. The premise that allows us to make such a comparison between the spin Hilbert space and the Majorana Hilbert space is that the spin representation $\mathcal{S}$ of the Kitaev model ground state is identical to the Majorana representation $\mathcal{M}$ in a way we have introduced. If we trace back further to the origin of such an algebraic equivalence, we will find that it arises from the concept of equivalent edge configurations because the spin correlation functions corresponding to configurations in the same equivalence class are identical. Thus, the structure of the reduced density matrix can be factorized, as manifested by equation \eqref{equ.rho-factorization}. At the same time, a gauge theory is also a way to define equivalence classes, in the sense that we identify different gauge field configurations as equivalent if one can be transformed into the other via a gauge transformation. 
+Here, we summarize our discussion on the origin of the gauge part $S^G_A$ of the entanglement entropy. From our derivation, the gauge part of the entanglement entropy arises from the difference in the dimension of the physical spin Hilbert space and the Hilbert space of the Majorana fermions. The premise that allows us to make such a comparison between the spin Hilbert space and the Majorana Hilbert space is that the spin representation $\mathcal{S}$ of the Kitaev model ground state is identical to the Majorana representation $\mathcal{M}$ in a way we have introduced. Such an algebraic equivalence arises from the concept of equivalent edge configurations because the spin correlation functions corresponding to configurations in the same equivalence class are identical. Thus, the structure of the reduced density matrix can be factorized, as manifested by equation \eqref{equ.rho-factorization}. At the same time, a gauge theory is also a way to define equivalence classes, in the sense that we identify different gauge field configurations as equivalent if one can be transformed into the other via a gauge transformation. 
 
-The Majorana fermion entanglement entropy $S^F_A$, which appears in equation \eqref{equ.EE-separation}, can be computed exactly using the method proposed by Ref.~\cite{Jin-Korepin, Vidal-Latorre-Rico-Kitaev, Latorre-Rico-Vidal, Peschel_2003, Peschel_2009, Chung_2001, Cheong_2004} because the Kitaev ground state is equivalent to a free fermion system. For a free Majorana fermion system, multi-point correlation functions can be decomposed into two-point correlation functions thanks to Wick's theorem, so the two-point correlation functions contain complete information about the state, including the entanglement. It turns out that the single-particle entanglement spectrum is exactly the eigenvalue spectrum of the correlation matrix $\Gamma^{(c)}$, which is of size $N^A\times N^A$, defined as
+The Majorana fermion entanglement entropy $S^F_A$, which appears in equation \eqref{equ.EE-separation}, can be computed exactly using the method proposed by Ref.~\cite{Jin-Korepin, Vidal-Latorre-Rico-Kitaev, Latorre-Rico-Vidal, Peschel_2003, Peschel_2009, Chung_2001, Cheong_2004} because the Kitaev ground state is equivalent to a free fermion system, in which all the information about the state is encoded in the two-point correlation functions, including the entanglement. The single-particle entanglement spectrum is exactly the eigenvalue spectrum of the correlation matrix $\Gamma^{(c)}$, which is of size $N^A\times N^A$, defined as
 \begin{equation}
-    [\Gamma^{(c)}]_{ij} \equiv \frac{1}{2}\anglelr{c_ic_j}\quad ;\; i,j\in A
+    [\Gamma^{(c)}]_{ij} \equiv \frac{1}{2}\anglelr{c_ic_j}\quad ;\; i,j\in A.
 \end{equation}
-The eigenvalues of $\Gamma^{(c)}$, denoted by $\gamma_{k,\pm}$, which are also elements in the single-particle entanglement spectrum, can be expressed in pairs if $N^A$ is even~\cite{Jin-Korepin, Latorre-Rico-Vidal}
+The eigenvalues of $\Gamma^{(c)}$, denoted by $\gamma_{k,\pm}$, can be expressed in pairs if $N^A$ is even~\cite{Jin-Korepin, Latorre-Rico-Vidal}
 \begin{equation}\label{equ.gamma-eigenvalue}
-    \gamma_{k,\pm} = \frac{1 \pm \nu_k}{2} \quad ; \; 1,2,\cdots,N^A/2
+    \gamma_{k,\pm} = \frac{1 \pm \nu_k}{2} \quad ; \; 1,2,\cdots,N^A/2.
 \end{equation}
 A pair of eigenvalues can also be expressed in terms of a parameter $\epsilon_k$ as 
 \begin{equation}\label{equ.epsilon-k}
-    \gamma_{k,n_k} = \frac{\mrm{e}^{-\epsilon_k\lr{1 - 2n_k}}}{2\tanh{\epsilon_k}}
+    \gamma_{k,n_k} = \frac{\mrm{e}^{-\epsilon_k\lr{1 - 2n_k}}}{2\tanh{\epsilon_k}},
 \end{equation}
 with $n_k=0,1$ implying $+,-$ in expression~\eqref{equ.gamma-eigenvalue}, respectively. There are then $2^{N^A/2}$ elements in the many-body entanglement spectrum of the whole system, which are composed of these single particle values in such a way that
 \begin{equation}\label{equ.many-body-entanglement-spectrum}
     \lambda_{\lrg{n}} \equiv \prod_{k=1}^{N^A/2}\gamma_{k,n_k} = \frac{1}{\mathcal{Z}} \mrm{e}^{-\sum_{k=1}^{N^A/2} \epsilon_k \lr{1-2n_k}}
     %\prod_{k=1}^{N^A/2}\frac{1 + (-1)^{n_k}\nu_k}{2}
 \end{equation} 
-where $\mathcal{Z}\equiv\prod_{k=1}^{N^A/2}2\tanh\epsilon_k$. By this method, the fermion entanglement spectrum can be numerically computed if the exact form of the two-point fermion correlation functions is given, which can be obtained straightforwardly by exactly solving the Hamiltonian~\eqref{equ.MF-Hamiltonian}. With the entanglement spectrum, it is straightforward to compute the entanglement entropy, 
+where $\mathcal{Z}\equiv\prod_{k=1}^{N^A/2}2\tanh\epsilon_k$. By this method, the fermion entanglement spectrum can be numerically computed if the exact form of the two-point fermion correlation functions is given, which can be obtained straightforwardly by exactly solving the Hamiltonian~\eqref{equ.MF-Hamiltonian}. Computing the entanglement entropy then becomes straightforward, 
 \begin{equation}\label{equ.EE-corr-mat}
     S_A^F = -\sum_{\lrg{n}}\lambda_{\lrg{n}}\ln \lambda_{\lrg{n}} = -\tr\lr{\Gamma^{(c)}\ln\Gamma^{(c)}}
 \end{equation}
@@ -71,6 +80,8 @@ The trace ``$\tr$'' is written in lowercase here to distinguish it from the trac
 \end{equation}
 where the first term is identified as the fermion part $S^F_A$, while the other is the gauge part $S^G_A$.
 
+The separability of the gauge and fermion degrees of freedom is based on two crucial properties: $[W_p, W_{p'}]=0\;\forall p,p'$ and $[W_p,\Sigma_{\mathfrak{D}}]=0\; \forall p,\mathfrak{D}$. The latter guarantees the decomposition of the spin system into gauge and matter sectors controlled by $W_p$ and $\Sigma_\mathfrak{D}$, respectively, whereas the former implies the gauge has no dynamics. 
 
-The derivation of the entanglement entropy reveals that the fermion part $S^F_A$ reflects the equivalence of representations $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$, and the gauge part $S^G_A$ arises from the difference between the spaces supporting these two identical representations. In particular, the separability of the gauge and fermion degrees of freedom relies on two crucial properties, $[W_p, W_{p'}]=0\;\forall p,p'$ and $[W_p,\Sigma_{\mathfrak{D}}]=0\; \forall p,\mathfrak{D}$. The latter guarantees the decomposition of the spin system into gauge and matter sectors controlled by $W_p$ and $\Sigma_\mathfrak{D}$, respectively, whereas the former implies the gauge has no dynamics. 
+
+
 
