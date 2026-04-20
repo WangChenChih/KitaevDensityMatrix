@@ -1,14 +1,12 @@
 \section{An introduction to the Kitaev Model}
 
-\textcolor{red}{We cannot review everything in the Kitaev model, so this part needs to be tied with later discussions explicitly before entering the later description. The review should provide the minimum ingredients for the chain of logic. For example, we review the Majorna representation to illustrate the non-trivial bi-partition problem when one cuts the gauge link. There, bi-partition could be subtle[cite]. Or any related subtlety.}
+%\textcolor{red}{We cannot review everything in the Kitaev model, so this part needs to be tied with later discussions explicitly before entering the later description. The review should provide the minimum ingredients for the chain of logic. For example, we review the Majorna representation to illustrate the non-trivial bi-partition problem when one cuts the gauge link. There, bi-partition could be subtle[cite]. Or any related subtlety.}
 
 \valert{
-We briefly introduce the Kitaev model and some fundamental properties of the Kitaev ground state. We also emphasize the emergent gauge-theory structure obtained by representing the model with Majorana fermions, which will be shown to be crucial for explaining the .
-
-1.model
-2.gauge
-3.Baskaran and equivalence class
+We briefly introduce the Kitaev model and some fundamental properties, including the emergent gauge-theory structure obtained by representing the model with Majorana fermions and the multi-spin correlation functions. The latter serves as a nice property that benefits the construction of the density matrix, while the former is crucial for explaining the microscopic origin of the entanglement structure. 
 }
+
+%\alert{However, since our paper is not going to follow the principle of \textit{cutting edges}, I do not introduce the subtlety about the bipartition or the cutting issue}
 
 The Hamiltonian of the Kitaev model reads~\cite{Kitaev}
 \[
@@ -38,7 +36,7 @@ The previous introduction demonstrates that the Kitaev model can be viewed as a 
 $b^x_ib^y_ib^z_ic_i = \mathds{1}$~\footnote{In this Gauss law formula, we can see the $c$-Majorana fermion operator is exactly the matter field $c_i=\mrm{e}^{i\pi\rho_i}$ if the $b$-Majorana operators are represented as $b^{\alpha_{ij}}_i=\mrm{e}^{i\pi E_{ij}}$. After that, the exponent becomes the familiar form $\div{E}=\rho$}, which corresponds to the intrinsic algebraic relation $\sigma^x\sigma^y\sigma^z=i\mathds{1}$ of the Pauli matrices in the spin representation~\cite{Kitaev}. 
 
 
-It has been proven that the two-spin correlation in the Kitaev model is short-ranged, and only the correlation functions of two nearest-neighbor spins of the same type as the bond connecting the two spins are finite-valued~\cite{Bakaran}. 
+The two-spin correlation in the Kitaev model is short-ranged, and only the correlation functions of two nearest-neighbor spins of the same type as the bond connecting them are finite~\cite{Bakaran}. 
 %This is due to the gauge sector of the ground state wave function that prevents a long-range correlation
 %\[
 %\anglelr{\sigma^{\mu}_i\sigma^{\nu}_j} = \underbrace{\bra{u}ib^\mu_ib^\nu_j\ket{u}}_{=0} \bra{M}\lr{ic_jc_i}\ket{M} = 0.

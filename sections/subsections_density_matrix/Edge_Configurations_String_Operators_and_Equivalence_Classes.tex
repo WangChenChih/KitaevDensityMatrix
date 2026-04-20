@@ -1,19 +1,20 @@
 \subsection{Edge Configurations, String Operators, and Equivalence Classes}\label{sec:density-matrix-whole}
 
-\textcolor{red}{These are the notations/setup that will make the "later discussion more fluent". The statement relies on the content that is not yet explicitly mentioned. Try to be specific. For example, the notation is a good devise for us to construct something for the reason 1. Furthermore, it explicitly demonstrate how symmetry enter quantity A. Something like that. That will give your reader some motivation to overcome the mental barrier that this is a worth reading paragraph.}
+%\textcolor{red}{These are the notations/setup that will make the "later discussion more fluent". The statement relies on the content that is not yet explicitly mentioned. Try to be specific. For example, the notation is a good devise for us to construct something for the reason 1. Furthermore, it explicitly demonstrate how symmetry enter quantity A. Something like that. That will give your reader some motivation to overcome the mental barrier that this is a worth reading paragraph.}
 
 \valert{
-To efficiently describe special structures hidden in the density matrix, we have to introduce some useful notations and definitions for \textit{edge configurations}, \textit{equivalence classes}, and \textit{sets of endpoints}. The density matrix was decomposed into terms labeled by different edge configurations, which will be demonstrated in the next section, and the existence of equivalence relations among edge configurations makes the density matrix more structured, giving rise to an interesting entanglement structure.
+To efficiently describe special structures hidden in the density matrix, we have to introduce some useful notations and definitions for \textit{edge configurations}, \textit{equivalence classes}, \textit{sets of endpoints}, and the algebra of these objects. The density matrix was decomposed into terms labeled by different edge configurations, which will be demonstrated in the next section, and the algebra of edge configurations allows us to manipulate these components. The existence of equivalence relations among edge configurations makes the density matrix more structured, giving rise to an interesting entanglement structure. 
 }
 
 \textit{edge configurations}, denoted by $\mathfrak{D}$, are sets consisting of edges in the lattice, and define their \textit{symmetric difference} $\ominus$ as
 \[
-\mathfrak{D}\ominus\mathfrak{D}' \equiv \mathfrak{D}\cup\mathfrak{D}'-\mathfrak{D}\cap\mathfrak{D}'\]
-Properties such as commutativity $\mathfrak{D}\ominus\mathfrak{D}' = \mathfrak{D}'\ominus\mathfrak{D}$ and associativity $\lr{\mathfrak{D}_1\ominus\mathfrak{D}_2}\ominus\mathfrak{D}_3 = \mathfrak{D}_1\ominus\lr{\mathfrak{D}_2\ominus\mathfrak{D}_3}$ can be verified directly. This algebra has three other properties, (i) $\varnothing\ominus\varnothing = \varnothing$, (ii) $\varnothing\ominus\mathfrak{D}=\mathfrak{D}$, and (iii) $\mathfrak{D}\ominus\mathfrak{D} = \varnothing$, which make it similar to the addition $\mathbb{Z}_2$. An example that illustrates the rule is given below
+\mathfrak{D}\ominus\mathfrak{D}' \equiv \mathfrak{D}\cup\mathfrak{D}'-\mathfrak{D}\cap\mathfrak{D}'
+\]
+The algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$ is the fundamental constituent of the algebraic operations throughout this work. Properties such as commutativity $\mathfrak{D}\ominus\mathfrak{D}' = \mathfrak{D}'\ominus\mathfrak{D}$ and associativity $\lr{\mathfrak{D}_1\ominus\mathfrak{D}_2}\ominus\mathfrak{D}_3 = \mathfrak{D}_1\ominus\lr{\mathfrak{D}_2\ominus\mathfrak{D}_3}$ can be verified directly. This algebra has three other properties, (i) $\varnothing\ominus\varnothing = \varnothing$, (ii) $\varnothing\ominus\mathfrak{D}=\mathfrak{D}$, and (iii) $\mathfrak{D}\ominus\mathfrak{D} = \varnothing$, which make it similar to the addition of modulo 2, or, an XOR operation. An example that illustrates the rule is given below
 \[
 \wordfig{2.5}{figures/oplus_1}\ominus\wordfig{2.5}{figures/oplus_2} = \wordfig{2.5}{figures/oplus_result},
 \]
-where thick red edges are those in the edge configurations.
+where thick edges are those in the edge configurations, and the thick light-violet edges on the right-hand side of the equation indicate the annihilated edges since they belong to the intersection of the two string configurations.
 
 With these, we define \emph{string operators} $\Sigma_\mathfrak{D}$ corresponding to different configurations $\mathfrak{D}$
 \begin{equation}\label{equ.string-operator-def}
@@ -23,9 +24,9 @@ Because of the anti-commuting feature of the Pauli matrices, we have to notice t
 %
 % is composed of $\mathbb{Z}_2$ dimer operators $\dimer{i}{j}$ within the edge configuration $\mathfrak{D}$. Therefore
 %
-multiplying two string operators $\Sigma_{\mathfrak{D}}$ and $\Sigma_{\mathfrak{D}}$ results in a symmetric difference pattern of the two edge configurations $\Sigma_{\mathfrak{D}\ominus\mathfrak{D}'}$. An equivalent statement is that the product of string operators represents the edge configuration algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$. More precisely, it gives a projective representation with a phase factor $g(\mathfrak{D},\mathfrak{D}')=\pm 1$,
+multiplying two string operators $\Sigma_{\mathfrak{D}}$ and $\Sigma_{\mathfrak{D}}$ results in a symmetric difference pattern of the two edge configurations $\Sigma_{\mathfrak{D}\ominus\mathfrak{D}'}$. An equivalent statement is that the product of string operators represents the edge configuration algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$. More precisely, it gives a projective representation with a phase factor $\varphi(\mathfrak{D},\mathfrak{D}')=\pm 1$,
 \begin{equation}\label{equ.Sigma-representation}
-\Sigma_{\mathfrak{D}}\Sigma_{\mathfrak{D}'} = g(\mathfrak{D},\mathfrak{D}') \Sigma_{\mathfrak{D}\ominus\mathfrak{D}'}.
+\Sigma_{\mathfrak{D}}\Sigma_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}') \Sigma_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
 
 

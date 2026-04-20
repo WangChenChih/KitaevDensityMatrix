@@ -1,9 +1,9 @@
 \subsection{Emergent Fermions at the Endpoints of Strings -- Equivalence between Spin and Fermion Representation}\label{sec:Emergent-Fermions-at-the-Endpoints}
 
-\textcolor{red}{The first paragraph should be high level explaination first then detail descriptions later.}
+%\textcolor{red}{The first paragraph should be high level explaination first then detail descriptions later.}
 
 \valert{
-The form of~\eqref{equ.density-matrix} manifests a pattern that the density matrix can be seen as a composition of strings. 
+The form of~\eqref{equ.density-matrix} not only implies the separability of the matter sector from the gauge sector via a pure spin representation, but also reflects the similarity between the density matrix represented using spins and the one using Majorana fermions. Here, we demonstrate that the algebra of the spin representation and the Majorana-fermion representation are identical. Such an identity makes it feasible to analyze the entanglement properties using the spin representation directly.
 }
 
 Starting from the Majorana representation, the ground state density matrix can also be represented as
@@ -28,7 +28,7 @@ In each dimer $\anglelr{ij}$ of the above product, the site $i$ belongs to subla
 \end{equation}
 Given equation \eqref{equ.Sigma-representation} and the fact that $[\mathcal{P}_G,\Sigma_{\mathfrak{D}}]=0$, the set of operators $\lrg{\mathcal{S}_{\mathfrak{D}}}$ also forms a representation of the algebra of edge configurations $\anglelr{\lrg{\mathfrak{D}},\ominus}$, 
 \begin{equation}\label{equ.U-rep-algebra}
-    \mathcal{S}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}'} = g(\mathfrak{D},\mathfrak{D}')\mathcal{S}_{\mathfrak{D}\ominus\mathfrak{D}'}.
+    \mathcal{S}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{S}_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
 With the string representation \eqref{equ.S-def} and \eqref{equ.U-rep-algebra}, The form of the density matrix in Eq.~\eqref{equ.density-matrix} becomes
 \begin{equation}\label{equ.rho-U}
@@ -44,7 +44,7 @@ The first two products completely consist of $\hat{u}_{ij}$'s, which commute wit
 \[\mathcal{P}^{(p)} \to \prod_{ p}\lr{\frac{\mathds{1} + \prod_{\anglelr{ij}\in p}\hat{u}_{ij}}{2}}\]
 in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit{those edges of the plaquette $p$}.}. Therefore, they will not contribute to the phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$ at all. So, we know that the anti-commutation relations among $c$-Majorana fermions are encoded in the phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$. In view of this, we find that the set of operators $\mathcal{M}_\mathfrak{D}$ defined by equation \eqref{equ.V-rep-def} also forms a projective representation of the edge configuration algebra and shares the same phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$ with the representation $\mathcal{S}$
 \begin{equation}\label{equ.V-rep-algebra}
-    \mathcal{M}_{\mathfrak{D}}\mathcal{M}_{\mathfrak{D}'} = g(\mathfrak{D},\mathfrak{D}')\mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'}
+    \mathcal{M}_{\mathfrak{D}}\mathcal{M}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'}
 \end{equation}
 This clearly illustrated a picture: the Majorana fermion representation is identical to the spin, or Pauli string, representation, and the Majorana fermions can be seen as emerging from the endpoints of those Pauli strings defined by \eqref{equ.string-operator-def}~\cite{Kitaev, fermion-and-string, string-net, Photons-and-electrons-as-emergent-phenomena-string, PRD-string-wen-quantum-order}. First, we exploit the fact that the spin degree of freedom can be fractionalized into Majorana fermions, which allows us to solve the model analytically. Conversely, to represent everything in terms of spins, as our primary goal in this work, we must \textit{glue} the fractionalized degrees of freedom back via string operators defined in the spin language. 
 
