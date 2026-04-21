@@ -2,11 +2,17 @@
 
 %\textcolor{red}{Can you provide a high level description of how to use the tools you had defined previously to get this part of the calculation done? What's the trick? What is the logical stepping stone for you to get the results before you enter the detail description.}
 
+%\valert{With the concepts of edge configurations and equivalence classes, all terms in the same class contribute the same weight to the density matrix and can be grouped. The cleaner form of the density matrix obtained by means of the grouping is presented at the end of the section, which will be demonstrated to encode the fermion feature, giving a clearer physical picture of the analysis of the entanglement structure.}
+
 \valert{
-With the concepts of edge configurations and equivalence classes, all terms in the same class contribute the same weight to the density matrix and can be grouped. The cleaner form of the density matrix obtained by means of the grouping is presented at the end of the section, which will be demonstrated to encode the fermion feature, giving a clearer physical picture of the analysis of the entanglement structure.
+Here, we use the string operators as the building blocks to derive the density matrix of the Kitaev ground state. By taking advantage of the equivalence classes, we write the density matrix in a form that further reflects the topological property and the origin of the effective Majorana fermion theory. 
 }
 
-We have known two crucial points for constructing the density matrix. The first one is that finite spin-correlation functions of the Kitaev ground state must be of the following form
+The construction of the density matrix relies on the fact that the model discussed here is a spin-1/2 system with $N$ spins. Local spin operators, represented by Pauli matrices, form a complete basis for any physical operator. Therefore, we can expand the density matrix $\rho$ by the spin operators~\cite{Latorre-Rico-Vidal}
+\begin{equation}\label{equ.rho-starting}
+    \rho = \frac{1}{2^N}\sum_{\mu_1,\cdots,\mu_N=0,x,y,z}\anglelr{\prod_{i}\sigma^{\mu_i}_i}\prod_{i}\sigma^{\mu_i}_i
+\end{equation}
+where $\sigma^0\equiv\mathds{1}$ represents the local identity. Here, we restrict ourselves to the ground state of the Kitaev model. the property \eqref{equ.coefficient-Majorana-evaluation} gives a constraint to the spin correlation function in the above equation, which simplifies the analytical form of the density matrix and further extracts the hidden topological properties. We have known two crucial points for constructing the density matrix. The first one is that finite spin-correlation functions of the Kitaev ground state must be of the following form
 \[
 \anglelr{\prod_{\anglelr{ij}\in \mathfrak{D}}\sigma^{\alpha_{ij}}_i\sigma^{\alpha_{ij}}_j} = \anglelr{\Sigma_{\mathfrak{D}}} \equiv \mathfrak{C}_{\mathfrak{D}}
 \]

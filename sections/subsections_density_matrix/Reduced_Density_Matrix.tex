@@ -26,21 +26,5 @@ Therefore, the final form of the reduced density matrix is as follows.
 \begin{equation}\label{equ.red-den-mat-sim-con}
     \rho_A = \frac{1}{2^{N^A-N^A_p}} \mathcal{P}^{(p)}_A\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}
 \end{equation}
-The form \eqref{equ.red-den-mat-sim-con} is the same as the density matrix \eqref{equ.density-matrix} as we anticipated. Along a similar line, we can also define a set of $\mathcal{S}$-operators
-\begin{equation}\label{equ.U-A-def}
-    \mathcal{S}^{(A)}_\mathfrak{D} \equiv \mathcal{P}^{(p)}_A\Sigma_\mathfrak{D}
-\end{equation}
-supported on the subregion $A$. With these newly defined operators, the reduced density matrix becomes
-\begin{equation}\label{equ.red-DM-new}
-    \rho_A = \frac{1}{2^{N^A-N^A_p}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\mathcal{S}^{(A)}_\mathfrak{D}.
-\end{equation}
-The form of the reduced density matrix above implies that the physical picture of Majorana fermions emerging at the endpoints of string operators still holds in any simply-connected subregion $A$, and it can be verified that $\mathcal{S}^{(A)}$-operators also satisfy a relation
-\begin{equation}\label{equ.U-A-rep-algebra}
-    \mathcal{S}^{(A)}_{\mathfrak{D}}\mathcal{S}^{(A)}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{S}^{(A)}_{\mathfrak{D}\ominus\mathfrak{D}'},
-\end{equation}
-which is the same as \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}. The reduced density matrix of Majorana fermions in the region $A$ also possesses the same form 
-\begin{equation}\label{equ.rho-F-reduced}
-    \rho_A^{F} \equiv \frac{1}{2^{N^A/2}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\mathcal{M}_\mathfrak{D}
-\end{equation}
-There are two straightforward ways to obtain this conclusion. The first approach is to trace out the environment of the Majorana fermion density matrix \eqref{equ.rho-F}. Because every $\mathcal{M}_\mathfrak{D}$ is a $\mathbb{Z}_2$ operator and thus $\Tr \mathcal{M}_{\mathfrak{D}}=0$ if $\mathfrak{D}\not\sim\varnothing$, the remaining part therefore consists of terms with $[\mathfrak{D}]\subset A$, which constitutes the reduced density matrix of a simply-connected region $A$.  The second way is following the logic of \eqref{equ.rho-A-raw-guess}. The observables in the Majorana space with finite expectation values are exactly $\mathcal{M}_\mathfrak{D}$ operators. To ensure that the reduced density matrix $\rho^F_A$ preserves the correct expectation values for these operators, the form of $\rho^F_A$ must be of \eqref{equ.rho-F-reduced}. Here, we only consider regions with an even $N^A$ since the denominator $2^{N^A/2}$ becomes fractional if $N^A$ is an odd number, making the dimension of the Hilbert space ill-defined. In the latter sections, cases with an odd number of $N^A$ will be discussed. 
+The form \eqref{equ.red-den-mat-sim-con} is the same as the density matrix \eqref{equ.density-matrix} as we anticipated. 
 
