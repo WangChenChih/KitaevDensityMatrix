@@ -28,30 +28,30 @@ Due to the change in the dimension of the Hilbert space of the $c$-Majorana sect
 &\Tr_{A} \mathcal{S}^{(A)}_{\mathfrak{D}} = 2^{N^A-N^A_p}\delta_{\mathfrak{D},\varnothing} \\
 & \Tr_{A,F} \mathcal{M}_{\mathfrak{D}} = 2^{(N^A+1)/2}\delta_{\mathfrak{D},\varnothing}
 \end{aligned}
-\right.
+\right..
 \end{equation}
 Carrying out the same calculation as we did in the even $N^A$ cases, we obtain a similar result to the entanglement entropy 
 \begin{align}\label{equ.EE-odd-derive-1}
     S_A &= -\Tr_{A,F} \rho^F_A\ln\rho^F_A + \lr{\frac{N^A-1}{2}-N^A_p}\ln 2 \nonumber\\
-    &= -\tr\lr{\Tilde{\Gamma}^{(c)}\ln \Tilde{\Gamma}^{(c)}} + \lr{\frac{1}{2}\abs{\de A} - \frac{3}{2}}\ln 2
+    &= -\tr\lr{\Tilde{\Gamma}^{(c)}\ln \Tilde{\Gamma}^{(c)}} + \lr{\frac{1}{2}\abs{\de A} - \frac{3}{2}}\ln 2,
 \end{align}
 where the correlation matrix in \eqref{equ.EE-corr-mat} is replaced by the enlarged one. According to \eqref{equ.tilde-Gamma-corner}, the first term of \eqref{equ.EE-odd-derive-1} can be reduced and expressed in terms of the original correlation matrix 
 \begin{equation}\label{equ.EE-reduce}
-    \tr\lr{\Tilde{\Gamma}^{(c)} \ln \Tilde{\Gamma}^{(c)}} = \tr\lr{\Gamma^{(c)} \ln \Gamma^{(c)}} - \frac{1}{2}\ln 2 
+    \tr\lr{\Tilde{\Gamma}^{(c)} \ln \Tilde{\Gamma}^{(c)}} = \tr\lr{\Gamma^{(c)} \ln \Gamma^{(c)}} - \frac{1}{2}\ln 2 .
 \end{equation}
 Substituting \eqref{equ.EE-reduce} into \eqref{equ.EE-odd-derive-1}, we will see that the last term $-\frac{1}{2}\ln 2$ in \eqref{equ.EE-reduce}, arises from the corner of $\Tilde{\Gamma}^{(c)}$ caused by the redundant fermion,  cancels the term $-\frac{1}{2}\ln 2$ in \eqref{equ.EE-odd-derive-1} arising from the enlarged dimension of the $c$-Majorana fermion sector, and we ultimately obtain a result that is the same as \eqref{equ.Yao-Qi-standard-form} in cases with even $N^A$. From this derivation, we prove that the result obtained by \cite{Yao-Qi_2010} is still correct for cases with odd $N^A$. The procedure can be understood in the following way. We first borrow dimension $2^{1/2}$ of a single Majorana fermion from the gauge sector to make the Hilbert space of the $c$-Majorana sector well-defined, and the additional term $-\frac{1}{2}\ln 2$ reflects such a borrowed dimension. Afterward, the redundant fermion forms an isolated corner in the correlation matrix $\Tilde{\Gamma}^{(c)}$, which gives the term $\frac{1}{2}\ln 2$ and then returns the dimension to the gauge sector. In the end, there is no net effect of the number of lattice sites, and the formula \eqref{equ.Yao-Qi-standard-form} holds for both even and odd cases.
 
-As shown in \eqref{equ.gamma-eigenvalue}, the elements in the single-particle entanglement spectrum come in pairs. That is, if $\frac{1+\nu_k}{2}$ is an eigenvalue of $\Tilde{\Gamma}^{(c)}$, then such a matrix must have another eigenvalue $\frac{1-\nu_k}{2}$~\cite{Jin-Korepin_2004}. As we have discussed, such a mode is designed in such a way that it decouples from other physical Majorana fermions, so we know the diagonal entry is exactly an eigenvalue of the correlation matrix $\Gamma^{(c)}$. Therefore, there must be another eigenvalue $\frac{1}{2}=1-\frac{1}{2}$ in the physical block of the correlation matrix. That means the many-body entanglement spectrum can be written as 
+As shown in \eqref{equ.gamma-eigenvalue}, the elements in the single-particle entanglement spectrum come in pairs. Since the lower-right corner of \eqref{equ.tilde-Gamma-corner} provides an eigenvalue $1/2$, there must be another identical eigenvalue $\frac{1}{2}=1-\frac{1}{2}$ in the single-particle entanglement spectrum. Therefore, the many-body entanglement spectrum can be written as 
 \begin{equation}\label{equ.many-body-entanglement-spectrum-odd}
 \lambda_{n_1,n_2,\cdots,n_{(N^A+1)/2}} = \frac{1}{2}\prod_{k=1}^{\frac{N^A-1}{2}}\gamma_{k,n_k}
 \end{equation}
-The formula shows that the many-body entanglement spectrum essentially depends on only $(N^A-1)/2$ quantum numbers, although the complete labeling contains $(N^A+1)/2$ of them. In other words, there is a 2-fold degeneracy in the entanglement spectrum of the $c$-Majorana sector, and therefore we only have $2^{\frac{N^A-1}{2}}$ distinct eigenvalues. The degree of degeneracy for each distinct eigenvalue is therefore $2^{\frac{N^A+1}{2}-N^A_p}$ because the total number of eigenvalues is equal to the number of distinct eigenvalues multiplied by the number of degeneracies
+The formula shows that the many-body entanglement spectrum depends on only $(N^A-1)/2$ quantum numbers, although the complete labeling contains $(N^A+1)/2$ of them. In other words, there is a 2-fold degeneracy in the entanglement spectrum of the $c$-Majorana sector, thus we only have $2^{\frac{N^A-1}{2}}$ distinct values of $\lambda_{\lrg{n}}$. The degree of degeneracy for each distinct eigenvalue is therefore $2^{\frac{N^A+1}{2}-N^A_p}$ because the total number of eigenvalues is equal to the number of distinct eigenvalues multiplied by the number of degeneracies
 \[
 2^{N^A-N^A_p} = 2^{\frac{N^A-1}{2}}\times 2^{\frac{N^A+1}{2}-N^A_p}.
 \]
 Defining the entanglement Hamiltonian $\mathcal{H}_A$ as the exponent of the reduced density matrix $\rho_A = \mrm{e}^{-\mathcal{H}_A}/\Tr_A\lr{\mrm{e}^{-\mathcal{H}_A}}$, it is proven to be quadratic~\cite{Peschel_2003, Peschel-Eisler_2009, Chung-Peschel_2001, Cheong-Henley_2004} and can be diagonalized as 
 \begin{equation}\label{equ.entanglement-Hamiltonian}
-    \mathcal{H}_A = \sum_{k=1}^{\frac{N^A+1}{2}}\epsilon_k\lr{1 - 2a^\dagger_k a_k}
+    \mathcal{H}_A = \sum_{k=1}^{\frac{N^A+1}{2}}\epsilon_k\lr{1 - 2a^\dagger_k a_k}.
 \end{equation}
 This form has also been implied by~\eqref{equ.many-body-entanglement-spectrum}. The quantum number $n_k$ that appears in \eqref{equ.many-body-entanglement-spectrum} and \eqref{equ.many-body-entanglement-spectrum-odd} is exactly the expectation value of the fermion number operator $a^\dagger_k a_k$ that diagonalizes the entanglement Hamiltonian. From the relation of the quantum number $n_k$ with the fermion number operator and the form of the entanglement Hamiltonian, we can identify $\hat{\bog{\pi}}^{(A)}\equiv(-1)^{\sum_{k}n_k} = \prod_{k}\lr{1-2n_k}$ as the total fermion parity in the subregion $A$. From the fermion parity point of view, we can understand the 2-fold degeneracy in the $c$-Majorana sector as the block-diagonalization depending on the total fermion parity in $A$. As we have seen, the value of $\lambda_{\lrg{n}}$ is independent of the last fermion number $n_{(N^A+1)/2}$. At the same time, $\hat{\bog{\pi}}^{(A)}$ commutes with the entanglement Hamiltonian, hence also commutes with $\rho_A$. Therefore, the entanglement spectrum can be separated into even and odd sectors, and these two identical sectors actually correspond to $\lrg{n}$ with $n_{(N^A+1)/2}=0,1$, respectively, giving a 2-fold degeneracy in the entanglement spectrum of the $c$-Majorana sector. 
 
