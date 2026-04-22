@@ -1893,7 +1893,7 @@ FUNCTION {string.enquote}
 
 FUNCTION {format.title}
 { title
-  duplicate$ empty$ 'skip$ { "t" change.case$ } if$
+  duplicate$ empty$ 'skip$ { "title" bibinfo.check } if$
   duplicate$ "title" bibinfo.check swap$
   duplicate$ empty$ 'pop$
     {

@@ -1,4 +1,4 @@
-\section{An introduction to the Kitaev Model}
+\section{An introduction to the Kitaev Model}\label{sec:model-intro}
 
 %\textcolor{red}{We cannot review everything in the Kitaev model, so this part needs to be tied with later discussions explicitly before entering the later description. The review should provide the minimum ingredients for the chain of logic. For example, we review the Majorna representation to illustrate the non-trivial bi-partition problem when one cuts the gauge link. There, bi-partition could be subtle[cite]. Or any related subtlety.}
 
@@ -10,7 +10,7 @@ Here, we review the Kitaev model and some of its fundamental properties, includi
 
 %\alert{However, since our paper is not going to follow the principle of \textit{cutting edges}, I do not introduce the subtlety about the bipartition or the cutting issue}
 
-The Hamiltonian of the Kitaev model reads~\cite{Kitaev}
+The Hamiltonian of the Kitaev model reads~\cite{Kitaev_2006}
 \[
 H = -\sum_{\anglelr{ij}}J_{\alpha_{ij}}\dimer{i}{j} \quad ;\quad\wordfig{1.6}{figures/direction-def.pdf}
 \]
@@ -26,7 +26,7 @@ In this way, the Hilbert space is enlarged, and the corresponding ground state $
 %\bra{\psi}\prod_{i=1}^{n}\sigma_i^{\mu_i}\ket{\psi} = (-1)^{n^2/2} \bra{u}\prod_{i=1}^{n}b^{\mu_i}_i\ket{u} \bra{M}\prod_{i=1}^{n}c_i\ket{M}
 %\]
 %
-Nevertheless, the state $\sket{\Tilde{\psi}}$ in the enlarged space is not physical. To obtain the physical state, a Gutzwiller projector is needed $\ket{\psi} = \mathcal{P}_G\sket{\Tilde{\psi}}$~\cite{Kitaev, projector-1, projector-2}. Hamiltonian \eqref{equ.MF-Hamiltonian} is analogous to a quadratic fermion system with tunable hopping amplitudes $J_{\alpha_{ij}}u_{ij}$ in the sense of parton mean-field theory~\cite{mf-flux-1, mf-flux-2, mf-flux-3}. The flux-free condition has been proven to minimize the energy of a 2D hexagonal lattice system~\cite{flux-1, flux-2, flux-3}. The flux operator in the Kitaev model is defined as
+Nevertheless, the state $\sket{\Tilde{\psi}}$ in the enlarged space is not physical. To obtain the physical state, a Gutzwiller projector is needed $\ket{\psi} = \mathcal{P}_G\sket{\Tilde{\psi}}$~\cite{Kitaev_2006, Pedrocchi-Chesi-Loss_2011, Zschocke-Vojta_2015}. Hamiltonian \eqref{equ.MF-Hamiltonian} is analogous to a quadratic fermion system with tunable hopping amplitudes $J_{\alpha_{ij}}u_{ij}$ in the sense of parton mean-field theory~\cite{mf-flux-1, mf-flux-2, mf-flux-3}. The flux-free condition has been proven to minimize the energy of a 2D hexagonal lattice system~\cite{flux-1, flux-2, flux-3}. The flux operator in the Kitaev model is defined as
 \begin{equation}\label{equ.flux-def}
     W_{p}\equiv \prod_{\anglelr{ij}\in p}\dimer{i}{j} \to \prod_{\anglelr{ij}\in p}\hat{u}_{ij},
 \end{equation}
@@ -35,7 +35,7 @@ and the flux-free condition is the situation where $\anglelr{W_p}=1\forall p$. B
 %The flux operators commute with the Hamiltonian, and thus the flux-free condition for the ground state $\ket{\psi}$ of the Kitaev model can be expressed as $W_p\ket{\psi}=+\ket{\psi}\forall p$.
 
 The previous introduction demonstrates that the Kitaev model can be viewed as a free fermion system coupled to a static $\mathbb{Z}_2$ gauge field~\footnote{The gauge field in the Kitaev model is said to be static because the expectation value of gauge fluxes are non-fluctuating, and there's no term related to the dynamics of the gauge field in the Lagrangian.}. The gauge connection in the gauge field that emerged from the fermionization of the Kitaev model is defined in such a way that $\mrm{e}^{iA_{ij}} = \hat{u}_{ij}$, and hence it is clear that the plaquette operator $W_p = \exp\lr{i\oint A}$ is the flux of the gauge theory. According to the relation $b^{\alpha_{ij}}_i\hat{u}_{ij}b^{\alpha_{ij}}_i = -\hat{u}_{ij}$, the $b$-Majorana fermions define the electric field operators in such a way that $b^{\alpha_{ij}}_i = \mrm{e}^{i\pi E_{ij}}$ since they play the roles of \textit{flipping} the $\mathbb{Z}_2$ gauge field, that is $b^{\alpha_{ij}}_i\ket{\lrg{u}} = \ket{\lrg{u\;;\; u_{ij}\to-u_{ij}}}$, and thus gives the canonical quantization of the gauge theory $[A_{ij}, E_{i'j'}] = i\delta_{ii'}\delta_{jj'}$. The Gauss law of the gauge theory only exists in the Majorana representation and reads
-$b^x_ib^y_ib^z_ic_i = \mathds{1}$~\footnote{In this Gauss law formula, we can see the $c$-Majorana fermion operator is exactly the matter field $c_i=\mrm{e}^{i\pi\rho_i}$ if the $b$-Majorana operators are represented as $b^{\alpha_{ij}}_i=\mrm{e}^{i\pi E_{ij}}$. After that, the exponent becomes the familiar form $\div{E}=\rho$}, which corresponds to the intrinsic algebraic relation $\sigma^x\sigma^y\sigma^z=i\mathds{1}$ of the Pauli matrices in the spin representation~\cite{Kitaev}. 
+$b^x_ib^y_ib^z_ic_i = \mathds{1}$~\footnote{In this Gauss law formula, we can see the $c$-Majorana fermion operator is exactly the matter field $c_i=\mrm{e}^{i\pi\rho_i}$ if the $b$-Majorana operators are represented as $b^{\alpha_{ij}}_i=\mrm{e}^{i\pi E_{ij}}$. After that, the exponent becomes the familiar form $\div{E}=\rho$}, which corresponds to the intrinsic algebraic relation $\sigma^x\sigma^y\sigma^z=i\mathds{1}$ of the Pauli matrices in the spin representation~\cite{Kitaev_2006}. 
 
 
 The two-spin correlation in the Kitaev model is short-ranged, and only the correlation functions of two nearest-neighbor spins of the same type as the bond connecting them are finite~\cite{Bakaran}. 

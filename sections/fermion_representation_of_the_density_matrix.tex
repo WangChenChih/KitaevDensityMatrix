@@ -1,9 +1,9 @@
 \section{Fermion Representation of the Density Matrix}\label{appendix:Majorana-derivation}
-The ground state of Hamiltonian \eqref{equ.MF-Hamiltonian} reads~\cite{Yao-Qi}
+The ground state of Hamiltonian \eqref{equ.MF-Hamiltonian} reads~\cite{Yao-Qi_2010}
 \begin{equation}\label{equ.fermion-state}
     \ket{\psi} = \sqrt{2^{N-1}} \mathcal{P}_G\ket{u}\ket{M}
 \end{equation}
-The Gutzwiller projector $\mathcal{P}_G=\prod_{i}\lr{\frac{\mathds{1}+D_i}{2}}$ implements the Gauss law of the $\mathbb{Z}_2$ gauge theory in the Majorana representation of the Kitaev model, and $D_i = b^x_ib^y_ib^z_i c_i$ is the generator of the $\mathbb{Z}_2$ gauge transform. The Gutzwiller projector can also be expanded in the following way~\cite{projector-1, projector-2, Fu-Knolle-Perkins-2018}
+The Gutzwiller projector $\mathcal{P}_G=\prod_{i}\lr{\frac{\mathds{1}+D_i}{2}}$ implements the Gauss law of the $\mathbb{Z}_2$ gauge theory in the Majorana representation of the Kitaev model, and $D_i = b^x_ib^y_ib^z_i c_i$ is the generator of the $\mathbb{Z}_2$ gauge transform. The Gutzwiller projector can also be expanded in the following way~\cite{Pedrocchi-Chesi-Loss_2011, Zschocke-Vojta_2015, Fu-Knolle-Perkins-2018}
 \[
 \mathcal{P}_G = \prod_{i}\lr{\frac{\mathds{1} + D_i}{2}}= \frac{1}{2^{N-1}}\lr{\frac{\mathds{1} + \prod_iD_i}{2}}\sum_{\lrg{i}}'\prod_{j\in\lrg{i}}D_j
 \]
@@ -14,11 +14,11 @@ where the primed sum stands for a summation over subsets $\lrg{i}$ with sizes sm
     &= \sum_{\lrg{i}}'\bra{M}\bra{u}\prod_{j\in\lrg{i}}D_j\ket{u}\ket{M} \\
     &= 1
 \end{align*}
-In the last second line, we used a fact that the state $\ket{u}\ket{M}$ is intrinsically an eigenvector of the operator $\prod_i D_i$ with eigenvalue $+1$. This operator is $\mathbb{Z}_2$ and commutes with the Hamiltonian; therefore, the state $\ket{u}\ket{M}$ is an eigenvector with eigenvalue $\pm 1$. The projector $\lr{\frac{\mathds{1}+\prod_iD_i}{2}}$, hidden in the Gutzwiller projector, selects only the states with eigenvalue $ +1$. Therefore, we only pick the state $\ket{u}\ket{M}$ with the eigenvalue $+1$. As for the last line of the derivation, we know that $D_i$ is the generator of the $\mathbb{Z}_2$ gauge transform and can flip the gauge fields residing on the three edges connected to the site $i$, which implies that the state $D_i\ket{u}$ is orthogonal to the original state $\ket{u}$ before being flipped, so only the term $\lrg{i}=\varnothing$ survives in the summation. It is worth mentioning that the operator is nothing but the fermion parity operator $\hat{\bog{\pi}}$ multiplied with all of the gauge field operators up to a phase~\cite{projector-1}
+In the last second line, we used a fact that the state $\ket{u}\ket{M}$ is intrinsically an eigenvector of the operator $\prod_i D_i$ with eigenvalue $+1$. This operator is $\mathbb{Z}_2$ and commutes with the Hamiltonian; therefore, the state $\ket{u}\ket{M}$ is an eigenvector with eigenvalue $\pm 1$. The projector $\lr{\frac{\mathds{1}+\prod_iD_i}{2}}$, hidden in the Gutzwiller projector, selects only the states with eigenvalue $ +1$. Therefore, we only pick the state $\ket{u}\ket{M}$ with the eigenvalue $+1$. As for the last line of the derivation, we know that $D_i$ is the generator of the $\mathbb{Z}_2$ gauge transform and can flip the gauge fields residing on the three edges connected to the site $i$, which implies that the state $D_i\ket{u}$ is orthogonal to the original state $\ket{u}$ before being flipped, so only the term $\lrg{i}=\varnothing$ survives in the summation. It is worth mentioning that the operator is nothing but the fermion parity operator $\hat{\bog{\pi}}$ multiplied with all of the gauge field operators up to a phase~\cite{Pedrocchi-Chesi-Loss_2011}
 \[
 \prod_i D_i = \prod_ib^x_ib^y_ib^z_ic_i \propto \prod_{\anglelr{ij}}b^{\alpha_{ij}}_{i}b^{\alpha_{ij}}_j\prod_ic_i \propto \lr{\prod_{\anglelr{ij}}\hat{u}_{ij}}\hat{\bog{\pi}}
 \]
-The phase could be $\pm 1$, depending on the boundary condition of the system~\cite{projector-1, projector-2}. Since $\ket{u}$ is the eigenvector of gauge field operators $\hat{u}_{ij}$ and $\ket{M}$ is the eigenvector of $\hat{\bog{\pi}}$ as the total fermion parity is fixed, it is natural that the state $\ket{u}\ket{M}$ is the eigenvector of the operator $\prod_i D_i$ with the eigenvalue $\pm 1$.
+The phase could be $\pm 1$, depending on the boundary condition of the system~\cite{Pedrocchi-Chesi-Loss_2011, Zschocke-Vojta_2015}. Since $\ket{u}$ is the eigenvector of gauge field operators $\hat{u}_{ij}$ and $\ket{M}$ is the eigenvector of $\hat{\bog{\pi}}$ as the total fermion parity is fixed, it is natural that the state $\ket{u}\ket{M}$ is the eigenvector of the operator $\prod_i D_i$ with the eigenvalue $\pm 1$.
 
 The density matrix of the ground state is a pure state of $\ket{\psi}$
 \[
