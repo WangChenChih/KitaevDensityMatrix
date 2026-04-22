@@ -3,8 +3,8 @@
 
 <svg
    width="354.82904mm"
-   height="220.8701mm"
-   viewBox="0 0 354.82904 220.8701"
+   height="229.13139mm"
+   viewBox="0 0 354.82904 229.13139"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
@@ -25,7 +25,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.60851062"
-     inkscape:cx="624.47554"
+     inkscape:cx="625.29722"
      inkscape:cy="313.05945"
      inkscape:window-width="1920"
      inkscape:window-height="1094"
@@ -82,7 +82,7 @@
      transform="translate(-10.87012,8.6960958)">
     <g
        id="g12"
-       transform="translate(7.5804053,-12.404921)">
+       transform="translate(7.5804053,-14.107483)">
       <g
          id="g8">
         <rect
@@ -620,7 +620,7 @@
      inkscape:label="words">
     <g
        id="g6052"
-       transform="matrix(2.2467351,0,0,2.2467351,47.105218,181.53059)"
+       transform="matrix(2.2467351,0,0,2.2467351,50.006733,185.92474)"
        ns3:version="1.12.0"
        ns3:texconverter="pdflatex"
        ns3:pdfconverter="inkscape"
@@ -676,7 +676,7 @@
     </g>
     <g
        id="g6052-39"
-       transform="matrix(2.24674,0,0,2.24674,139.65082,92.511094)"
+       transform="matrix(2.24674,0,0,2.24674,137.53414,92.511094)"
        ns3:version="1.12.0"
        ns3:texconverter="pdflatex"
        ns3:pdfconverter="inkscape"
@@ -713,7 +713,7 @@
     </g>
     <g
        id="g6052-3"
-       transform="matrix(1.7997752,0,0,1.7997752,207.06839,160.27166)"
+       transform="matrix(1.7997752,0,0,1.7997752,203.95741,168.20921)"
        ns3:version="1.12.0"
        ns3:texconverter="pdflatex"
        ns3:pdfconverter="inkscape"
@@ -966,7 +966,7 @@
     </g>
     <g
        id="g6297-1"
-       transform="matrix(-1.1546782,-1.1546782,1.1546782,-1.1546782,317.94262,44.519739)"
+       transform="matrix(-1.1546782,-1.1546782,1.1546782,-1.1546782,317.41345,43.990572)"
        ns3:version="1.12.0"
        ns3:texconverter="pdflatex"
        ns3:pdfconverter="inkscape"
@@ -1066,7 +1066,7 @@
     </g>
     <g
        id="g9164"
-       transform="matrix(1.9564366,0,0,1.9564366,311.77431,3.7107429)"
+       transform="matrix(1.9564366,0,0,1.9564366,310.71597,3.1815762)"
        ns3:version="1.12.0"
        ns3:texconverter="pdflatex"
        ns3:pdfconverter="inkscape"
