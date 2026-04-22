@@ -26,8 +26,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      inkscape:zoom="1.7643229"
-     inkscape:cx="306.91661"
-     inkscape:cy="230.4"
+     inkscape:cx="307.4834"
+     inkscape:cy="225.86568"
      inkscape:window-width="1920"
      inkscape:window-height="1094"
      inkscape:window-x="-11"
@@ -57,7 +57,7 @@
        xlink:href="#Strips1_1"
        preserveAspectRatio="xMidYMid"
        id="pattern2"
-       patternTransform="scale(1.5)"
+       patternTransform="matrix(0,4.5,-4.5,0,0,0)"
        x="0"
        y="0" />
     <pattern
