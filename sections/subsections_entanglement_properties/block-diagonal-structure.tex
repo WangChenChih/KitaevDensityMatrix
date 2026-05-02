@@ -38,15 +38,12 @@ After considering the transformation $\sigma^\mu_i\to ib^\mu_ic_i$, the operator
     \hat{\xi}_n \equiv \sigma^{\mu_{2n-1}}_{i_{2n-1}}\Sigma_{\mathcal{C}_n}\sigma^{\mu_{2n}}_{i_{2n}} \quad ; \quad n=1,2,3,\cdots ,L
 \end{equation}
 up to a phase that depends on the lengths of the strings $\abs{\mathcal{C}_n}$. The process of producing $\hat{\xi}$-operators from \eqref{equ.b-link} to \eqref{equ.spin-string-linking-gauge} is illustrated in \autoref{fig.linking-strings-electric-field}. All $\hat{\xi}_n$ operators defined in a simply-connected subregion $A$ commute with the reduced density matrix $\rho_A$. 
-\begin{figure*}
+\begin{figure}
     \centering
-    \includegraphics[width=0.24\linewidth]{figures/Yao-Qi-mechanism-origin.pdf}
-    \includegraphics[width=0.24\linewidth]{figures/Yao-Qi-mechanism-dimers.pdf}
-    \includegraphics[width=0.24\linewidth]{figures/Yao-Qi-mechanism-xi-def.pdf}
-    \includegraphics[width=0.24\linewidth]{figures/Yao-Qi-mechanism-zeta-def.pdf}
-    \caption{The electric-field operators living on the edges crossing the boundary of the region are split in half, as shown in the first panel. In the physical spin representation, these electric fields correspond to the spin operators $\sigma^\mu$ with directions pointing outwards. The second panel displays string operators that connect two adjacent spins in the first panel in a pair. Multiplying the first panel by the second one gives a series of operators $\hat{\xi}$, as shown in the third panel. Applying the same method but with the pairing order shifted yields another set of operators $\hat{\zeta}$, as showcased in the last panel.}
+    \includegraphics[width=0.8\linewidth]{figures/xi-wilson-flip.pdf}
+    \caption{\alert{The electric-field operators living on the edges crossing the boundary of the region are split in half, as shown in the first panel. In the physical spin representation, these electric fields correspond to the spin operators $\sigma^\mu$ with directions pointing outwards. The second panel displays string operators that connect two adjacent spins in the first panel in a pair. Multiplying the first panel by the second one gives a series of operators $\hat{\xi}$, as shown in the third panel. Applying the same method but with the pairing order shifted yields another set of operators $\hat{\zeta}$, as showcased in the last panel.}}
     \label{fig.xi-def}
-\end{figure*}
+\end{figure}
 The first three panels of \autoref{fig.xi-def} illustrate an example of the process of defining $\hat{\xi}$-operators using the method given by \eqref{equ.spin-string-linking-gauge}. 
 %The directions of the spin operators at the endpoints of the links point outward, representing the gauge fields being cut. In the first panel are the spin operators $\sigma^\mu_i$, which are exactly the spin operators shown in equation \eqref{equ.spin-string-linking-gauge}, at the boundary with their directions pointing outwards. In the next panel, we subsequently multiply the string operators $\Sigma_{\mathcal{C}_n}$, which is the string operator shown in equation \eqref{equ.spin-string-linking-gauge} that lies between the two spin operators residing on the two endpoints of the string, with the spin operators set previously. After that, such operators are used as definitions of $\hat{\xi}_n$'s, which are illustrated in the third panel of \autoref{fig.xi-def}. In this example, we now focus on $\hat{\xi}_1$, which is defined as
 %\[
@@ -62,7 +59,7 @@ At the same time, the regions where $\hat{\xi}$-operators are supported have no 
 \end{equation}
 where each $\varrho_{\lrg{\xi}}$ is the block labeled by a set of binaries $\lrg{\xi}$, and thus the number of blocks is $2^{L} = 2^{\abs{\de A}/2}$.
 
-In defining $\hat{\xi}$-operators, the way we chose to pair points along the boundary was like $(b^{\mu_1}_{i_1},b^{\mu_2}_{i_2}), (b^{\mu_3}_{i_3},b^{\mu_4}_{i_4}),\cdots,(b^{\mu_{2L-1}}_{i_{2L-1}},b^{\mu_{2L}}_{i_{2L}})$. However, it is not the only way to pair these points. We can choose another way in which the pairing order is shifted by one compared to the previous way we adapted for $\hat{\xi}$-operators
+\alert{In defining $\hat{\xi}$-operators, the way we chose to pair points along the boundary was like $(b^{\mu_1}_{i_1},b^{\mu_2}_{i_2}), (b^{\mu_3}_{i_3},b^{\mu_4}_{i_4}),\cdots,(b^{\mu_{2L-1}}_{i_{2L-1}},b^{\mu_{2L}}_{i_{2L}})$. However, it is not the only way to pair these points. We can choose another way in which the pairing order is shifted by one compared to the previous way we adapted for $\hat{\xi}$-operators
 \[
 (b^{\mu_2}_{i_2},b^{\mu_3}_{i_3}), (b^{\mu_4}_{i_4},b^{\mu_5}_{i_5}),\cdots,(b^{\mu_{2L}}_{i_{2L}},b^{\mu_1}_{i_1})
 \]
@@ -84,7 +81,7 @@ This equation implies that the $\hat{\zeta}$-operators relate different blocks o
 \begin{equation}\label{equ.related-blocks}
     \hat{\zeta}_n \varrho_{\lrg{\cdots,\xi_n,\xi_{n+1},\cdots}}\hat{\zeta}_n^\dagger = \varrho_{\lrg{\cdots,-\xi_n,-\xi_{n+1},\cdots}}
 \end{equation}
-By this relation, any two blocks $\varrho_{\lrg{\xi}}$ and $\varrho_{\lrg{\xi'}}$ in $\rho_A$ can be related, and thus their sets of eigenvalues are identical. However, a $\hat{\zeta}$-operator flips the eigenvalues of two $\hat{\xi}$-operators at the same time, so only two blocks with the same total parity $\prod_{i=1}^{L}\xi_i$ of the set $\lrg{\xi}$ are related by a specific set of $\hat{\zeta}$-operators.
+By this relation, any two blocks $\varrho_{\lrg{\xi}}$ and $\varrho_{\lrg{\xi'}}$ in $\rho_A$ can be related, and thus their sets of eigenvalues are identical. However, a $\hat{\zeta}$-operator flips the eigenvalues of two $\hat{\xi}$-operators at the same time, so only two blocks with the same total parity $\prod_{i=1}^{L}\xi_i$ of the set $\lrg{\xi}$ are related by a specific set of $\hat{\zeta}$-operators.}
 
 
 
