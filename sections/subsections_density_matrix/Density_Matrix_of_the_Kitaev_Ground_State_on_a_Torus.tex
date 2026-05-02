@@ -4,19 +4,14 @@
 
 %\valert{With the concepts of edge configurations and equivalence classes, all terms in the same class contribute the same weight to the density matrix and can be grouped. The cleaner form of the density matrix obtained by means of the grouping is presented at the end of the section, which will be demonstrated to encode the fermion feature, giving a clearer physical picture of the analysis of the entanglement structure.}
 
-\valert{
-Here, we use the string operators as the building blocks to derive the density matrix of the Kitaev ground state. By taking advantage of the equivalence classes, we write the density matrix in a form that further reflects the topological property and the origin of the effective Majorana fermion theory. 
-}
+\valert{Inspired by the replica trick demonstrated by \cite{Yao-Qi_2010}, we anticipate that the form of the density matrix should possess a pattern that directly reflects the separability of the gauge part and the matter part.} Here, we use the string operators as the building blocks to derive the density matrix of the Kitaev ground state. \valert{We illustrate that the separability between the two sectors arises from the equivalence class, and the character of each equivalent class further reflects the origin of the effective Majorana fermion theory.}
+
 
 The construction of the density matrix relies on the fact that the model discussed here is a spin-1/2 system with $N$ spins. Local spin operators, represented by Pauli matrices, form a complete basis for any physical operator. Therefore, we can expand the density matrix $\rho$ by the spin operators~\cite{Latorre-Rico-Vidal_2004}
 \begin{equation}\label{equ.rho-starting}
     \rho = \frac{1}{2^N}\sum_{\mu_1,\cdots,\mu_N=0,x,y,z}\anglelr{\prod_{i}\sigma^{\mu_i}_i}\prod_{i}\sigma^{\mu_i}_i
 \end{equation}
-where $\sigma^0\equiv\mathds{1}$ represents the local identity. Here, we restrict ourselves to the ground state of the Kitaev model. the property \eqref{equ.coefficient-Majorana-evaluation} gives a constraint to the spin correlation function in the above equation, which simplifies the analytical form of the density matrix and further extracts the hidden topological properties. We have known two crucial points for constructing the density matrix. The first one is that finite spin-correlation functions of the Kitaev ground state must be of the following form
-\[
-\anglelr{\prod_{\anglelr{ij}\in \mathfrak{D}}\sigma^{\alpha_{ij}}_i\sigma^{\alpha_{ij}}_j} = \anglelr{\Sigma_{\mathfrak{D}}} \equiv \mathfrak{C}_{\mathfrak{D}}
-\]
-Otherwise, the correlation function vanishes. From now on, we denote by $\mathfrak{C}_{\mathfrak{D}}$ the expectation values of the string operator corresponding to the edge configuration $\mathfrak{D}$. The other is that every edge configuration in the same equivalence class gives the same weight to the density matrix, so we can sort terms in the expansion \eqref{equ.rho-starting} into equivalence classes
+where $\sigma^0\equiv\mathds{1}$ represents the local identity. Here, we restrict ourselves to the ground state of the Kitaev model. the property \eqref{equ.coefficient-Majorana-evaluation} gives a constraint to the spin correlation function in the above equation, which simplifies the analytical form of the density matrix and further extracts the hidden topological properties. We have known two crucial points for constructing the density matrix. The first one is that finite spin-correlation functions of the Kitaev ground state must be of the form given by \eqref{equ.only-finite-correlation}, $\anglelr{\Sigma_{\mathfrak{D}}} \equiv \mathfrak{C}_{\mathfrak{D}}$. Otherwise, the correlation function vanishes. From now on, we denote by $\mathfrak{C}_{\mathfrak{D}}$ the expectation values of the string operator corresponding to the edge configuration $\mathfrak{D}$. The other is that every edge configuration in the same equivalence class gives the same weight to the density matrix, so we can sort terms in the expansion \eqref{equ.rho-starting} into equivalence classes
 \begin{equation}\label{equ.class-sum}
     \sum_{\mathfrak{D}}\mathfrak{C}_{\mathfrak{D}}\Sigma_\mathfrak{D} = \sum_{[\mathfrak{D}^c]}\sum_{\mathfrak{D}\in[\mathfrak{D}^c]}\mathfrak{C}_{\mathfrak{D}}\Sigma_\mathfrak{D}
 \end{equation}
@@ -42,7 +37,7 @@ To make the trace equal to $1$, we require $C = 2^{-N+N_p}$. In the end, we obta
 \begin{equation}\label{equ.density-matrix}
     \rho =  \frac{1}{2^{N-N_p}}\mathcal{P}^{(p)}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}.
 \end{equation}
-As indicated in Sec.~\ref{sec:density-matrix-whole}, there is a one-to-one correspondence between sets of endpoints and equivalence classes. The sum in \eqref{equ.density-matrix} can also be understood as summing over sets of endpoints. This implies that the details of the strings are smeared out, and only the information of their endpoints remains important. All the information about the details of strings is grouped and stored in the projector $\mathcal{P}^{(p)}$. The separation between the string details and endpoints manifests the separability of the matter sector from the gauge sector.
+As indicated in Sec.~\ref{sec:density-matrix-whole}, there is a one-to-one correspondence between sets of endpoints and equivalence classes. Therefore, the sum in \eqref{equ.density-matrix} can also be understood as summing over sets of endpoints. This implies that the details of the strings are smeared out, and only the information of their endpoints remains important. All the information about the details of strings is grouped and stored in the projector $\mathcal{P}^{(p)}$. The separation between the string details and endpoints manifests the separability of the matter sector from the gauge sector.
 
 %Because $[W_p,\Sigma_\mathfrak{D}]=0\;\forall p,\mathfrak{D}$, the projector $\mathcal{P}^{(p)}$ commutes with the summation part consisting of string operators. This is also a manifestation of the separability of the $c$-Majorana fermion sector from the gauge sector, which will be elucidated in later sections.
 

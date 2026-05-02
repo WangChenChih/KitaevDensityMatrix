@@ -8,9 +8,9 @@ Starting from the Majorana representation, the ground state density matrix can a
 \[
   \rho = 2^{N-1}\mathcal{P}_G\prod_{\anglelr{ij}}\lr{\frac{\mathds{1}+\hat{u}_{ij}}{2}}\rho_F\mathcal{P}_G
 \]
-where $\rho_F$ is the density matrix of the Kitaev ground state in the Majorana fermion representation. Details of the derivation are presented in Appendix \ref{appendix:Majorana-derivation}. The Majorana density matrix $\rho_F$ can be constructed from a starting point similar to \eqref{equ.rho-starting} that we have used in the beginning.
+where $\rho_F$ is the density matrix of the Kitaev ground state in the Majorana fermion representation. Details of the derivation are presented in Appendix \ref{appendix:Majorana-derivation}. The Majorana density matrix $\rho_F$ can be constructed from a starting point similar to \eqref{equ.rho-starting} that we have used in the beginning,
 \begin{equation}\label{equ.rho-F}
-    \rho^F = \frac{1}{2^{N/2}}\sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D}\mathcal{M}_\mathfrak{D}
+    \rho^F = \frac{1}{2^{N/2}}\sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D}\mathcal{M}_\mathfrak{D},
 \end{equation}
 where
 \begin{equation}\label{equ.V-rep-def}
@@ -32,7 +32,7 @@ With the string representation \eqref{equ.S-def} and \eqref{equ.U-rep-algebra}, 
 \begin{equation}\label{equ.rho-U}
     \rho =  \frac{1}{2^{N-N_p}} \sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}}
 \end{equation}
-which is of a form extremely similar to \eqref{equ.rho-F} if those $\mathcal{S}$-operators are replaced by $\mathcal{M}$-operators. This is reminiscent of different representations of the same algebra.
+which is of a form similar to \eqref{equ.rho-F} if those $\mathcal{S}$-operators are replaced by $\mathcal{M}$-operators. This is reminiscent of different representations of the same algebra.
 If we use the Majorana fermions to represent spin operators as $\sigma^\mu\to ib^\mu c$, then 
 \begin{align*}
     \mathcal{S}_\mathfrak{D} &\to \mathcal{P}^{(p)} \prod_{\anglelr{ij}\in \mathfrak{D}}\lr{\hat{u}_{ij}ic_jc_i} \\
@@ -44,7 +44,7 @@ in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit
 \begin{equation}\label{equ.V-rep-algebra}
     \mathcal{M}_{\mathfrak{D}}\mathcal{M}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'}
 \end{equation}
-This clearly illustrated a picture: the Majorana fermion representation is identical to the spin, or Pauli string, representation, and the Majorana fermions can be seen as emerging from the endpoints of those Pauli strings defined by \eqref{equ.string-operator-def}~\cite{Kitaev_2006, fermion-and-string, string-net, Photons-and-electrons-as-emergent-phenomena-string, PRD-string-wen-quantum-order}. First, we exploit the fact that the spin degree of freedom can be fractionalized into Majorana fermions, which allows us to solve the model analytically. Conversely, to represent everything in terms of spins, as our primary goal in this work, we must \textit{glue} the fractionalized degrees of freedom back via string operators defined in the spin language. 
+This clearly illustrated a picture: the Majorana fermion representation is identical to the spin representation, and the Majorana fermions can be seen as emerging from the endpoints of those Pauli strings defined by \eqref{equ.string-operator-def}~\cite{Kitaev_2006, fermion-and-string, string-net, Photons-and-electrons-as-emergent-phenomena-string, PRD-string-wen-quantum-order}. 
 
 \valert{
 For the reduced density matrix, we can also define a set of $\mathcal{S}$-operators
@@ -61,9 +61,9 @@ The form of the reduced density matrix above implies that the physical picture o
 \end{equation}
 which is the same as \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}. The reduced density matrix of Majorana fermions in the region $A$ also possesses the same form 
 \begin{equation}\label{equ.rho-F-reduced}
-    \rho_A^{F} \equiv \frac{1}{2^{N^A/2}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\mathcal{M}_\mathfrak{D}
+    \rho_A^{F} \equiv \frac{1}{2^{N^A/2}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\mathcal{M}_\mathfrak{D},
 \end{equation}
-There are two straightforward ways to obtain this conclusion. The first approach is to trace out the environment of the Majorana fermion density matrix \eqref{equ.rho-F}. Because every $\mathcal{M}_\mathfrak{D}$ is a $\mathbb{Z}_2$ operator and thus $\Tr \mathcal{M}_{\mathfrak{D}}=0$ if $\mathfrak{D}\not\sim\varnothing$, the remaining part therefore consists of terms with $[\mathfrak{D}]\subset A$, which constitutes the reduced density matrix of a simply-connected region $A$.  The second way is following the logic of \eqref{equ.rho-A-raw-guess}. The observables in the Majorana space with finite expectation values are exactly $\mathcal{M}_\mathfrak{D}$ operators. To ensure that the reduced density matrix $\rho^F_A$ preserves the correct expectation values for these operators, the form of $\rho^F_A$ must be of \eqref{equ.rho-F-reduced}. Here, we only consider regions with an even $N^A$ since the denominator $2^{N^A/2}$ becomes fractional if $N^A$ is an odd number, making the dimension of the Hilbert space ill-defined. In the latter sections, cases with an odd number of $N^A$ will be discussed. 
+which is constructed in a way similar to \eqref{equ.rho-F}. Here, we only consider regions with an even $N^A$ since the denominator $2^{N^A/2}$ becomes fractional if $N^A$ is an odd number, making the dimension of the Hilbert space ill-defined. In the latter sections, cases with an odd number of $N^A$ will be discussed. 
 }
 
 
@@ -79,7 +79,9 @@ which can be represented pictorially as follows
 \[
 \mathcal{S}\lr{\wordfig{1.5}{figures/fermion-braiding_1.pdf}} = -\mathcal{S}\lr{\wordfig{1.5}{figures/fermion-braiding_2.pdf}}.
 \]
-The physical meaning of this equation is that the endpoints of strings obey fermion statistics~\cite{fermion-and-string}. The mathematical operation of this equation is equivalent to exchanging the positions of string-endpoints at sites $i$ and $k$. It turns out that an additional phase of $-1$ is accumulated after the swap, analogous to what happens when two fermions are exchanged. In fact, if we identify the operator $\lsegment{j}{i}$ of a single string $\overleftarrow{ji}$ pointing from $i$ to $j$ with the hopping operator $ic_jc_i$, which is actually the Majorana representation of the string $\mathcal{M}_{\overleftarrow{ji}}\propto ic_jc_i$, of Majorana fermions hopping from $i$ to $j$, then the above equation is equivalent to the following Majorana representation
+The physical meaning of this equation is that the endpoints of strings obey fermion statistics~\cite{fermion-and-string}. 
+%The mathematical operation of this equation is equivalent to exchanging the positions of string-endpoints at sites $i$ and $k$. It turns out that an additional phase of $-1$ is accumulated after the swap, analogous to what happens when two fermions are exchanged. 
+In fact, if we identify the operator $\lsegment{j}{i}$ of a single string $\overleftarrow{ji}$ pointing from $i$ to $j$ with the hopping operator $ic_jc_i$, which is actually the Majorana representation of the string $\mathcal{M}_{\overleftarrow{ji}}\propto ic_jc_i$, of Majorana fermions hopping from $i$ to $j$, then the above equation is equivalent to the following Majorana representation
 \[
 (ic_ic_l)(ic_kc_i)(ic_ic_j) = - (ic_ic_j)(ic_kc_i)(ic_ic_l),
 \]
