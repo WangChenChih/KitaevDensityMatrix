@@ -27,8 +27,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      inkscape:zoom="1.7301433"
-     inkscape:cx="248.82332"
-     inkscape:cy="193.91458"
+     inkscape:cx="192.46961"
+     inkscape:cy="194.49256"
      inkscape:window-width="1920"
      inkscape:window-height="1094"
      inkscape:window-x="-11"
@@ -3147,7 +3147,7 @@
        ns3:scale="3.851136481312904"
        ns3:alignment="middle center"
        ns3:inkscapeversion="1.4.2"
-       transform="matrix(2.2496698,0,0,2.2496698,180.90414,135.7631)"
+       transform="matrix(2.2496698,0,0,2.2496698,183.90414,129.7631)"
        ns3:jacobian_sqrt="3.85114"
        style="fill:#664500;fill-opacity:1;stroke-width:0.999976;stroke-dasharray:none">
       <defs
@@ -3524,7 +3524,7 @@
        ns3:scale="1.7229669257682068"
        ns3:alignment="middle center"
        ns3:inkscapeversion="1.4.2"
-       transform="matrix(1.72297,0,0,1.72297,80.838257,172.40386)"
+       transform="matrix(1.72297,0,0,1.72297,83.294127,173.90386)"
        ns3:jacobian_sqrt="1.72297"
        style="fill:#5200f4;fill-opacity:1;stroke-width:0">
       <defs
@@ -3615,7 +3615,7 @@
        ns3:scale="1.7229669257682068"
        ns3:alignment="middle center"
        ns3:inkscapeversion="1.4.2"
-       transform="matrix(1.72297,0,0,1.72297,83.207367,135.75787)"
+       transform="matrix(1.72297,0,0,1.72297,83.34797,135.75787)"
        ns3:jacobian_sqrt="1.72297"
        style="fill:#5200f4;fill-opacity:1;stroke-width:0">
       <defs
