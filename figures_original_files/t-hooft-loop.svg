@@ -27,15 +27,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.78613283"
-     inkscape:cx="78.867079"
-     inkscape:cy="127.84099"
+     inkscape:zoom="1.5722657"
+     inkscape:cx="126.56894"
+     inkscape:cy="192.39751"
      inkscape:window-width="1920"
      inkscape:window-height="1094"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4" />
+     inkscape:current-layer="layer3" />
   <metadata
      id="metadata1">
     <rdf:RDF>
@@ -89,8 +89,8 @@
        refY="0"
        orient="auto"
        inkscape:stockid="Dot"
-       markerWidth="5"
-       markerHeight="5"
+       markerWidth="1"
+       markerHeight="1"
        viewBox="0 0 1 1"
        inkscape:isstock="true"
        inkscape:collect="always"
@@ -1362,31 +1362,31 @@
       <path
          d="M 269.73818,271.21828 295.96364,256.077"
          clip-path="url(#pd054bb46b6-3)"
-         style="fill:none;stroke:#d80000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot)"
+         style="fill:none;stroke:#d80000;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot);stroke-dasharray:none"
          id="path37-2"
          transform="translate(-47.224843,-66.782607)" />
       <path
          d="m 243.51273,225.79446 26.22545,-15.14128"
          clip-path="url(#pd054bb46b6-3)"
-         style="fill:none;stroke:#d80000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot)"
+         style="fill:none;stroke:#d80000;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot);stroke-dasharray:none"
          id="path52-7"
          transform="translate(-47.224843,-66.782607)" />
       <path
          d="m 217.28727,180.37064 26.22546,-15.14128"
          clip-path="url(#pd054bb46b6-3)"
-         style="fill:none;stroke:#d80000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot)"
+         style="fill:none;stroke:#d80000;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot);stroke-dasharray:none"
          id="path82-9"
          transform="translate(-47.224843,-66.782607)" />
       <path
          d="m 191.06182,134.94682 26.22545,-15.14128"
          clip-path="url(#pd054bb46b6-3)"
-         style="fill:none;stroke:#d80000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot)"
+         style="fill:none;stroke:#d80000;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot);stroke-dasharray:none"
          id="path97-5"
          transform="translate(-47.224843,-66.782607)" />
       <path
          d="M 164.83636,89.522997 191.06182,74.381724"
          clip-path="url(#pd054bb46b6-3)"
-         style="fill:none;stroke:#d80000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot)"
+         style="fill:none;stroke:#d80000;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;marker-start:url(#Dot);stroke-dasharray:none"
          id="path127-4"
          transform="translate(-47.224843,-66.782607)" />
     </g>
