@@ -2,13 +2,13 @@
 
 %\textcolor{red}{The first paragraph should be high level explaination first then detail descriptions later.}
 
-\valert{The form of~\eqref{equ.density-matrix} implies the separability of the matter sector from the gauge sector via a pure spin representation. This observation also reflects the similarity between the density matrix represented using spins and the one using Majorana fermions. In this section, we demonstrate that the spin representation and the Majorana-fermion representation are identical, and they are just two different representations of the same algebra. Such an identity makes the density matrix reproduce the correct entanglement and further implies the block-diagonal structure of the density matrix.}
+The form of~\eqref{equ.density-matrix} implies the separability of the matter sector from the gauge sector via a pure spin representation. This observation also reflects the similarity between the DM represented using spins and the one using Majorana fermions. In this section, we demonstrate that the spin representation and the Majorana-fermion representation are identical, and they are just two different representations of the same algebra. Such an identity makes the DM reproduce the correct entanglement and further implies the block-diagonal structure of the DM.
 
-Starting from the Majorana representation, the ground state density matrix can also be represented as
+Starting from the Majorana representation, the ground state DM can also be represented as
 \[
   \rho = 2^{N-1}\mathcal{P}_G\prod_{\anglelr{ij}}\lr{\frac{\mathds{1}+\hat{u}_{ij}}{2}}\rho_F\mathcal{P}_G
 \]
-where $\rho_F$ is the density matrix of the Kitaev ground state in the Majorana fermion representation. Details of the derivation are presented in Appendix \ref{appendix:Majorana-derivation}. The Majorana density matrix $\rho_F$ can be constructed from a starting point similar to \eqref{equ.rho-starting} that we have used in the beginning,
+where $\rho_F$ is the DM of the Kitaev ground state in the Majorana fermion representation. Details of the derivation are presented in Appendix \ref{appendix:Majorana-derivation}. The Majorana DM $\rho_F$ can be constructed from a starting point similar to \eqref{equ.rho-starting} that we have used in the beginning,
 \begin{equation}\label{equ.rho-F}
     \rho^F = \frac{1}{2^{N/2}}\sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D}\mathcal{M}_\mathfrak{D},
 \end{equation}
@@ -20,7 +20,7 @@ In each dimer $\anglelr{ij}$ of the above product, the site $i$ belongs to subla
 %
 %$c_1$ and $c_2$ as $f=\frac{1}{2}(c_1+ic_2)$ and $f^\dagger=\frac{1}{2}(c_1-ic_2)$. Therefore, the total number of physical degrees of freedom of a system composed of $N$ Majorana fermions is $2^{N/2}$ instead of $2^N$
 %
-. To manifest the similarity between the spin density matrix \eqref{equ.density-matrix}, we define a set of operators $\mathcal{S}_{\mathfrak{D}}$ for each operator that corresponds to an edge configuration
+. To manifest the similarity between the spin DM \eqref{equ.density-matrix}, we define a set of operators $\mathcal{S}_{\mathfrak{D}}$ for each operator that corresponds to an edge configuration
 \begin{equation}\label{equ.S-def}
     \mathcal{S}_\mathfrak{D} \equiv \mathcal{P}^{(p)}\Sigma_\mathfrak{D}
 \end{equation}
@@ -28,7 +28,7 @@ Given equation \eqref{equ.Sigma-representation} and the fact that $[\mathcal{P}_
 \begin{equation}\label{equ.U-rep-algebra}
     \mathcal{S}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{S}_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
-With the string representation \eqref{equ.S-def} and \eqref{equ.U-rep-algebra}, The form of the density matrix in Eq.~\eqref{equ.density-matrix} becomes
+With the string representation \eqref{equ.S-def} and \eqref{equ.U-rep-algebra}, The form of the DM in Eq.~\eqref{equ.density-matrix} becomes
 \begin{equation}\label{equ.rho-U}
     \rho =  \frac{1}{2^{N-N_p}} \sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}}
 \end{equation}
@@ -46,28 +46,26 @@ in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit
 \end{equation}
 This clearly illustrated a picture: the Majorana fermion representation is identical to the spin representation, and the Majorana fermions can be seen as emerging from the endpoints of those Pauli strings defined by \eqref{equ.string-operator-def}~\cite{Kitaev_2006, fermion-and-string, string-net, Photons-and-electrons-as-emergent-phenomena-string, PRD-string-wen-quantum-order}. 
 
-\valert{
-For the reduced density matrix, we can also define a set of $\mathcal{S}$-operators
+For the RDM, we can also define a set of $\mathcal{S}$-operators
 \begin{equation}\label{equ.U-A-def}
     \mathcal{S}^{(A)}_\mathfrak{D} \equiv \mathcal{P}^{(p)}_A\Sigma_\mathfrak{D}
 \end{equation}
-supported on the subregion $A$. With these newly defined operators, the reduced density matrix becomes
+supported on the subregion $A$. With these newly defined operators, the RDM becomes
 \begin{equation}\label{equ.red-DM-new}
     \rho_A = \frac{1}{2^{N^A-N^A_p}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\mathcal{S}^{(A)}_\mathfrak{D}.
 \end{equation}
-The form of the reduced density matrix above implies that the physical picture of Majorana fermions emerging at the endpoints of string operators still holds in any simply-connected subregion $A$, and it can be verified that $\mathcal{S}^{(A)}$-operators also satisfy a relation
+The form of the RDM above implies that the physical picture of Majorana fermions emerging at the endpoints of string operators still holds in any simply-connected subregion $A$, and it can be verified that $\mathcal{S}^{(A)}$-operators also satisfy a relation
 \begin{equation}\label{equ.U-A-rep-algebra}
     \mathcal{S}^{(A)}_{\mathfrak{D}}\mathcal{S}^{(A)}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{S}^{(A)}_{\mathfrak{D}\ominus\mathfrak{D}'},
 \end{equation}
-which is the same as \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}. The reduced density matrix of Majorana fermions in the region $A$ also possesses the same form 
+which is the same as \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}. The RDM of Majorana fermions in the region $A$ also possesses the same form 
 \begin{equation}\label{equ.rho-F-reduced}
     \rho_A^{F} \equiv \frac{1}{2^{N^A/2}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\mathcal{M}_\mathfrak{D},
 \end{equation}
-which is constructed in a way similar to \eqref{equ.rho-F}. Here, we only consider regions with an even $N^A$ since the denominator $2^{N^A/2}$ becomes fractional if $N^A$ is an odd number, making the dimension of the Hilbert space ill-defined. In the latter sections, cases with an odd number of $N^A$ will be discussed. 
-}
+which is constructed similarly to \eqref{equ.rho-F}. Here, we consider only regions with an even $N^A$, since the denominator $2^{N^A/2}$ becomes fractional if $N^A$ is odd, rendering the Hilbert space dimension ill-defined. In the latter sections, cases with an odd number of $N^A$ will be discussed. 
 
 
-From the analytical form of the density matrices we found, we see the identity between the spin representation and the Majorana-fermion representation arises from the fact that every operator $\mathcal{S}_\mathfrak{D}$ depends only on the equivalence class $[\mathfrak{D}]$ the configuration $\mathfrak{D}$ belongs to. In other words, the following operators with different configurations, which share the same set of endpoints, are identical.
+From the analytical form of the DM we found, we see the identity between the spin representation and the Majorana-fermion representation arises from the fact that every operator $\mathcal{S}_\mathfrak{D}$ depends only on the equivalence class $[\mathfrak{D}]$ the configuration $\mathfrak{D}$ belongs to. In other words, the following operators with different configurations, which share the same set of endpoints, are identical.
 \[
 \mathcal{S}\lr{\wordfig{0.5}{figures/ij_segment.pdf}} = \mathcal{S}\lr{\wordfig{0.75}{figures/ij_curve.pdf}} = \mathcal{S}\lr{\wordfig{0.8}{figures/ij_segment_1_loop.pdf}} = \cdots
 \]
