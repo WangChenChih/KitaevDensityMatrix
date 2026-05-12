@@ -30,7 +30,7 @@ The gauge part $\ket{u}\bra{u}$ is nothing but a projector onto the state $\ket{
 \end{equation}
 The projector $\ket{M}\bra{M}$ is the density matrix of the ground state of the effective free Majorana fermion system, and is denoted by $\ket{M}\bra{M}=\rho^F$ in the main part of this paper. The density matrix $\rho^F$ only contains the information of the matter sector, and can be expressed in terms of those $c$-Majorana fermion operators, whose form has been shown in equation \eqref{equ.rho-F}. Combining these results, we ultimately obtain the density matrix of the ground state
 \begin{equation}\label{equ.Majorana-density-matrix}
-    \rho = 2^{N-1}\mathcal{P}_G\prod_{\anglelr{ij}}\lr{\frac{\mathds{1} + \hat{u}_{ij}}{2}} \rho^F \mathcal{P}_G
+    \rho = 2^{N-1}\mathcal{P}_G\prod_{\anglelr{ij}}\lr{\frac{\mathds{1} + \hat{u}_{ij}}{2}} \rho^F \mathcal{P}_G.
 \end{equation}
 
 Here, we also demonstrate that the density matrix in the spin representation can also be derived from the Majorana fermion representation \eqref{equ.Majorana-density-matrix}, We apply the following transformation
@@ -40,7 +40,7 @@ Here, we also demonstrate that the density matrix in the spin representation can
 to transform the Majorana fermion operators back into spin operators. We have applied the fact that $ib^\mu_ic_i$ commutes with the $\mathbb{Z}_2$ gauge generator $D_i$, thus $[ib^\mu_i c_i, \mathcal{P}_G]=0$. In general, the above relation implies the direct correspondence between $\Sigma_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$
 \begin{equation}\label{equ.U-V-relation} 
 \mathcal{P}_G
-    \lr{\prod_{\anglelr{ij}\in\mathfrak{D}}\hat{u}_{ij}} \mathcal{M}_\mathfrak{D} = \Sigma_{\mathfrak{D}}\mathcal{P}_G
+    \lr{\prod_{\anglelr{ij}\in\mathfrak{D}}\hat{u}_{ij}} \mathcal{M}_\mathfrak{D} = \Sigma_{\mathfrak{D}}\mathcal{P}_G.
 \end{equation}
 The Gutzwiller projection of the last term is actually redundant since $\Sigma_{\mathfrak{D}}$ is already physical. We add this here to emphasize that we restrict ourselves to physical space. With this equation, the gauge part, composed of gauge-field operators, can then be represented in terms of $\Sigma_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$. Therefore, equation \eqref{equ.Majorana-density-matrix} can be rewritten as
 \begin{align*}
@@ -63,9 +63,9 @@ because $\mathcal{M}_\mathfrak{D}$ is physical only when $\mathfrak{D}\sim\varno
     &= \frac{1}{2^{N/2}}\sum_{[\mathfrak{D}']} \varphi(\mathfrak{D},\mathfrak{D}') \mathfrak{C}_{\mathfrak{D}'} \mathcal{P}_G \mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'} \mathcal{P}_G \\
     &= \frac{1}{2^{N/2}} \mathfrak{C}_{\mathfrak{D}} \mathcal{P}_G
 \end{align*}
-Notice that the factor $\varphi(\mathfrak{D},\mathfrak{D})=+1$ when the number of $A$-sublattice points and that of $B$-sublattice points in $\mrm{EP}(\mathfrak{D})$ are identical. Otherwise, it will be equal to $-1$. We simply reduce $\varphi(\mathfrak{D},\mathfrak{D})$ to $+1$ directly because only those configurations satisfying $\varphi(\mathfrak{D},\mathfrak{D})=+1$ have finite values of $\mathfrak{C}_\mathfrak{D}$. Combining this result with the density matrix obtained previously, we get
+Notice that the factor $\varphi(\mathfrak{D},\mathfrak{D})=+1$ when the number of $A$-sublattice points and that of $B$-sublattice points in $\mrm{EP}(\mathfrak{D})$ are identical. Otherwise, it will be equal to $-1$. We simply reduce $\varphi(\mathfrak{D},\mathfrak{D})$ to $+1$ directly because only those configurations satisfying $\varphi(\mathfrak{D},\mathfrak{D})=+1$ have finite values of $\mathfrak{C}_\mathfrak{D}$. Combining this result with the density matrix obtained previously, we obtain the following result
 \begin{equation}\label{equ.spin-rho-from-fermion}
-    \rho = \frac{1}{2^{N+1}} \sum_{\mathfrak{D}} \mathfrak{C}_\mathfrak{D} \Sigma_\mathfrak{D} 
+    \rho = \frac{1}{2^{N+1}} \sum_{\mathfrak{D}} \mathfrak{C}_\mathfrak{D} \Sigma_\mathfrak{D}. 
 \end{equation}
-The Gutzwiller projector has been omitted because we now completely restrict ourselves to physical space. The normalization factor is $2^{-N-1}$ instead of $2^{-N}$ because two different edge configurations $\mathfrak{D}_Z\ominus\mathfrak{D}$ and $\mathfrak{D}_{zz}\ominus\mathfrak{D}$ give the identical string operator $\Sigma_{\mathfrak{D}_Z\ominus\mathfrak{D}} = \Sigma_{\mathfrak{D}_{zz}\ominus\mathfrak{D}}$ for any $\mathfrak{D}$, as explained in Appendix~\ref{sec:fermion_parity_from_string_operators}. Thus, the summation should be divided by two to avoid double-counting. Notice that we do not have this issue in $\rho^F$ since $\mathcal{M}_{\mathfrak{D}_Z}$ is not identical to $\mathcal{M}_{\mathfrak{D}_{zz}}$, which is proportional to identity $\mathcal{M}_{\mathfrak{D}_{zz}}\propto\mathds{1}$. Therefore, we have to treat them as two different components, and both should be included in $\rho^F$. After grouping the terms in \eqref{equ.spin-rho-from-fermion} into equivalence classes, it will eventually reproduce \eqref{equ.density-matrix}. 
+The Gutzwiller projector has been omitted because we now completely restrict ourselves to physical space. The normalization factor is $1/2^{N+1}$ instead of $1/2^{N}$ because two different edge configurations $\mathfrak{D}_Z\ominus\mathfrak{D}$ and $\mathfrak{D}_{zz}\ominus\mathfrak{D}$ give the identical string operator $\Sigma_{\mathfrak{D}_Z\ominus\mathfrak{D}} = \Sigma_{\mathfrak{D}_{zz}\ominus\mathfrak{D}}$ for any $\mathfrak{D}$, as explained in Appendix~\ref{sec:fermion_parity_from_string_operators}. Thus, the result should be divided by two to avoid redundancy. Notice that we do not have this issue in $\rho^F$ since $\mathcal{M}_{\mathfrak{D}_Z}$ is not identical to $\mathcal{M}_{\mathfrak{D}_{zz}}$, which is proportional to identity $\mathcal{M}_{\mathfrak{D}_{zz}}\propto\mathds{1}$. Therefore, we have to treat them as two different components, and both should be included in $\rho^F$. After grouping the terms in \eqref{equ.spin-rho-from-fermion} into equivalence classes, it will eventually reproduce \eqref{equ.density-matrix}. 
 
