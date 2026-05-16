@@ -4,26 +4,26 @@
 
 The notion of fermion parity obtained in Sec.~\ref{sec:EE-calculation-odd} motivates a question: how to describe fermion parity in the spin representation? And how does it give an additional degeneracy in the ES? In this section, we find a specific sort of operator in spin representation that corresponds to fermion parity. It further block-diagonalizes the DM if $N^A$ is odd, hence gives an additional degeneracy.
 
-A relation implied by equation \eqref{equ.Pick_sim-con} 
+A relation implied by Eq.~\eqref{equ.Pick_sim-con} 
 \[%\label{equ.bulk-boundary-parity}
     N^A=\abs{\de A} \mod{2},
 \]
-indicates that once the number of lattice sites in $A$ is odd, so is the length of the boundary. This raises an issue that there will always be one single site left after sorting lattice sites along the boundary in pairs, as shown in the first panel of \autoref{fig.Xi-odd}. If $L$ is defined as the number of $\hat{\xi}$-operators, then in cases with odd $\abs{\de A}$, we onlyl have
+indicates that once the number of lattice sites in $A$ is odd, so is the length of the boundary. This raises an issue that there will always be one single site left after sorting lattice sites along the boundary in pairs, as shown in the first panel of \autoref{fig.Xi-odd}. If $L$ is defined as the number of $\hat{\xi}$-operators, then we only have
 \[
 L = \frac{1}{2}\lr{\abs{\de A} - 1}
 \]
-In this way, the block-diagonal structure \eqref{equ.block-rho-final} and the derivation \eqref{equ.EE-from-blocks} are still valid, but the result should be modified as
+in cases with odd $\abs{\de A}$. In this case, the block-diagonal structure \eqref{equ.block-rho-final} and the derivation \eqref{equ.EE-from-blocks} are still valid, but the result should be modified as
 \begin{align}\label{equ.EE-odd-blocks}
     S_A &= -\Tr_A\Tilde{\rho}_A\ln\Tilde{\rho}_A + \lr{L-1}\ln 2 \nonumber\\
     &= -\Tr_A\Tilde{\rho}_A\ln\Tilde{\rho}_A + \lr{\frac{1}{2}\abs{\de A}-\frac{3}{2}}\ln 2
 \end{align}
-where $\Tilde{\rho}_A\equiv 2^{L-1}\varrho_A$. The form of \eqref{equ.EE-odd-blocks} is the same as that of \eqref{equ.EE-odd-derive-1}, showing that the block $\Tilde{\rho}_A$ here is identical to the Majorana RDM \eqref{equ.rho-A-F-odd} with a redundant Majorana fermion included. 
+where $\Tilde{\rho}_A\equiv 2^{L-1}\varrho_A$. The form of Eq.~\eqref{equ.EE-odd-blocks} is the same as that of Eq.~\eqref{equ.EE-odd-derive-1}, showing that the block $\Tilde{\rho}_A$ here is identical to the Majorana RDM \eqref{equ.rho-A-F-odd} with a redundant Majorana fermion included. 
 
 In Sec.~\ref{sec:EE-calculation-odd}, the result of the Majorana ES shows that the degree of degeneracy is 
 \[
-2^{\frac{N^A+1}{2}-N^A_p} = 2^{\frac{1}{2}\lr{\abs{\de A} - 1}} = 2^L
+2^{\frac{N^A+1}{2}-N^A_p} = 2^{\lr{\abs{\de A} - 1}/2} = 2^L.
 \]
-However, according to the discussion in the previous part for cases with an even number of sites, the degree of degeneracy is $2^{L-1}$ if there are $L$ well-defined $\hat{\xi}$-operators. This discrepancy implies that apart from the set of $\hat{\xi}$-operators, there exists an additional operator that further block-diagonalizes $\rho_A$ to give an additional twofold degeneracy to the ES. At the end of Sec.~\ref{sec:EE-calculation-odd}, we have elucidated that the additional twofold degeneracy in the ES of the Majorana sector originates from the total fermion parity. Therefore, we anticipate that the additional operator block-diagonalizing the DM, which will be denoted by $\hat{\Xi}_A$ later, should be related to the total fermion parity in the Majorana representation. A feasible choice is a dimer covering of the subregion $A$,
+However, according to the discussion in the previous part for cases with an even number of sites, the degree of degeneracy is $2^{L-1}$ if there are $L$ well-defined $\hat{\xi}$-operators. This discrepancy implies that apart from the set of $\hat{\xi}$-operators, there exists an additional operator that further block-diagonalizes $\rho_A$ to yield an additional twofold degeneracy in the ES. At the end of Sec.~\ref{sec:EE-calculation-odd}, we have elucidated that the additional twofold degeneracy in the ES of the Majorana sector originates from the total fermion parity. Therefore, we anticipate that the additional operator that block-diagonalizes the DM, which will be denoted by $\hat{\Xi}_A$ later, should be related to the total fermion parity in the Majorana representation. A feasible choice is a dimer covering of the subregion $A$,
 \begin{equation}\label{equ.Xi-def}
     \hat{\Xi}_A \equiv \sigma^\mu_l \Sigma_{\mathfrak{D}_{\mrm{DC}}^{A(l)}},
 \end{equation}
@@ -40,7 +40,7 @@ where the edge configuration $\mathfrak{D}_{\mrm{DC}}^{A(l)}$ stands for a dimer
 $\hat{\Xi}_A$ can be examined to commute with $\rho_A$ in the same way as for $\hat{\xi}$-operators. String operators are composed of multiple dimers, and every dimer commutes with the dimer covering because of the properties of Pauli matrices. Therefore, the only thing to be concerned about is $\sigma^\mu_l$ lying at the remaining site.
 As we have defined, the site $l$ is at the boundary and $\mu$ points outward. It can be seen directly that, inside $A$, there are only two edges connected to $l$, and the corresponding string operator of both edges anti-commutes with $\sigma^\mu_l$. However, since the string operator also anti-commutes with the dimer that connects to the other endpoint of the edge, the two anti-commutations cancel each other. In the end, every string operator with $\mathfrak{D}\subset A$ commutes with $\hat{\Xi}_A$. Because $\rho_A$ is composed of string operators inside $A$, we conclude that $[\hat{\Xi}_A,\rho_A]=0$. 
 
-$\hat{\Xi}_A$ is related to the total fermion parity by transforming \eqref{equ.Xi-def} into the Majorana fermion representation, and we find that it is equal to the total fermion parity operator multiplied by the gauge-field operators arranged in order of the dimer covering $\mathfrak{D}^{A(l)}_{\mrm{DC}}$
+$\hat{\Xi}_A$ is related to the total fermion parity by transforming Eq.~\eqref{equ.Xi-def} into the Majorana fermion representation, and we find that it is equal to the total fermion parity operator multiplied by the gauge-field operators arranged in order of the dimer covering $\mathfrak{D}^{A(l)}_{\mrm{DC}}$
 \[
 \hat{\Xi}_A \propto \lr{\prod_{\anglelr{ij}\in  \mathfrak{D}^{A(l)}_{\mrm{DC}}} \hat{u}_{ij}} \lr{b^\mu_l\prod_{i\in A}c_i}
 \]
@@ -48,13 +48,13 @@ up to a phase. In the above formula, the total fermion parity operator is define
 \begin{equation}\label{equ.total-fermion-parity-odd}
     \hat{\bog{\pi}}^{(A)} \propto b^\mu_l\prod_{i\in A}c_i
 \end{equation}
-with a phase correction depending on the geometry of the subregion. Because the gauge has been fixed as $u_{ij}=1\;\forall\anglelr{ij}$, the expectation value of $\hat{\Xi}_A$ is completely determined by that of $\hat{\bog{\pi}}^{(A)}$. The definition of the total fermion parity here is different from what we encountered in \eqref{equ.total-fermion-parity-entire-system} and \eqref{equ.total-fermion-parity-Sigma-Z}. In fact, because $N^A$ is an odd number, $\prod_{i\in A}c_i$ itself only contains an odd number of Majorana fermions, hence not sufficient to define a fermion parity operator. This mechanism has been discussed in Sec.~\ref{sec:EE-calculation-odd}, and the alternative we adopted there is to include a redundant Majorana fermion $c_{(N^A+1)}$, and Eq.~\eqref{equ.total-fermion-parity-odd} implies that the redundant fermion is actually $b^\mu_l$ borrowed from the gauge sector. 
-%The situation in which the matter sector borrows a Majorana fermion from the gauge sector is also demonstrated in the derivation procedures \eqref{equ.EE-odd-derive-1} and \eqref{equ.EE-reduce}. 
+with a phase correction depending on the geometry of the subregion. Because the gauge has been fixed as $u_{ij}=1\;\forall\anglelr{ij}$, the expectation value of $\hat{\Xi}_A$ is completely determined by that of $\hat{\bog{\pi}}^{(A)}$. The definition of the total fermion parity here is different from Eq.~\eqref{equ.total-fermion-parity-Sigma-Z}. Because $N^A$ is odd here, $\prod_{i\in A}c_i$ itself only contains an odd number of Majorana fermions, which is insufficient to define a fermion parity operator. This mechanism has been discussed in Sec.~\ref{sec:EE-calculation-odd}, and the alternative we adopted there is to include a redundant Majorana fermion $c_{(N^A+1)}$, and Eq.~\eqref{equ.total-fermion-parity-odd} implies that the redundant fermion is actually $b^\mu_l$ borrowed from the gauge sector. 
+%The situation in which the matter sector borrows a Majorana fermion from the gauge sector is also demonstrated in the derivation procedures Eq.~\eqref{equ.EE-odd-derive-1} and Eq.~\eqref{equ.EE-reduce}. 
 %By now, the physical meaning of the redundant fermion and its origin are clearly reflected by $\hat{\Xi}_A$. 
 
 In summary, for cases with odd $N^A$, we have $L = \frac{1}{2}\lr{\abs{\de A} - 1}$ different $\hat{\xi}$-operators and an additional operator $\hat{\Xi}_A$ that commute with $\rho_A$. These operators give $2^{L+1}$ blocks labeled with a set of eigenvalues $\lrg{\xi_1,\cdots,\xi_L;\Xi_A}$. Here, the non-contractible Wilson operators still relate these blocks in the same way as we have discussed in the previous section. The only difference is that a non-contractible Wilson operator flips the sign of $\Xi_A$ only when one of its endpoints is at the remaining site $l$. Together, there are $2^{L+1}$ identical blocks in the RDMs. Therefore, there is a $2^{L+1}$-fold degeneracy in the ES, in agreement with our analysis in Sec.~\ref{sec:EE-calculation-odd}.
 
-%To prove that these blocks are identical, leading to extensive degeneracy, we also have to find $(L+1)$ $\hat{\zeta}$-operators that relate all the blocks in the same way as \eqref{equ.xi-zeta-relation}. Since $\hat{\zeta}$-operators do not have to commute with each other, we can still find $(L+1)$ of them, as illustrated in the last panel of \autoref{fig.Xi-odd}. The arrangement of $\hat{\zeta}$-operators is designed in a way that two of them overlap at the remaining site $l$. In this way, the $\hat{\xi}$-operators can still be flipped through \eqref{equ.xi-zeta-relation}. More importantly, both overlapping $\hat{\zeta}$-operators can flip the sign of $\Xi_A$. 
+%To prove that these blocks are identical, leading to extensive degeneracy, we also have to find $(L+1)$ $\hat{\zeta}$-operators that relate all the blocks in the same way as Eq.~\eqref{equ.xi-zeta-relation}. Since $\hat{\zeta}$-operators do not have to commute with each other, we can still find $(L+1)$ of them, as illustrated in the last panel of \autoref{fig.Xi-odd}. The arrangement of $\hat{\zeta}$-operators is designed in a way that two of them overlap at the remaining site $l$. In this way, the $\hat{\xi}$-operators can still be flipped through \eqref{equ.xi-zeta-relation}. More importantly, both overlapping $\hat{\zeta}$-operators can flip the sign of $\Xi_A$. 
 %Take \autoref{fig.Xi-odd} for example, these two overlapping operators are $\hat{\zeta}_5$ and $\hat{\zeta}_6$, by which $\hat{\Xi}_A$ can be flipped in the way that $\hat{\zeta}_5\hat{\Xi}_A\hat{\zeta}_5 = \hat{\zeta}_6\hat{\Xi}_A\hat{\zeta}_6 = -\hat{\Xi}_A$. 
 %Similar to what we encountered in cases with even $N^A$, 
 %Since each $\hat{\zeta}$-operator simultaneously flips two values in the set $\lrg{\xi_1,\cdots,\xi_L;\Xi_A}$, they only provide $2^L$-fold degeneracy in the ES although we have $(L+1)$ operators to block-diagonalize $\rho_A$. This agrees with our analysis in Sec.~\ref{sec:EE-calculation-odd}, and the operator $\hat{\Xi}_A$ indeed gives a twofold degeneracy to the ES. 

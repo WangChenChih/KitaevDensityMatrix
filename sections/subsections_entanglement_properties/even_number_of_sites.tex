@@ -5,9 +5,9 @@ In this section, the EE of the Kitaev ground state is calculated using the DM an
 
 %The derivation of the EE reveals that the fermion part $S^F_A$ reflects the equivalence of representations $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$, and the gauge part $S^G_A$ arises from the difference between the spaces supporting these two identical representations. In particular, the separability of the gauge and fermion degrees of freedom relies on two crucial properties, $[W_p, W_{p'}]=0\;\forall p,p'$ and $[W_p,\Sigma_{\mathfrak{D}}]=0\; \forall p,\mathfrak{D}$. The latter guarantees the decomposition of the spin system into gauge and matter sectors controlled by $W_p$ and $\Sigma_\mathfrak{D}$, respectively, whereas the former implies the gauge has no dynamics. 
 
-%As we have discussed in Sec.~\ref{sec:Emergent-Fermions-at-the-Endpoints}, there is a clear correspondence, manifested by \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}, between operators $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$. In the subregion, after tracing out the environment, a similar relation is still there between $\mathcal{S}^{(A)}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$ for all $\mathfrak{D}\subset A$. 
+%As we have discussed in Sec.~\ref{sec:Emergent-Fermions-at-the-Endpoints}, there is a clear correspondence, manifested by Eq.~\eqref{equ.U-rep-algebra} and Eq.~\eqref{equ.V-rep-algebra}, between operators $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$. In the subregion, after tracing out the environment, a similar relation is still there between $\mathcal{S}^{(A)}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$ for all $\mathfrak{D}\subset A$. 
 
-Due to the equivalence of the representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ in the region $A$, plus the similarity of the forms of \eqref{equ.red-DM-new} and \eqref{equ.rho-F-reduced}, the EE of the spin system $S_A = \Tr_A\rho_A\ln\rho_A$ can be calculated using the Majorana DM \eqref{equ.rho-F-reduced} as an alternative. Inspired by this insight, we first observe that both representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ consist of traceless operators and the identity. Therefore, their trace satisfies 
+Due to the equivalence of the representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ in the region $A$, plus the similarity of the forms of Eq.~\eqref{equ.red-DM-new} and \eqref{equ.rho-F-reduced}, the EE of the spin system $S_A = \Tr_A\rho_A\ln\rho_A$ can be calculated using the Majorana DM \eqref{equ.rho-F-reduced} as an alternative. Inspired by this insight, we first observe that both representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ consist of traceless operators and the identity. Therefore, their trace satisfies 
 \begin{equation}\label{equ.U-V-trace-relation}
     \left\{
 \begin{aligned}
@@ -50,7 +50,7 @@ With this, the terms in parentheses of the last line of the above derivation can
 \end{equation}
 This formula shows that the EE can be separated into the fermion part $S^F_A$ and the gauge part, $S^G_A$, in agreement with the result obtained in \cite{Yao-Qi_2010}.
 
-We summarize our discussion on the origin of the gauge part of the EE. From our derivation, the gauge part of the EE arises from the mismatch between the dimension of the physical spin Hilbert space and the Hilbert space of the Majorana fermions. This comparison is justified by the algebraic equivalence between the spin representation S and the Majorana representation M of the Kitaev ground state, established via equivalent edge configurations, which yield identical spin correlation functions within each class, and can be factorized as manifested by equation \eqref{equ.rho-factorization}. 
+We summarize our discussion on the origin of the gauge part of the EE. From our derivation, the gauge part of the EE arises from the mismatch between the dimension of the physical spin Hilbert space and the Hilbert space of the Majorana fermions. This comparison is justified by the algebraic equivalence between the spin representation S and the Majorana representation M of the Kitaev ground state, established via equivalent edge configurations, which yield identical spin correlation functions within each class, and can be factorized as manifested by Eq.~\eqref{equ.rho-factorization}. 
 
 The matter part of the EE can be computed exactly using the method proposed by Ref.~\cite{Jin-Korepin_2004, Vidal-Latorre-Rico-Kitaev_2003, Latorre-Rico-Vidal_2004, Peschel_2003, Peschel-Eisler_2009, Chung-Peschel_2001, Cheong-Henley_2004} because the Kitaev ground state is equivalent to a free fermion system, in which all the information about the state is encoded in the two-point correlation functions, including the entanglement. The single-particle ES is the eigenvalue spectrum of the correlation matrix $\Gamma^{(c)}$, which is of size $N^A\times N^A$, defined as
 \begin{equation}
@@ -74,7 +74,7 @@ By this method, the fermion ES can be numerically computed if the exact form of 
 \begin{equation}\label{equ.EE-corr-mat}
     S_A^F = -\sum_{\lrg{n}}\lambda_{\lrg{n}}\ln \lambda_{\lrg{n}} = -\tr\lr{\Gamma^{(c)}\ln\Gamma^{(c)}}.
 \end{equation}
-The trace ``$\tr$'' is written in lowercase here to distinguish it from the trace ``$\Tr$'' over the Hilbert space of the quantum many-body system. This quantity can be computed via numerically diagonalizing the correlation matrix $\Gamma^{(c)}$. In terms of the correlation matrix, formula \eqref{equ.EE-separation} can be written as
+The trace ``$\tr$'' is written in lowercase here to distinguish it from the trace ``$\Tr$'' over the Hilbert space of the quantum many-body system. This quantity can be computed via numerically diagonalizing the correlation matrix $\Gamma^{(c)}$. In terms of the correlation matrix, Eq.~\eqref{equ.EE-separation} can be written as
 \begin{equation}\label{equ.Yao-Qi-standard-form}
     S_A = -\tr\lr{\Gamma^{(c)} \ln \Gamma^{(c)}} + \lr{\frac{1}{2}\abs{\de A} - 1}\ln 2
 \end{equation}

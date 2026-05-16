@@ -8,7 +8,7 @@ Starting from the Majorana representation, the ground state DM can also be repre
 \[
   \rho = 2^{N-1}\mathcal{P}_G\prod_{\anglelr{ij}}\lr{\frac{\mathds{1}+\hat{u}_{ij}}{2}}\rho_F\mathcal{P}_G
 \]
-where $\rho_F$ is the DM of the Kitaev ground state in the Majorana fermion representation. Details of the derivation are presented in Appendix \ref{appendix:Majorana-derivation}. The Majorana DM $\rho_F$ can be constructed from a starting point similar to \eqref{equ.rho-starting} that we have used in the beginning,
+where $\rho_F$ is the DM of the Kitaev ground state in the Majorana fermion representation. Details of the derivation are presented in Appendix \ref{appendix:Majorana-derivation}. The Majorana DM $\rho_F$ can be constructed from a starting point similar to Eq.~\eqref{equ.rho-starting} that we have used in the beginning,
 \begin{equation}\label{equ.rho-F}
     \rho^F = \frac{1}{2^{N/2}}\sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D}\mathcal{M}_\mathfrak{D},
 \end{equation}
@@ -20,11 +20,11 @@ In each dimer $\anglelr{ij}$ of the above product, the site $i$ belongs to subla
 %
 %$c_1$ and $c_2$ as $f=\frac{1}{2}(c_1+ic_2)$ and $f^\dagger=\frac{1}{2}(c_1-ic_2)$. Therefore, the total number of physical degrees of freedom of a system composed of $N$ Majorana fermions is $2^{N/2}$ instead of $2^N$
 %
-. To manifest the similarity between the spin DM \eqref{equ.density-matrix}, we define a set of operators $\mathcal{S}_{\mathfrak{D}}$ for each operator that corresponds to an edge configuration
+. To manifest the similarity between the spin DM \eqref{equ.density-matrix} and the Majorana DM \eqref{equ.rho-F}, we define a set of operators $\mathcal{S}_{\mathfrak{D}}$ for each operator that corresponds to an edge configuration
 \begin{equation}\label{equ.S-def}
     \mathcal{S}_\mathfrak{D} \equiv \mathcal{P}^{(p)}\Sigma_\mathfrak{D}
 \end{equation}
-Given equation \eqref{equ.Sigma-representation} and the fact that $[\mathcal{P}_G,\Sigma_{\mathfrak{D}}]=0$, the set of operators $\lrg{\mathcal{S}_{\mathfrak{D}}}$ also forms a representation of the algebra of edge configurations $\anglelr{\lrg{\mathfrak{D}},\ominus}$, 
+Given Eq.~\eqref{equ.Sigma-representation} and the fact that $[\mathcal{P}_G,\Sigma_{\mathfrak{D}}]=0$, the set of operators $\lrg{\mathcal{S}_{\mathfrak{D}}}$ also forms a representation of the algebra of edge configurations $\anglelr{\lrg{\mathfrak{D}},\ominus}$, 
 \begin{equation}\label{equ.U-rep-algebra}
     \mathcal{S}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{S}_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
@@ -32,7 +32,7 @@ With the string representation \eqref{equ.S-def} and \eqref{equ.U-rep-algebra}, 
 \begin{equation}\label{equ.rho-U}
     \rho =  \frac{1}{2^{N-N_p}} \sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}}
 \end{equation}
-which is of a form similar to \eqref{equ.rho-F} if those $\mathcal{S}$-operators are replaced by $\mathcal{M}$-operators. This is reminiscent of different representations of the same algebra.
+which is of a form similar to Eq.~\eqref{equ.rho-F} if those $\mathcal{S}$-operators are replaced by $\mathcal{M}$-operators. This is reminiscent of different representations of the same algebra.
 If we use the Majorana fermions to represent spin operators as $\sigma^\mu\to ib^\mu c$, then 
 \begin{align*}
     \mathcal{S}_\mathfrak{D} &\to \mathcal{P}^{(p)} \prod_{\anglelr{ij}\in \mathfrak{D}}\lr{\hat{u}_{ij}ic_jc_i} \\
@@ -40,11 +40,11 @@ If we use the Majorana fermions to represent spin operators as $\sigma^\mu\to ib
 \end{align*}
 The first two products completely consist of $\hat{u}_{ij}$'s, which commute with each other as well as the $c$-Majorana fermion operators~\footnote{Note that the projector $\mathcal{P}^{(p)}$ becomes
 \[\mathcal{P}^{(p)} \to \prod_{ p}\lr{\frac{\mathds{1} + \prod_{\anglelr{ij}\in p}\hat{u}_{ij}}{2}}\]
-in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit{those edges of the plaquette $p$}.}. Therefore, they will not contribute to the phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$ at all. So, we know that the anti-commutation relations among $c$-Majorana fermions are encoded in the phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$. In view of this, we find that the set of operators $\mathcal{M}_\mathfrak{D}$ defined by equation \eqref{equ.V-rep-def} also forms a projective representation of the edge configuration algebra and shares the same phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$ with the representation $\mathcal{S}$
+in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit{those edges of the plaquette $p$}.}. Therefore, they will not contribute to the phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$ at all. So, we know that the anti-commutation relations among $c$-Majorana fermions are encoded in the phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$. In view of this, we find that the set of operators $\mathcal{M}_\mathfrak{D}$ defined by Eq.~\eqref{equ.V-rep-def} also forms a projective representation of the edge configuration algebra and shares the same phase factor $g\lr{\mathfrak{D},\mathfrak{D}'}$ with the representation $\mathcal{S}$
 \begin{equation}\label{equ.V-rep-algebra}
     \mathcal{M}_{\mathfrak{D}}\mathcal{M}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'}
 \end{equation}
-This clearly illustrated a picture: the Majorana fermion representation is identical to the spin representation, and the Majorana fermions can be seen as emerging from the endpoints of those Pauli strings defined by \eqref{equ.string-operator-def}~\cite{Kitaev_2006, fermion-and-string, string-net, Photons-and-electrons-as-emergent-phenomena-string, PRD-string-wen-quantum-order}. 
+This clearly illustrated a picture: the Majorana fermion representation is identical to the spin representation, and the Majorana fermions can be seen as emerging from the endpoints of those Pauli strings defined by Eq.~\eqref{equ.string-operator-def}~\cite{Kitaev_2006, fermion-and-string, string-net, Photons-and-electrons-as-emergent-phenomena-string, PRD-string-wen-quantum-order}. 
 
 For the RDM, we can also define a set of $\mathcal{S}$-operators
 \begin{equation}\label{equ.U-A-def}
@@ -58,11 +58,11 @@ The form of the RDM above implies that the physical picture of Majorana fermions
 \begin{equation}\label{equ.U-A-rep-algebra}
     \mathcal{S}^{(A)}_{\mathfrak{D}}\mathcal{S}^{(A)}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{S}^{(A)}_{\mathfrak{D}\ominus\mathfrak{D}'},
 \end{equation}
-which is the same as \eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}. The RDM of Majorana fermions in the region $A$ also possesses the same form 
+which is the same as Eq.~\eqref{equ.U-rep-algebra} and \eqref{equ.V-rep-algebra}. The RDM of Majorana fermions in the region $A$ also possesses the same form 
 \begin{equation}\label{equ.rho-F-reduced}
     \rho_A^{F} \equiv \frac{1}{2^{N^A/2}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\mathcal{M}_\mathfrak{D},
 \end{equation}
-which is constructed similarly to \eqref{equ.rho-F}. Here, we consider only regions with an even $N^A$, since the denominator $2^{N^A/2}$ becomes fractional if $N^A$ is odd, rendering the Hilbert space dimension ill-defined. In the latter sections, cases with an odd number of $N^A$ will be discussed. 
+which is constructed similarly to Eq.~\eqref{equ.rho-F}. Here, we consider only regions with an even $N^A$, since the denominator $2^{N^A/2}$ becomes fractional if $N^A$ is odd, rendering the Hilbert space dimension ill-defined. In the latter sections, cases with an odd number of $N^A$ will be discussed. 
 
 
 From the analytical form of the DM we found, we see the identity between the spin representation and the Majorana-fermion representation arises from the fact that every operator $\mathcal{S}_\mathfrak{D}$ depends only on the equivalence class $[\mathfrak{D}]$ the configuration $\mathfrak{D}$ belongs to. In other words, the following operators with different configurations, which share the same set of endpoints, are identical.
@@ -90,6 +90,6 @@ or equivalently
     -\mathcal{M}_{\overleftarrow{ij}}
     \mathcal{M}_{\overleftarrow{kil}}.
 \end{equation}
-Comparing \eqref{eq.M-rep_swap} with \eqref{eq.S-rep-swap} shows the identity between the $\mathcal{S}$-representation and the Majorana representation.
+Comparing Eq.~\eqref{eq.M-rep_swap} with Eq.~\eqref{eq.S-rep-swap} shows the identity between the $\mathcal{S}$-representation and the Majorana representation.
 
 
