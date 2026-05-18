@@ -1,12 +1,7 @@
 \section{An introduction to the Kitaev Model}\label{sec:model-intro}
 
-%\textcolor{red}{We cannot review everything in the Kitaev model, so this part needs to be tied with later discussions explicitly before entering the later description. The review should provide the minimum ingredients for the chain of logic. For example, we review the Majorna representation to illustrate the non-trivial bi-partition problem when one cuts the gauge link. There, bi-partition could be subtle[cite]. Or any related subtlety.}
-
-%\valert{We briefly introduce the Kitaev model and some fundamental properties, including the emergent gauge-theory structure obtained by representing the model with Majorana fermions and the multi-spin correlation functions. The latter serves as a nice property that benefits the construction of the DM, while the former is crucial for explaining the microscopic origin of the entanglement structure. }
-
 Here, we review the Kitaev model and some of its fundamental properties, including the emergent gauge-theory structure obtained by representing the model in terms of Majorana fermions and the spin correlation functions. The gauge theory perspective will be used to clarify the microscopic origin of the entanglement structure. At the same time, the constraints on the spin correlation functions allow us to formulate the DM in an analyzable form, so that the entanglement structure can be elucidated in the spin representation.
 
-%\alert{However, since our paper is not going to follow the principle of \textit{cutting edges}, I do not introduce the subtlety about the bipartition or the cutting issue}
 
 The Hamiltonian of the Kitaev model reads~\cite{Kitaev_2006}
 \[
@@ -26,31 +21,17 @@ Since the gauge field has no dynamics, the Hilbert space is divided into sectors
 where $p$ represents an elementary hexagon of the honeycomb lattice.
 %
 The optimal configuration $\ket{u}$ of the gauge field that minimizes the ground state energy is the flux-free sector, in which $\anglelr{W_p}=+1\;\forall p$~\cite{Lieb_1994, Lieb-Loss_1992, Lieb_1992}. For convenience, we fix the gauge by choosing $u_{ij}=1\forall\anglelr{ij}$ such that the flux-free condition is satisfied. In this work, we assume this gauge by default, unless otherwise specified.
-%\cite{Kotliar_1988, Affleck-Brad_1988, Rokhsar_1990}. 
 
 
-%, because the gauge field operators commute with the matter operators and hence the ground state can be separated into the matter and the gauge sectors $\sket{\Tilde{\psi}}=\ket{u}\ket{M}$~\footnote{The gauge field operators $\hat{u}_{ij}$ commute with the Hamiltonian and so the ground state is also an eigenvector of operators $\hat{u}_{ij}$, thus the gauge operator in the Hamiltonian Eq.~\eqref{equ.MF-Hamiltonian} can be fixed to their eigenvalues $\pm 1$, and Hamiltonian Eq.~\eqref{equ.MF-Hamiltonian} then becomes quadratic in $c$.}. 
-%
-%In this way, the spin correlation functions can be computed in the enlarged space
-%\[
-%\bra{\psi}\prod_{i=1}^{n}\sigma_i^{\mu_i}\ket{\psi} = (-1)^{n^2/2} \bra{u}\prod_{i=1}^{n}b^{\mu_i}_i\ket{u} \bra{M}\prod_{i=1}^{n}c_i\ket{M}
-%\]
-%
 
-%In this way, the flux-free condition is automatically satisfied. 
-%The flux operators commute with the Hamiltonian, and thus the flux-free condition for the ground state $\ket{\psi}$ of the Kitaev model can be expressed as $W_p\ket{\psi}=+\ket{\psi}\forall p$.
 
 The previous part demonstrates that the Kitaev model can be viewed as a free fermion system coupled to a static $\mathbb{Z}_2$ gauge field.
-%~\footnote{The gauge field in the Kitaev model is said to be static because the expectation value of gauge fluxes are non-fluctuating, and there's no term related to the dynamics of the gauge field in the Lagrangian.} 
 The gauge connection in the gauge field that emerged from the fermionization of the Kitaev model is defined in a way that $\mrm{e}^{iA_{ij}} = \hat{u}_{ij}$, and hence the plaquette operator $W_p = \exp\lr{i\oint A}$ is the magnetic flux of the gauge theory. In contrast to the gauge field $A$, the electric field operators are defined by the $b$-Majorana fermions in the way that $b^{\alpha_{ij}}_i = \mrm{e}^{i\pi E_{ij}}$ since they \textit{flip} the gauge fields according to the relation $b^{\alpha_{ij}}_i\hat{u}_{ij}b^{\alpha_{ij}}_i = -\hat{u}_{ij}$, which is analogous to the canonical quantization of gauge theories $[A_{ij}, E_{i'j'}] = -i\delta_{ii'}\delta_{jj'}$~\footnote{The quantization relation of the gauge theory depends on the gauge choice. In our discussion, the gauge is chosen as $A_0=0$, which leads to the relation $[A_\mu(\bo{x}), E_\nu(\bo{x}')] = -i\delta_{\mu\nu}\delta(\bo{x}-\bo{x}')$ mentioned in the main text.}. The Gauss law of the gauge theory only exists in the Majorana representation and reads
 $b^x_ib^y_ib^z_ic_i = \mathds{1}$~\footnote{In this Gauss law formula, we can see the $c$-Majorana fermion operator is exactly the matter field $c_i=\mrm{e}^{i\pi\rho_i}$ if the $b$-Majorana operators are represented as $b^{\alpha_{ij}}_i=\mrm{e}^{i\pi E_{ij}}$. After that, the exponent becomes the familiar form $\div{E}=\rho$}, which corresponds to the intrinsic algebraic relation $\sigma^x\sigma^y\sigma^z=i\mathds{1}$ of the Pauli matrices in the spin representation~\cite{Kitaev_2006}. 
 
 
 The two-spin correlation in the Kitaev model is short-ranged. Only the correlation functions of two nearest-neighbor spins of the same type as the bond connecting them are finite, because two non-adjacent spin operators flip the gauge fluxes, which is orthogonal to the flux-free state~\cite{Bakaran-Mandal-Shankar_2007}. 
-%This is due to the gauge sector of the ground state wave function that prevents a long-range correlation
-%\[
-%\anglelr{\sigma^{\mu}_i\sigma^{\nu}_j} = \underbrace{\bra{u}ib^\mu_ib^\nu_j\ket{u}}_{=0} \bra{M}\lr{ic_jc_i}\ket{M} = 0.
-%\]
+
 From this result, in general, only spin correlation functions of the form
 \begin{equation}\label{equ.only-finite-correlation}
     \anglelr{\prod_{\anglelr{ij}\in \mathfrak{D}}\dimer{i}{j}}
@@ -59,6 +40,6 @@ that consists of nearest-neighbor bonds survives. In the definition, we denote b
 \begin{equation}\label{equ.coefficient-Majorana-evaluation}
     \anglelr{\prod_{\anglelr{ij}\in \mathfrak{D}}\dimer{i}{j}} = \bra{M}\lr{\prod_{\anglelr{ij}\in\mathfrak{D}}ic_jc_i}\ket{M}.
 \end{equation} 
-%Since the Kitaev model in the flux-free sector is equivalent to a free fermion model for the Majorana fermions, the multi-point correlation function $\mathfrak{C}_{\mathfrak{D}}$ of the Majorana fermions can be decomposed into two-point correlation functions according to Wick's theorem. 
+
 Notice that Eq.~\eqref{equ.coefficient-Majorana-evaluation} becomes unity if the edges in $\mathfrak{D}$ form closed loops, since each Majorana fermion cancels that from its former edge one by one. Therefore, correlation functions of two edge configurations $\mathfrak{D}$ and $\mathfrak{D}'$ that differ from each other by a closed loop are equal. Hence, the two configurations are said to be \textit{equivalent}. This equivalence relation will give rise to an \textit{equivalence class structure}, which is crucial to formulating the DM.
 

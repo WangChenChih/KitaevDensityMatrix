@@ -1,13 +1,7 @@
 \subsection{String Operators and Equivalence Classes}\label{sec:density-matrix-whole}
 
-%\textcolor{red}{These are the notations/setup that will make the "later discussion more fluent". The statement relies on the content that is not yet explicitly mentioned. Try to be specific. For example, the notation is a good devise for us to construct something for the reason 1. Furthermore, it explicitly demonstrate how symmetry enter quantity A. Something like that. That will give your reader some motivation to overcome the mental barrier that this is a worth reading paragraph.}
-
-%\valert{To efficiently describe special structures hidden in the DM, we have to introduce some useful notations and definitions for \textit{edge configurations}, \textit{equivalence classes}, \textit{sets of endpoints}, and the algebra of these objects. The DM was decomposed into terms labeled by different edge configurations, which will be demonstrated in the next section, and the algebra of edge configurations allows us to manipulate these components. The existence of equivalence relations among edge configurations makes the DM more structured, giving rise to an interesting entanglement structure. }
-
-
 The information of a state is stored in the correlation functions. In the Kitaev model, the form~\eqref{equ.only-finite-correlation} implies that the finite correlation functions are determined by string-like objects $\mathfrak{D}$. Thus, we need to discuss how to manipulate the fundamental string objects to further analyze the DM. In this section, we introduce the notions of the \textit{string operators} and their \textit{equivalence classes} to describe the spin correlation functions in the Kitaev model. Both will be the building blocks for the DM. We begin by introducing the algebraic rule of operating edge configurations, and then point out the structure of the equivalence classes from the algebra. 
 
-%\alert{It is not clear to me that this is the optimal way to discuss the structure. }
 
 \textit{edge configurations}, denoted by $\mathfrak{D}$ as appeared in Eq.~\eqref{equ.only-finite-correlation}, are sets consisting of edges in the lattice. Their \textit{symmetric difference}, denoted by $\ominus$, is defined as
 \[
@@ -27,13 +21,7 @@ With the edge configurations, we define \emph{string operators} $\Sigma_\mathfra
 \begin{equation}\label{equ.string-operator-def}
     \Sigma_\mathfrak{D} \equiv \prod_{\anglelr{ij}\in \mathfrak{D}}\sigma^{\alpha_{ij}}_i\sigma_j^{\alpha_{ij}}.
 \end{equation}
-The order of multiplying dimer operators $\dimer{i}{j}$ in the above product is also important, because two dimer operators anti-commute if they share a common endpoint. In a finite system, we can label the edges and multiply the dimer operators in order of this labeling to fix the ambiguity of the sign of the string operators.
-%\sout{Because of the anti-commuting feature of the Pauli matrices, we have to notice the order of the product. For example, consider two connected edges. One of them, $\Sigma_{\anglelr{ij}}=\sigma_i^x\sigma_j^x$, is type-$x$, and the other, $\Sigma_{\anglelr{jk}}=\sigma^y_j\sigma^y_k$, is type-$y$. They share a common endpoint $j$. If we want to build $\Sigma_{\anglelr{ij}\ominus\anglelr{jk}}$, we will find that $\lr{\sigma^x_i\sigma_j^x}\lr{\sigma_j^y\sigma_k^y}$ and $\lr{\sigma_j^y\sigma_k^y}\lr{\sigma^x_i\sigma_j^x}$ are different in sign\alert{ seems the same to me...}. This example illustrates that the order in which those dimers $\lr{\sigma^{\alpha_{ij}}_i\sigma^{\alpha_{ij}}_j}$ are placed in the product is important in several cases. To make the definition of string operators unique and self-consistent, we have to fix the order. In the subsequent discussion, we assume that all products include ordering information, such that every string operator is uniquely defined. Due to the $\mathbb{Z}_2$ nature of string operators $\Sigma_{\mathfrak{D}}$,
-%
-% is composed of $\mathbb{Z}_2$ dimer operators $\dimer{i}{j}$ within the edge configuration $\mathfrak{D}$. Therefore
-%
-%multiplying two string operators $\Sigma_{\mathfrak{D}}$ and $\Sigma_{\mathfrak{D}}$ results in a symmetric difference pattern of the two edge configurations $\Sigma_{\mathfrak{D}\ominus\mathfrak{D}'}$. An equivalent statement is that the product of string operators represents the edge configuration algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$.} 
-Due to the anti-commutation relation of Pauli spin operators, the string operators give a projective representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$ with a phase factor $\varphi(\mathfrak{D},\mathfrak{D}')=\pm 1$,
+The order of multiplying dimer operators $\dimer{i}{j}$ in the above product is also important, because two dimer operators anti-commute if they share a common endpoint. In a finite system, we can label the edges and multiply the dimer operators in order of this labeling to fix the ambiguity of the sign of the string operators. Due to the anti-commutation relation of Pauli spin operators, the string operators give a projective representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$ with a phase factor $\varphi(\mathfrak{D},\mathfrak{D}')=\pm 1$,
 \begin{equation}\label{equ.Sigma-representation}
 \Sigma_{\mathfrak{D}}\Sigma_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}') \Sigma_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
@@ -48,8 +36,6 @@ is a plaquette operator $W_p$ centered at $p$. From the property of $W_p$, strin
     \Sigma_{\de\mathcal{A}} = \prod_{p\in\mathcal{A}}W_p
 \end{equation}
 as illustrated in \autoref{fig.equivalent}. 
-%
-%As we know, the Kitaev ground state is an eigenvector of plaquette operators with an eigenvalue $+1$. That is, the expectation value of a string operator is equal to one whenever the edge configuration consists of closed loops without open strings. 
 %
 Since the Kitaev ground state is an eigenvector of plaquette operators with an eigenvalue $+1$, the expectation value of the string operator of the configuration $\mathfrak{D}$ is equal to another configuration $\mathfrak{D}\ominus\de\mathcal{A}$ constructed by adding a loop configuration $\de\mathcal{A}$ to the original one,
 \[

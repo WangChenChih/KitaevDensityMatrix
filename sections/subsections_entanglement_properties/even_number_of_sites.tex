@@ -3,9 +3,6 @@
 In this section, the EE of the Kitaev ground state is calculated using the DM and the algebras of strings obtained earlier, which reproduces the result proposed by~\cite{Yao-Qi_2010} that it can be separated into the gauge and the matter contribution. The derivation reveals that the matter part of the EE reflects the equivalence between representations $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$, while the gauge part arises from the difference in dimension of the Hilbert space between these two identical representations. 
 
 
-%The derivation of the EE reveals that the fermion part $S^F_A$ reflects the equivalence of representations $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$, and the gauge part $S^G_A$ arises from the difference between the spaces supporting these two identical representations. In particular, the separability of the gauge and fermion degrees of freedom relies on two crucial properties, $[W_p, W_{p'}]=0\;\forall p,p'$ and $[W_p,\Sigma_{\mathfrak{D}}]=0\; \forall p,\mathfrak{D}$. The latter guarantees the decomposition of the spin system into gauge and matter sectors controlled by $W_p$ and $\Sigma_\mathfrak{D}$, respectively, whereas the former implies the gauge has no dynamics. 
-
-%As we have discussed in Sec.~\ref{sec:Emergent-Fermions-at-the-Endpoints}, there is a clear correspondence, manifested by Eq.~\eqref{equ.U-rep-algebra} and Eq.~\eqref{equ.V-rep-algebra}, between operators $\mathcal{S}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$. In the subregion, after tracing out the environment, a similar relation is still there between $\mathcal{S}^{(A)}_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$ for all $\mathfrak{D}\subset A$. 
 
 Due to the equivalence of the representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ in the region $A$, plus the similarity of the forms of Eq.~\eqref{equ.red-DM-new} and \eqref{equ.rho-F-reduced}, the EE of the spin system $S_A = \Tr_A\rho_A\ln\rho_A$ can be calculated using the Majorana DM \eqref{equ.rho-F-reduced} as an alternative. Inspired by this insight, we first observe that both representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ consist of traceless operators and the identity. Therefore, their trace satisfies 
 \begin{equation}\label{equ.U-V-trace-relation}
@@ -60,16 +57,6 @@ The eigenvalues of $\Gamma^{(c)}$, denoted by $\gamma_{k,\pm}$, can be expressed
 \begin{equation}\label{equ.gamma-eigenvalue}
     \gamma_{k,\pm} = \frac{1 \pm \nu_k}{2} \quad ; \; 1,2,\cdots,N^A/2.
 \end{equation}
-%A pair of eigenvalues can also be expressed in terms of a parameter $\epsilon_k$ as 
-%\begin{equation}\label{equ.epsilon-k}
-%    \gamma_{k,n_k} = \frac{\mrm{e}^{-\epsilon_k\lr{1 - 2n_k}}}{2\tanh{\epsilon_k}},
-%\end{equation}
-%with $n_k=0,1$ implying $+,-$ in expression~\eqref{equ.gamma-eigenvalue}, respectively. There are then $2^{N^A/2}$ elements in the many-body ES of the whole system, which are composed of these single particle values in such a way that
-%\begin{equation}\label{equ.many-body-entanglement-spectrum}
-%    \lambda_{\lrg{n}} \equiv \prod_{k=1}^{N^A/2}\gamma_{k,n_k} = \frac{1}{\mathcal{Z}} \mrm{e}^{-\sum_{k=1}^{N^A/2} \epsilon_k \lr{1-2n_k}}
-    %\prod_{k=1}^{N^A/2}\frac{1 + (-1)^{n_k}\nu_k}{2}
-%\end{equation} 
-%where $\mathcal{Z}\equiv\prod_{k=1}^{N^A/2}2\tanh\epsilon_k$. 
 By this method, the fermion ES can be numerically computed if the exact form of the two-point fermion correlation functions is given, which can be obtained straightforwardly by exactly solving the Hamiltonian~\eqref{equ.MF-Hamiltonian}. The EE becomes 
 \begin{equation}\label{equ.EE-corr-mat}
     S_A^F = -\sum_{\lrg{n}}\lambda_{\lrg{n}}\ln \lambda_{\lrg{n}} = -\tr\lr{\Gamma^{(c)}\ln\Gamma^{(c)}}.

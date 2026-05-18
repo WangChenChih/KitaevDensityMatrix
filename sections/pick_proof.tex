@@ -18,24 +18,4 @@ We begin by defining a \textit{circuit} $C$ of length $\ell$ in a triangular lat
 where $f$ and $v$ denote the number of interior \textit{faces} and \textit{vertices} of $A$, respectively. A proof of Eq.~\eqref{equ.Lieb-Loss-formula} can be derived from Euler's theorem, which states $2 = V-E+F$ for a convex polyhedron. Since a two-dimensional sublattice can be viewed as one side of a convex polyhedron, Euler's formula becomes $2 = (\ell + v) - (\ell + e) + (f+1)$, where $e$ is the number of interior edges. Due to the geometry of a triangular lattice, by counting the faces and the edges they share, we obtain the relation $2e+\ell = 3f$. Substituting this relation into Euler's theorem, we obtain Eq.~\eqref{equ.Lieb-Loss-formula}. An illustration is given by \autoref{fig.dual-lattice-Pick-theorem}, which also shows that the dual lattice of a triangular lattice is a honeycomb lattice. This duality establishes correspondences between the triangular and honeycomb lattices: they are $\ell\leftrightarrow\abs{\de A}$, $f\leftrightarrow N^A$, and $v\leftrightarrow N^A_p$. According to these correspondences, replacing the quantities in Eq.~\eqref{equ.Lieb-Loss-formula} defined in a triangular lattice with their corresponding quantities defined in the dual honeycomb lattice gives Eq.~\eqref{equ.Pick_sim-con}.
 
 
-%This formula can be generalized to multiply-connected regions. Suppose a connected region has a genus number $g$, and the $n$-th hole surrounded by the connected region $A$ is denoted by $B^{(n)}$ such that $A\cap B^{(n)}=\varnothing$ and $A\cup \lr{\bigcup_{n=1}^{g} B^{(n)}}$ is simply-connected. Denoting by $\ell_{\mrm{out}} = \abs{\de\lr{A\cup \lr{\bigcup_{n=1}^{g} B^{(n)}}}}$ the number of crossing edges of the outer boundary, and by $\ell_{\mrm{in}}^{(n)}=\abs{\de B^{(n)}}$ the length of the $n$-th inner boundary, we have
-%\[
-%\left\{
-%\begin{aligned}
-%&\ell_{\mrm{out}} = N^A- 2N^A_{p} + \sum_{n=1}^{g}\lr{N^{B(n)} -2N^{B(n)}_{p} - 2N^{\de(n)}_{p}} +2 \\
-%&\ell_{\mrm{in}}^{(n)} = N^{B(n)} -2N^{B(n)}_{p}  +2
-%\end{aligned}
-%\right.
-%\]
-%where $N^{\de(n)}_p$ is the number of plaquettes at the interface between $A$ and $B$. It is obvious that $N^{\de(n)}_p = \ell_{\mrm{in}}^{(n)}$. Thus, we have
-%\[
-%\ell_{\mrm{out}} = N^A- 2N^A_{p} - \sum_{n=1}^{g}\ell_{\mrm{in}}^{(n)} -2g + 2
-%\]
-%At the same time, we know that the length of the boundary of the region $A$ is the sum of the outer boundary and all inner boundaries
-%\[
-%\abs{\de A} = \ell_{\mrm{out}} + \sum_{n=1}^{g}\ell_{\mrm{in}}^{(n)}
-%\]
-%Combining this relation with the result we obtained gives a generalized version of Eq.~\eqref{equ.Pick_sim-con}:
-%\[
-%\abs{\de A} = N^A-2N^A_p+2(1-g)
-%\]
+

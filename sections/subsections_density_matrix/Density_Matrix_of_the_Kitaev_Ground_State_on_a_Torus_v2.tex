@@ -1,19 +1,12 @@
 \subsection{Density Matrix of the Kitaev Ground State on a Torus}\label{sec:density-matrix-calculate}
 
-%\textcolor{red}{Can you provide a high level description of how to use the tools you had defined previously to get this part of the calculation done? What's the trick? What is the logical stepping stone for you to get the results before you enter the detail description.}
-
-%\valert{With the concepts of edge configurations and equivalence classes, all terms in the same class contribute the same weight to the DM and can be grouped. The cleaner form of the DM obtained by means of the grouping is presented at the end of the section, which will be demonstrated to encode the fermion feature, giving a clearer physical picture of the analysis of the entanglement structure.}
-
-%\valert{Inspired by the replica trick demonstrated by \cite{Yao-Qi_2010}, we anticipate that the form of the DM should possess a pattern that directly reflects the separability of the gauge part and the matter part.}
 In Ref. \cite{Yao-Qi_2010}, the authors demonstrate the separability of EE between the gauge and matter sectors through the replica approach. However, as the Kitaev model can be exactly transformed to a free-fermion theory without disorder, we anticipate a direct demonstration of such separability without the replica approach. Here, we use the string operators as the building blocks to derive the DM of the Kitaev ground state. We illustrate that the separability between the two sectors arises from the equivalence class, and the character of each equivalence class further reflects the origin of the effective Majorana fermion theory.
 
 We start from the fundamental properties of the DM. A DM must be Hermitian, and it gives the expectation value of observables by $\anglelr{\mathcal{O}} = \Tr\lr{\rho \mathcal{O}}$. To obtain the correct expectation value, the DM should be of the following form
-%The construction of the DM relies on the fact that the model discussed here is a spin-1/2 system with $N$ spins. Local spin operators, represented by Pauli matrices, form a complete basis for any physical operator. Therefore, we can expand the DM $\rho$ by the spin operators~\cite{Latorre-Rico-Vidal_2004}
 \begin{equation}\label{equ.rho-starting}
     \rho = \frac{1}{2^N}\sum_{n}\anglelr{\mathcal{O}_n}\mathcal{O}_n,
 \end{equation}
 where we have assumed that each independent observable $\mathcal{O}_n$ in the model is composed of Pauli spin operators, thus it is Hermitian and squares to one. For the Kitaev model, the property \eqref{equ.coefficient-Majorana-evaluation} constrains the form of finite observables composed of spin operators. 
-%which simplifies the analytical form of the DM and further extracts the hidden topological properties. We have known two crucial points for constructing the DM. The first one is that finite spin-correlation functions of the Kitaev ground state 
 Therefore, the expansion \eqref{equ.rho-starting} includes only terms of the form $\mathcal{O}_n = \Sigma_\mathfrak{D}$. Furthermore, every edge configuration in the same equivalence class gives the same weight to the DM, so we can sort the terms in the expansion \eqref{equ.rho-starting} into equivalence classes
 \begin{equation}\label{equ.class-sum}
     \sum_{\mathfrak{D}}\mathfrak{C}_{\mathfrak{D}}\Sigma_\mathfrak{D} = \sum_{[\mathfrak{D}^c]}\sum_{\mathfrak{D}\in[\mathfrak{D}^c]}\mathfrak{C}_{\mathfrak{D}}\Sigma_\mathfrak{D}.
@@ -42,6 +35,4 @@ In the end, we obtain the exact form of the DM
     \rho =  \frac{1}{2^{N-N_p}}\mathcal{P}^{(p)}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}.
 \end{equation}
 As indicated in Sec.~\ref{sec:density-matrix-whole}, there is a one-to-one correspondence between sets of endpoints and equivalence classes. Therefore, the sum in Eq.~\eqref{equ.density-matrix} can also be understood as summing over sets of endpoints. This implies that the details of the strings are smeared out, and only the information of their endpoints remains important. All the information about the details of strings is grouped and stored in the projector $\mathcal{P}^{(p)}$. The separation between the string details and endpoints manifests the separability of the matter sector from the gauge sector.
-
-%Because $[W_p,\Sigma_\mathfrak{D}]=0\;\forall p,\mathfrak{D}$, the projector $\mathcal{P}^{(p)}$ commutes with the summation part consisting of string operators. This is also a manifestation of the separability of the $c$-Majorana fermion sector from the gauge sector, which will be elucidated in later sections.
 
