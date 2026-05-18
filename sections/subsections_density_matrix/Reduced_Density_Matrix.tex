@@ -1,6 +1,6 @@
 \subsection{Reduced Density Matrix}\label{sec:density-matrix-reduced}
 
-Information about the many-body entanglement of a state is encoded in the RDM. Understanding the RDM is the first step in investigating the entanglement structure. Here, we employ the method introduced in the previous section to obtain the RDM intuitively without performing the partial trace. Nevertheless, we still provide a rigorous derivation of how to perform the partial trace directly in Appendix~\ref{appendix:reduced-density0matrix}. 
+Understanding the RDM is the first step in investigating the entanglement structure since information about entanglement, such as ES and EE, is defined directly by the RDM. Here, we employ the method introduced in the previous section to obtain the RDM intuitively without performing the partial trace. Nevertheless, we still provide a rigorous derivation of how to perform the partial trace directly in Appendix~\ref{appendix:reduced-density0matrix}. 
 
 The property of a RDM is the same as the DM of the entire system, since both are Hermitian and are designed to give the expectation values of observables in the way that $\anglelr{\mathcal{O}_A}=\Tr\lr{\rho\mathcal{O}_A}=\Tr_A\lr{\rho_A\mathcal{O}_A}$, for any observable $\mathcal{O}_A$ with support $A$. In the Kitaev model, observables possessing finite expectation values are string operators. Therefore, the RDM can be expressed in terms of string operators $\Sigma_\mathfrak{D}$, with $\mathfrak{D}$ entirely inside $A$, accompanied by their expectation values $\mathfrak{C}_\mathfrak{D}$,
 \begin{equation}\label{equ.rho-A-raw-guess}
@@ -14,10 +14,10 @@ The final form of the RDM is then
 \[
 \rho_A = C\mathcal{P}^{(p)}_A\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}
 \]
-The condition $[\mathfrak{D}]\subset A$ below the summation means choosing equivalence classes such that each class contains at least one configuration that is entirely contained within $A$. Recall the correspondence between endpoint sets and equivalent classes, the condition is also equivalent to choosing classes $[\mathfrak{D}]$ such that $\mrm{EP}(\mathfrak{D})\subset A$. The constant $C$ is a normalization coefficient to be determined by imposing the normalization condition $\Tr_A\rho_A=1$,
+The condition $[\mathfrak{D}]\subset A$ below the summation means choosing equivalence classes such that each class contains at least one edge configuration $\mathfrak{D}$ that lies entirely in $A$, and we will use it to define $\Sigma_\mathfrak{D}$ in the above formula to ensure that the RDM acts on states in the local Hilbert space supported on $A$. Recall the correspondence between endpoint sets and equivalent classes, the condition is also equivalent to choosing classes $[\mathfrak{D}]$ such that $\mrm{EP}(\mathfrak{D})\subset A$. The constant $C$ is a normalization coefficient to be determined by imposing the normalization condition $\Tr_A\rho_A=1$,
 \begin{align*}
     \Tr_A\rho_A &= C\sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_\mathfrak{D} \Tr_A\lrm{\mathcal{P}^{(p)}_A \Sigma_\mathfrak{D}} \\
-    &= \frac{C}{2^{N^A_p}}\sum_{\mathcal{A}_p}\sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_\mathfrak{D} \Tr_A\lrm{ \lr{\prod_{p\in\mathcal{A}_p}W_p} \Sigma_\mathfrak{D}} \\
+    &= \frac{C}{2^{N^A_p}} \sum_{\mathcal{A}\in A} \sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_\mathfrak{D} \Tr_A\lrm{ \lr{\prod_{p\in\mathcal{A}}W_p} \Sigma_\mathfrak{D}} \\
     &= \frac{C}{2^{N^A_p}}\Tr_A\mathds{1}_A = C2^{N^A - N^A_p} = 1
 \end{align*}
 Therefore, the final form of the RDM is as follows.

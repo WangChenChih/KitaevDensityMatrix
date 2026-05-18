@@ -2,13 +2,13 @@
 
 
 
-The notion of fermion parity obtained in Sec.~\ref{sec:EE-calculation-odd} motivates a question: how to describe fermion parity in the spin representation? And how does it give an additional degeneracy in the ES? In this section, we find a specific sort of operator in spin representation that corresponds to fermion parity. It further block-diagonalizes the DM if $N^A$ is odd, hence gives an additional degeneracy.
+The notion of fermion parity obtained in Sec.~\ref{sec:EE-calculation-odd} motivates a question: how to describe fermion parity in the spin representation? And how does it give an additional degeneracy in the ES if the subregion contains an odd number of lattice sites? In this section, we find a specific sort of operator in spin representation that corresponds to fermion parity. It further block-diagonalizes the DM if $N^A$ is odd, hence gives an additional degeneracy.
 
 A relation implied by Eq.~\eqref{equ.Pick_sim-con} 
 \[%\label{equ.bulk-boundary-parity}
     N^A=\abs{\de A} \mod{2},
 \]
-indicates that once the number of lattice sites in $A$ is odd, so is the length of the boundary. This raises an issue that there will always be one single site left after sorting lattice sites along the boundary in pairs, as shown in the first panel of \autoref{fig.Xi-odd}. If $L$ is defined as the number of $\hat{\xi}$-operators, then we only have
+indicates that once the number of lattice sites in $A$ is odd, so is the length of the boundary. This raises an issue that there will always be one single site left after sorting lattice sites along the boundary in pairs, as shown in the left panel of \autoref{fig.Xi-odd}. If $L$ is defined as the number of $\hat{\xi}$-operators, then we only have
 \[
 L = \frac{1}{2}\lr{\abs{\de A} - 1}
 \]
@@ -19,7 +19,7 @@ in cases with odd $\abs{\de A}$. In this case, the block-diagonal structure \eqr
 \end{align}
 where $\Tilde{\rho}_A\equiv 2^{L-1}\varrho_A$. The form of Eq.~\eqref{equ.EE-odd-blocks} is the same as that of Eq.~\eqref{equ.EE-odd-derive-1}, showing that the block $\Tilde{\rho}_A$ here is identical to the Majorana RDM \eqref{equ.rho-A-F-odd} with a redundant Majorana fermion included. 
 
-In Sec.~\ref{sec:EE-calculation-odd}, the result of the Majorana ES shows that the degree of degeneracy is 
+In Sec.~\ref{sec:EE-calculation-odd}, the result of the Majorana ES shows that the degree of degeneracy of a system with odd $N^A$ is 
 \[
 2^{\frac{N^A+1}{2}-N^A_p} = 2^{\lr{\abs{\de A} - 1}/2} = 2^L.
 \]
@@ -27,7 +27,7 @@ However, according to the discussion in the previous part for cases with an even
 \begin{equation}\label{equ.Xi-def}
     \hat{\Xi}_A \equiv \sigma^\mu_l \Sigma_{\mathfrak{D}_{\mrm{DC}}^{A(l)}},
 \end{equation}
-where the edge configuration $\mathfrak{D}_{\mrm{DC}}^{A(l)}$ stands for a dimer covering of $A$ with a site $l$ being excluded. Since $N^A$ is an odd number, it is not possible for a dimer configuration composed of non-overlapping dimers to cover the entire subregion~\footnote{The dimer covering is not uniquely defined. One can choose an arbitrary dimer covering with a remaining site $l$ at the boundary that covers the subregion.}. The remaining site $l$ is required to be at the boundary of the subregion $A$, and the direction $\mu$ of the Pauli matrix $\sigma_l^\mu$ is that of the edge connected to $l$ that crosses the boundary. An example is illustrated in \autoref{fig.Xi-odd}, where the remaining site $l$ is in the upper portion of the subregion. 
+where the edge configuration $\mathfrak{D}_{\mrm{DC}}^{A(l)}$ stands for a dimer covering of $A$ with a site $l$ being excluded. Since $N^A$ is an odd number, it is not possible for a dimer configuration composed of non-overlapping dimers to cover the entire subregion~\footnote{The dimer covering is not uniquely defined. One can choose an arbitrary dimer covering with a remaining site $l$ at the boundary that covers the subregion.}. The remaining site $l$ is required to be at the boundary of the subregion $A$, and the direction $\mu$ of the Pauli matrix $\sigma_l^\mu$ is that of the edge connected to $l$ that crosses the boundary. See the right panel of \autoref{fig.Xi-odd}. 
 \begin{figure}
     \centering
     \includegraphics[width=0.45\linewidth]{figures/xi-wilson-flip_odd.pdf}
