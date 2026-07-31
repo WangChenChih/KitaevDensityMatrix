@@ -35,18 +35,16 @@ Based on the block-diagonal structure \eqref{equ.rho-block-diagonal-structure} o
 \[2^{L-1} = 2^{\abs{\de A}/2 - 1}\] 
 identical blocks in $\rho_A$. The factor $2^{-1}$ arises from the fixed parity of quantum numbers, which can also be understood a consequence of the exact 1-form Wilson symmetry~\cite{Xu-Rakovszky-Knap-Pollmann_2025}. Based on the block-diagonal structure of $\rho_A$, it can be expressed as
 \begin{equation}\label{equ.block-rho-final}
-    \rho_A = \bigoplus_{n=1}^{2^{L-1}}\varrho^{(n)}_A
+    \rho_A = \frac{1}{2^{L-1}}\bigoplus_{n=1}^{2^{L-1}}\varrho^{(n)}_A
 \end{equation}
 with all the blocks $\varrho_A^{(n)}$ identical. Substitution of such an expression into the definition of von Neumann entropy directly gives the EE, 
 \begin{align}\label{equ.EE-from-blocks}
     S_A 
     &= -\Tr_A\rho_A\ln\rho_A \nonumber \\
     &= -\Tr_A\lrm{\bigoplus_{n=1}^{2^{L-1}}\lr{\varrho^{(n)}_A \ln \varrho^{(n)}_A}} \nonumber \\
-    &= -2^{L-1}\Tr_A\varrho_A \ln \varrho_A \nonumber \\
-    &= -\Tr_A\Tilde{\rho}_A\ln\Tilde{\rho}_A + \lr{\frac{1}{2}\abs{\de A} -  1}\ln 2
+    &= -\Tr_A \varrho_A\ln\varrho_A + \lr{\frac{1}{2}\abs{\de A} -  1}\ln 2
 \end{align}
-where $\Tilde{\rho}_A \equiv 2^{L-1}\varrho_A$ is the normalized DM
-defined to make $\Tr_A\Tilde{\rho}_A=1$. By comparing Eq.~\eqref{equ.EE-from-blocks} with Eq.~\eqref{equ.EE-separation}, we find that each block $\Tilde{\rho}_A$ corresponds to the Majorana RDM $\rho_A^F$. At the same time, the gauge part $S^G_A$ measures the number of identical blocks in $\rho_A$, which is exactly the degree of degeneracy in the ES. This agrees with the gauge nature of such a contribution since the degeneracy 
+Comparing Eq.~\eqref{equ.EE-from-blocks} with Eq.~\eqref{equ.EE-separation}, we find that each block $\Tilde{\rho}_A$ corresponds to the Majorana RDM $\rho_A^F$. At the same time, the gauge part $S^G_A$ measures the number of identical blocks in $\rho_A$, which is exactly the degree of degeneracy in the ES. This agrees with the gauge nature of such a contribution since the degeneracy 
 %arises from the block-diagonal structure of $\rho_A$ along with the fact that every block is identical, and the presence of block-diagonal structure is due to the residual electric field from the 
 is yielded by the residual Gauss law after the environment is traced out. Finally, the topological EE $-\ln 2$ is a consequence of the topological constraint that the total parity of the quantum numbers, $\prod_{n=1}^L\xi_n$, is fixed, originating from the exact 1-form Wilson symmetry. 
 

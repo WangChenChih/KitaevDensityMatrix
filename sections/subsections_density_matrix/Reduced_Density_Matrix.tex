@@ -6,7 +6,7 @@ The property of a RDM is the same as the DM of the entire system, since both are
 \begin{equation}\label{equ.rho-A-raw-guess}
     \rho_A \propto\sum_{\mathfrak{D}\subset A}\mathfrak{C}_\mathfrak{D} \Sigma_\mathfrak{D}
 \end{equation}
-The equivalent configurations can be sorted in the same way as in the previous section, then the summation can be rewritten as a summing of equivalent classes with the projector $\mathcal{P}^{(p)}_A$ of dimension $2^{N^A-N^A_p}$, which only includes plaquettes inside $A$,
+The equivalent configurations can be sorted in the same way as in the previous section. Owing to this, the summation can be rewritten as a summation of \alert{equivalence classes} with the projector $\mathcal{P}^{(p)}_A$ of dimension $2^{N^A-N^A_p}$, which only includes plaquettes inside $A$,
 \begin{equation}\label{equ.p-proj-A}
     \mathcal{P}^{(p)}_A = \prod_{p\in A}\lr{\frac{\mathds{1}+W_p}{2}}
 \end{equation}
@@ -14,7 +14,7 @@ The final form of the RDM is then
 \[
 \rho_A = C\mathcal{P}^{(p)}_A\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}
 \]
-The condition $[\mathfrak{D}]\subset A$ below the summation means choosing equivalence classes such that each class contains at least one edge configuration $\mathfrak{D}$ that lies entirely in $A$, and we will use it to define $\Sigma_\mathfrak{D}$ in the above formula to ensure that the RDM acts on states in the local Hilbert space supported on $A$. Recall the correspondence between endpoint sets and equivalent classes, the condition is also equivalent to choosing classes $[\mathfrak{D}]$ such that $\mrm{EP}(\mathfrak{D})\subset A$. The constant $C$ is a normalization coefficient to be determined by imposing the normalization condition $\Tr_A\rho_A=1$,
+The condition $[\mathfrak{D}]\subset A$ below the summation means choosing equivalence classes such that each class contains at least one edge configuration $\mathfrak{D}$ that lies entirely in $A$, and we will use it to define $\Sigma_\mathfrak{D}$ in the above formula to ensure that the RDM acts on states in the local Hilbert space supported on $A$. Recall the correspondence between endpoint sets and \alert{equivalence classes}; the condition is also equivalent to choosing classes $[\mathfrak{D}]$ such that $\mrm{EP}(\mathfrak{D})\subset A$. The constant $C$ is a normalization coefficient to be determined by imposing the normalization condition $\Tr_A\rho_A=1$,
 \begin{align*}
     \Tr_A\rho_A &= C\sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_\mathfrak{D} \Tr_A\lrm{\mathcal{P}^{(p)}_A \Sigma_\mathfrak{D}} \\
     &= \frac{C}{2^{N^A_p}} \sum_{\mathcal{A}\in A} \sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_\mathfrak{D} \Tr_A\lrm{ \lr{\prod_{p\in\mathcal{A}}W_p} \Sigma_\mathfrak{D}} \\
