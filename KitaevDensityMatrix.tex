@@ -77,6 +77,8 @@ floatfix,
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{proposition}[theorem]{Proposition}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
 
 %\usepackage{cancel}
 
@@ -123,7 +125,9 @@ floatfix,
 \newcommand{\segment}[2]{\mathcal{S}_{\overrightarrow{#1#2}}}
 \newcommand{\lsegment}[2]{\mathcal{S}_{\overleftarrow{#1#2}}}
     
-
+\newcommand{\TReven}{\bo{Ev}}
+\newcommand{\TRodd}{\bo{Od}}
+\newcommand{\Good}{\bo{Gd}}
 
 \begin{document}
 
@@ -184,6 +188,9 @@ Furthermore, we extend the formalism to subsystems with an odd number of lattice
 \input{sections/acknowledgements}
 
 \appendix
+\valert{
+\input{sections/Z2-projective-representation}
+}
 \input{sections/string_and_fermion_parity}
 \input{sections/explicit_calculation_of_reduced_density_matrices}
 \input{sections/fermion_representation_of_the_density_matrix}
