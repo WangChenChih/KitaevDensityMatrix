@@ -17,10 +17,10 @@ We denote by $\mathfrak{C}_{\mathfrak{D}}$ the expectation values of the string 
 \end{equation}
 The constant $C$ is the normalization factor determined by imposing the constraint $\Tr\rho = 1$. Performing the trace, we have 
 \begin{align}\label{equ.rho-direct-trace-1}
-    \Tr\rho &= \frac{C}{2^2} \sum_{[\mathfrak{D}]} \mathfrak{C}_{\mathfrak{D}} \Tr\lr{\mathcal{P}^{(p)}\Sigma_{\mathfrak{D}}} \nonumber\\
-    &= \frac{C}{2^{2+N_p}} \sum_{[\mathfrak{D}]} \sum_{\mathcal{A}}'\Tr\lrm{ \lr{2\prod_{p\in\mathcal{A}} W_p}\Sigma_{\mathfrak{D}}}
+    \Tr\rho &= \alert{C} \sum_{[\mathfrak{D}]} \mathfrak{C}_{\mathfrak{D}} \Tr\lr{\mathcal{P}^{(p)}\Sigma_{\mathfrak{D}}} \nonumber\\
+    &= \alert{\frac{1}{2^2}}\frac{C}{2^{N_p}} \sum_{[\mathfrak{D}]} \sum_{\mathcal{A}}'\Tr\lrm{ \lr{2\prod_{p\in\mathcal{A}} W_p}\Sigma_{\mathfrak{D}}}
 \end{align}
-The coefficient $1/2^2$ in the first line originates from the denominator of projectors provided by the two non-contractible Wilson loops. The two non-contractible Wilson-loop operators drop out because neither the local plaquette operators nor the string operators can annihilate them to yield the identity. Consequently, their contributions vanish upon taking the trace. The summation of plaquette operators arises from the expansion of $\mathcal{P}^{(p)}$
+The coefficient $1/2^2$ in the \alert{second} line originates from the denominator of projectors provided by the two non-contractible Wilson loops. The two non-contractible Wilson-loop operators drop out because neither the local plaquette operators nor the string operators can annihilate them to yield the identity. Consequently, their contributions vanish upon taking the trace. The summation of plaquette operators arises from the expansion of $\mathcal{P}^{(p)}$
 \begin{align}\label{equ.W-prod-expansion}
     \prod_{p}\lr{\mathds{1}+W_p} &= \lr{\mathds{1}+\prod_{p}W_p}\sum'_{\mathcal{A}}\prod_{p\in\mathcal{A}}W_p \nonumber\\
     &= 2\sum'_{\mathcal{A}}\prod_{p\in\mathcal{A}}W_p,
