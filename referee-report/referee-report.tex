@@ -1,0 +1,167 @@
+\documentclass[12pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{color}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\pagestyle{empty}
+
+\newcommand{\alert}[1]{{\color{red}#1}}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%% info %%%%%%%%%%%%%%%
+\fontsize{12pt}{14pt}\selectfont
+
+\begin{flushright}
+    \today
+\end{flushright}
+\begin{flushleft}
+Editors
+\\
+Physical Review B
+\\
+American Physical Society
+\end{flushleft}
+\vspace{-5mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent\rule{\linewidth}{1.2pt}
+
+%%%%%%%%%%%%%%%%% main %%%%%%%%%%%%%%%
+\vspace{5mm}
+\fontsize{12pt}{18pt}\selectfont
+%\noindent Dear Editors,
+
+\bigskip
+
+\noindent\alert{\textbf{\underline{Note:} The labeling of equations and sections mentioned in our response is based on the revised version of the manuscript. }}
+
+
+\section*{First Referee}
+We thank the Referee for their careful reading and assessment of our manuscript. We appreciate that the Referee recognizes our finding of the nice mathematical relation between the spin string operators and the Majorana strings. We also appreciate the comments on the potential interest of this work in some research areas. Before addressing the minor points raised by the Referee, we would like to review the motivation and emphasize the potential value of this work. 
+
+First, our work does not simply reproduce the result proposed in Ref.~[21]. Despite the cleverness of the method proposed in this earlier work, some important problems remain unclear. The first problem, which we think is the most important part that is missed in Ref.~[21], is the validity of Eq.~(42) of our work (or Eq.~(5) in Ref.~[21]) for the cases where the subregion has an odd number of lattice sites. The method proposed in Ref.~[21] and its supplementary material began with a special technique of reshuffling gauge fields crossing the boundary of the subregion. The validity of this clever trick is based on the assumption that the subregion has an even number of lattice sites. Otherwise, we could not bypass the difficulties of \textit{cutting the gauge fields} that cross the entanglement cut, which has been notoriously confusing in analyzing the entanglement of systems with gauge degrees of freedom. A consequence of this even-odd effect is that the fermion parity is crucial in the entanglement spectrum. This reflects two contributions of our work. One is that (i) our approach incorporates the entire entanglement spectrum in the physical spin basis rather than focusing only on the matter sector, and (ii) the demonstration of the interplay between fermion parity and entanglement. The former is discussed in Sec.~IV.C and D, and the latter is discussed in Sec.~IV.B and E. Also, rather than using the replica trick to compute the entanglement entropy, our approach allows us to obtain the entanglement spectrum, which contains richer information than the entropy. Furthermore, the entanglement spectrum obtained through our approach is based on a more insightful physical picture involving higher-form symmetry and lattice gauge theory inspired by Ref.~[45] in the manuscript (discussed in Sec.~IV.C), which has become central to modern condensed matter and even high-energy physics. Although this framework cannot apply to general QSLs directly, it applies to states that possess exact 1-form Wilson symmetry. In other words, from the gauge theory perspective, it applies to states whose gauge flux is static. This is also the reason why we did not discuss the matter sector in detail, because this work aims to uncover the common fundamental properties of QSLs with these features, which is more universal in the sense that it does not depend on the details of the model's coupling parameters.   
+
+Second, this work is intended to provide insight into how to construct the density matrix of QSLs in terms of spin operators. The value of this attempt lies in the need for density matrices in quantum resource theory and quantum information theory. Because of this, we revise the first few paragraphs in the introductory section to guide the reader in this direction. In these research areas, the most fundamental operational elements are spins, also known as qubits, rather than Majorana fermions. Without the density matrix explicitly represented in terms of spins, it would be difficult to formulate how the quantum gates and quantum channels act on the state. At the same time, the experimental operation of states in the area of quantum resources is often performed by manipulating spins rather than the derived abstract degrees of freedom such as Majorana fermions. The mathematical form of the density matrix proposed in our work can also serve as a benchmark for future theoretical research on Kitaev spin liquids at finite temperature and for numerical studies of the generalized Kitaev model with non-Kitaev interactions included in the Hamiltonian. In other words, this work provides a starting point for extending it to the general cases. 
+
+In the following, we address each of the Referee's minor points concerning readability in detail, and we indicate the corresponding changes made in the revised manuscript.
+
+\begin{enumerate}
+    \item \textbf{\textit{One important question regarding the central equations Eq. 13 and Eq. 21. Is this writing of the DM general or only working for the Kitaev model. It seems to me that it only holds for a set of operators $\mathcal{O}_n$ with $\mathrm{Tr}(\mathcal{O}_n \mathcal{O}_m)=0$ when $n$ is different from $m$, the authors use the word "independent observables". I think this equation needs more justification/explanation.}}
+
+    Thanks for pointing out the confusion. Eq~(13) is a general identity for expanding a density matrix in terms of a set of \textit{orthonormal Hermitian basis operators}. To avoid possible confusion, we emphasize this fact in the the paragraph under Eq.~(13), which is rephrased into ``\textit{Following this narrative, in general, a DM can be expanded by a set of orthonormal Hermitian basis operators $\{\mathcal{O}_n \}$ as follows (Eq.(13)), where $N$ is the total number of spins in the system. In constructing the above equation, the operators $\mathcal{O}_n$ are chosen as Pauli group elements composed of Pauli spin operators, for every observable in a spin-1/2 system can be expanded in terms of Pauli group elements.}'' In the revised version, we specify the operators as \textit{elements in the Pauli group}. In this way, the term \textit{independent} becomes stronger, because every independent operator is exactly a Pauli group element, whose properties are well established in the literature. 
+
+    \item \textbf{\textit{Some notations are left undefined and remain unclear to me. In particular, what are the constants $N$, $N_p$ and $N^A_p$ as appearing in Eq. 16 and Eq. 21 for example? The authors may need to repeat their meanings in different places to avoid confusion.}}
+
+    Sorry for my neglect. We have added the definitions of these notations below Eq.~(13) and above Eq.~(20). We also mentioned them once again below Eq.~(18) and Eq.~(21). 
+
+    \item \textbf{\textit{Between Eq. 35 and Eq. 36, the authors perform some calculations, and there is a term proportional to $\ln2$ appearing in $\rho^F \ln\rho^F$. I think the authors need to provide more details on these equations as it seems the $\ln2$ term is central to the area law part of the EE.}}
+
+    Thanks for your advice. We have added a paragraph following Eq.~(38), in which we emphasize that the term proportional to $\ln 2$ arises from the mismatch between the Hilbert space dimensions. Such a term was later converted into the area-law entropy using identity (37).
+
+    \item \textbf{\textit{The authors did not give a discussion on the EE results. From what I can see, it looks like Eq. 37 and Eq. 45 can be taken as their final results for EE? Does the "area law" part mainly come from the gauge contribution? What is the implications? What is the form of the fermion part? Although these may have been discussed in Ref. 21, it's still better to have such a discussion here.}}
+
+    Regarding the question that \textit{the authors did not give a discussion on the EE result}, we actually spend an entire section (Sec.~IV) to address this question. Here, we explain this more clearly.
+    
+    From our point of view, both even and odd cases are included in Eq.~(42). In odd cases, Eq.~(46) is the form before unpacking the enlarged correlation matrix $\tilde{\Gamma}^{(c)}$. Following Eq.~(46) and the discussion below the equation, we pointed out that the form of the EE reduces to Eq~(46). Therefore, Eq.~(46) is the \textit{only} final result.
+
+    Regarding the area law part, the manuscript explicitly demonstrates the area law in the gauge part, which has already been discussed in \href{https://doi.org/10.1103/PhysRevLett.105.080501}{Phys. Rev. Lett. 105, 080501}. This manuscript focuses on the origin of the degeneracy in the ES and how to uncover this structure by exploiting spin formulation. Therefore, we wouldn't say that the area-law part mainly comes from the gauge contribution. The only conclusion drawn in this manuscript is that the matter sector of the EE arises from the identical blocks, and the gauge sector arises from the degeneracy in the ES. 
+
+    The implication of the form of EE is discussed in many paragraphs scattered throughout the manuscript. It is discussed mainly in Sec.~IV, where we demonstrated that the degeneracy in the ES yields the mathematical form of EE. The logic is that the mathematical form of the EE (Eq.~(42)) implies the degeneracy in the ES (Sec.~IV.A and B). Following this intuition, our approach (Sec.~IV.C, D, and E) successfully proves such a degeneracy, and the proof is based on the gauge structure hidden in the Kitaev ground state that can be fully uncovered using the spin formulation. 
+
+    \item \textbf{\textit{ In the discussion the authors state that the method works for all "Kitaev-like" models, including the chiral spin liquid models like: \href{https://doi.org/10.1103/PhysRevB.100.195131}{Phys. Rev. B 100, 195131(2019)}, \href{https://doi.org/10.1103/PhysRevB.101.041114}{Phys. Rev. B 101, 041114(R) (2020)} etc. I think it is essential to mention these works in the text and discuss/predict how the EE in these chiral spin liquid models differ from the original Kitaev model. Should the difference come mainly from the fermion part or gauge part? Would the topological nature of the fermion add some interesting features?}}
+
+    Thanks for providing these two insightful papers. We have included them as references in the paragraph about chiral spin liquids. We also added a little explanation on the validity of the spin formulation for Kitaev-like models and how the time-reversal symmetry is implied by the plaquette projector affected by the lattice geometry. 
+    
+    However, the main goal of the paragraph is to emphasize the \textit{similarity} instead of the \textit{differences} from the Kitaev model. In the meantime, the spin formulation offers little additional insight into the fermion sector. Therefore, we do not focus extensively on the fermion sector or the differences in it among these models.
+    
+\end{enumerate}
+
+\section*{Second Referee}
+
+We thank the Referee for their careful reading of our manuscript and for their positive and encouraging assessment of our work. We are grateful that the Referee recognizes the value of formulating the density matrix and entanglement structure of the Kitaev spin liquid ground state directly in terms of spins, and for highlighting the significance of expressing the matter–gauge separation of the entanglement entropy and the origin of the entanglement spectrum degeneracy entirely within the spin formulation. We also appreciate the Referee's comment on the potential broader applicability of our approach to other systems such as chiral spin liquids, which we believe strengthens the relevance of this work beyond the pure Kitaev model. In the following, we address each of the Referee's minor points concerning readability in detail, and we indicate the corresponding changes made in the revised manuscript.
+
+\begin{enumerate}
+    \item \textbf{\textit{On page 3, in the left column, the authors introduce $b_i^x b_i^y b_i^z c_i = 1$ as the Gauss-law constraint in the Majorana representation. As far as I understand, this constraint is closely related to the Gutzwiller projection onto the physical Hilbert space discussed immediately before. It may be helpful for readers if the authors could clarify this relation explicitly.}}
+
+    Thanks for the suggestion. Here is the revision. Because the relation between the Gutzwiller projection and the Gauss-law constraint, bridged through the constraint $b_i^x b_i^y b_i^z c_i = 1$, has been briefly discussed in Appendix~D of the revised version (Appendix~C in the original version), We did not add much additional explanation in the main text, partly because the Gutzwiller projection is not crucial in this research. We refer readers to Appendix~D of the revised version in case they don't have a spin-liquid background. we also emphasize the relation between the Gutzwiller projection and the Gauss-law constraint in a standard mathematical formalism to make the information as clear as possible. All edits are marked in red.
+
+    \item \textbf{\textit{For the phase factor $\varphi(\mathfrak{D},\mathfrak{D}')$ appearing in Eq. (6), it would be helpful to state explicitly how it transforms under the interchange of $\mathfrak{D}$ and $\mathfrak{D}'$, in particular, whether or not it changes sign.}}
+
+    Thanks for this interesting question. We added a new appendix (Appendix A of the revised version) to address this issue with mathematical rigor. A short answer to this question is that the phase factor can change sign if the two configurations are exchanged. The relation between $\varphi(\mathfrak{D}, \mathfrak{D}')$ and $\varphi(\mathfrak{D}', \mathfrak{D})$ is shown in Theorem A.7 in Appendix A of the revised version.
+
+    \item \textbf{\textit{ On page 4, in the right column, below the four conditions (i)–(iv), the authors write, “At the same time, the right panel of Fig. 1 shows that …” Should “the right panel” instead read “the left panel”?}}
+
+    Thanks for pointing out the typo. The correction is marked in red in the revised version.
+
+    \item \textbf{\textit{ In the first line of Eq. (16), the factor $1/2^2$ appears to be unnecessary if $P^{(p)}$ is defined as in Eq. (11). The second line of Eq. (16), however, appears to be correct. The authors may wish to check this equation.}}
+    
+    Thanks for pointing out the typo. The coefficients are corrected (marked in red) to ensure the equations are consistent.
+
+    \item \textbf{\textit{On the left-hand side of Eq. (22), the density matrix is written as $\rho^F$. Should this instead be $\rho_F$, with F as a subscript?}}
+
+    In our notation, the subscript is left for the indicators of the subregions. A reduced density matrix of the fermion system in a subregion $A$ is denoted by $\rho^F_A$. Therefore, we choose $\rho^F$ to denote the fermionic density matrix instead of $\rho_F$ to unify the notation throughout the manuscript and to avoid possible confusion of the fermion indicator `\textit{F}' with the subregion subscript.
+
+    \item \textbf{\textit{In Sec. III A, the separation into matter and gauge contributions is explained only in the fermionic language at this point. Since one of the central aims of the manuscript is to reinterpret these properties entirely in terms of spin degrees of freedom, it may be useful to indicate here that a spin-based interpretation will be developed later in the manuscript. This would help guide the reader and clarify the connection between this section and the subsequent analysis.}}
+
+    Thanks for the suggestion. We have added a paragraph ``\textit{In fact, the physical interpretation of the properties of string operators listed from Eq.~(7) to Eq.~(12) is that the system can be separated into the gauge and matter parts, in which the gauge part is governed by the projector $\mathcal{P}^{(p)}$ while the matter part is encoded in the endpoints of string operators. The only difference is that this fact is demonstrated entirely using spin operators throughout this work. More details will be presented in Sec.~III D.}'' at the end of Sec.~III A. to emphasize this aspect.
+\end{enumerate}
+
+\section*{Third Referee}
+
+We thank the Referee for their careful reading of our manuscript and for their encouraging assessment of our work. We are grateful that the Referee recognizes our detailed comparison between the spin and fermionic representations of the density matrices as clarifying the origin of the matter-gauge separation of the entanglement entropy, and that the Referee highlights our identification of the block-diagonal structure of the RDMs and its connection to the underlying 1-form gauge symmetry as a valuable contribution. We also appreciate the Referee's acknowledgment of our treatment of subsystems with an odd number of sites, which extends beyond the approach proposed in \href{https://doi.org/10.1103/PhysRevLett.105.080501}{Phys. Rev. Lett. 105, 080501}. In the following, we address each of the Referee's minor points in detail, and we indicate the corresponding changes made in the revised manuscript.
+
+\begin{enumerate}
+    \item \textbf{\textit{Eq. (16): Taking the trace of Eq. (15) does not yield the first line of Eq. (16) directly. It appears that the definition of $\mathcal{P}^{(p)}$ changes between these equations. The authors should clarify or amend this step.}}
+
+    The second referee has also mentioned this typo. Thanks for pointing it out. The coefficients are corrected (marked in red).
+
+    \item \textbf{\textit{Equation above Eq. (21): In the second line, should $\mathcal{A} \in A$ be corrected to $\mathcal{A} \subset A$?}}
+
+    Thanks for pointing out this typo. It has been corrected (marked in red).
+
+    \item \textbf{\textit{Line below Eq. (24): Should $\mathcal{P}_G$ read $\mathcal{P}^{(p)}$?}}
+
+    Thanks for pointing out this typo. It has been corrected (marked in red).
+
+    \item \textbf{\textit{Five lines above Eq. (34): There appears to be a missing minus sign in the definition of the entanglement entropy (EE).}}
+
+    Thanks for pointing out this typo. It has been corrected (marked in red).
+
+    \item \textbf{\textit{A few lines below Eq. (35): The authors state "we further define the following two functions", but I suggest rephrasing this to avoid presenting them as new definitions, as the function $f$ was already defined previously.}}
+
+    We agree with your opinion. The two functions in Eq.~(36) are not newly defined, since they are merely the integrands of the entropy. The message we want to convey is that both integrands can be represented in terms of the function $f$, but in different representations. Therefore, it has been rephrased to ``\textit{the following two functions that appear in the formula for computing the entropy can be expressed in terms of the function $f$ with different representations as the domain}.''
+
+    \item \textbf{\textit{Sec. IV C, 2nd paragraph: The authors write "Each residue Gauss law". Here, "residue" should be corrected to the adjective "residual". Please check for similar word choice issues elsewhere in the manuscript.}}
+
+    Thanks for pointing out this typo. It has been corrected (marked in red).
+
+    \item \textbf{\textit{Sec. IV D, 2nd paragraph: The text mentions "$2^L$ identical copies" and "$2^L$-fold degeneracy". Based on the argument below Eq. (54), should these factors of $2^L$ be $2^{L-1}$?}}
+
+    Thanks for pointing out the inconsistency. We thought it would be confusing to state that there is a $2^{L-1}$-fold degeneracy before explicitly demonstrating how the factor $2^{-1}$ arises. However, it seems that the inconsistency leads to more confusion. Therefore, we have changed $2^L$ to $2^{L-1}$ as you suggested.
+
+    \item \textbf{\textit{Sec. IV E, 2nd-to-last paragraph: The authors write "$2^{L+1}$ identical blocks". While there are $2^{L+1}$ blocks in total, my understanding is that the Wilson operators can only relate $2^L$ of them. Could the authors clarify whether all $2^{L+1}$ blocks are truly identical?}}
+
+    That is a typo. Thanks for pointing it out. To make this conclusion, along with the notation $L$, more understandable, we also included the analysis of the degeneracy shown in Eq.~(60). 
+
+    \item \textbf{\textit{Sec. V, 3rd paragraph: In the phrase "an additional two-fold degeneracy in the EE", should "EE" be "ES" (entanglement spectrum)?}}
+
+    Thanks for pointing out the typo. It has been corrected (marked in red).
+
+    \item \textbf{\textit{Terminology: The text occasionally uses "equivalent classes" instead of "equivalence classes". The latter should be used consistently throughout the manuscript.}}
+
+    Thanks for pointing out this typo. It has been corrected (marked in red).
+    
+\end{enumerate}
+
+\end{document}

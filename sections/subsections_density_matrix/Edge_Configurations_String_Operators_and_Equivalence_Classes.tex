@@ -25,7 +25,7 @@ The order of multiplying dimer operators $\dimer{i}{j}$ in the above product is 
 \begin{equation}\label{equ.Sigma-representation}
 \Sigma_{\mathfrak{D}}\Sigma_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}') \Sigma_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
-
+\alert{Detailed discussions on the fundamental properties of the phase factor $\varphi(\mathfrak{D},\mathfrak{D}')$ are given in Appendix~\ref{appendix:projective-rep}}.
 
 Compared to the open strings with endpoints, edge configurations composed of closed loops form a special class, since the expectation values of their corresponding string operators are equal to 1. For example, the simplest closed loop $\de p$ consists of six edges surrounding a plaquette $p$, and the corresponding string operator 
 \[
@@ -54,8 +54,9 @@ for an arbitrary set $\mathcal{A}$ of plaquettes due to the $\mathbb{Z}_2$ natur
 \end{equation}
 where $\Tilde{W}_v\equiv\Sigma_{\mathcal{L}_v}$ and $\Tilde{W}_h\equiv\Sigma_{\mathcal{L}_h}$ are the corresponding string operators of non-contractible loops $\mathcal{L}_v$ and $\mathcal{L}_h$, respectively, as illustrated in the right panel of \autoref{fig.equivalent}.
 \begin{figure}
-    \includegraphics[width=0.45\linewidth]{figures/equivalent_loop.pdf}
-    \includegraphics[width=0.45\linewidth]{figures/equivalent.pdf}
+    \includegraphics[height=0.12\textheight]{figures/equivalent_loop.pdf}
+    \hspace{3mm}
+    \includegraphics[height=0.12\textheight]{figures/equivalent.pdf}
     \caption{The left panel shows two equivalent edge configurations $\mathfrak{D}_1\sim\mathfrak{D}_2$ bridged via a loop $\mathcal{C}=\de\mathcal{A}$. The two configurations share the same endpoints $i$ and $j$. The right panel shows three possible ways to get other dimer configurations with the same expectation value of the string operators. The two Wilson loops, $\Tilde{W}_h\equiv \Sigma_{\mathcal{L}_h}$ and $\Tilde{W}_v\equiv \Sigma_{\mathcal{L}_v}$ commute $[\Tilde{W}_h,\Tilde{W}_v]=0$, and neither of them can be constructed by local operators $W_p$'s. Aside from the non-contractible Wilson loops, we also have local ones, given by plaquette operators $ W_p$ inside the region $\mathcal{A}$.}
     \label{fig.equivalent}
 \end{figure}
@@ -82,9 +83,5 @@ for an arbitrary closed loop $\mathcal{C}$. Thus, only the information of config
     \item[(iii)] $\mathfrak{D}_1=\mathfrak{D}_2\ominus\de\mathcal{A}\ominus\mathcal{L}_h$
     \item[(iv)] $\mathfrak{D}_1=\mathfrak{D}_2\ominus\de\mathcal{A}\ominus\mathcal{L}_v\ominus\mathcal{L}_h$
 \end{enumerate} 
-Equivalent configurations are collected into \emph{equivalence classes} $[\mathfrak{D}^c]=\lrg{\mathfrak{D}:\mathfrak{D}\sim\mathfrak{D}^c}$ characterized by each representative $\mathfrak{D}^c$. At the same time, the right panel of Fig.~\ref{fig.equivalent} shows that the two equivalent edge configurations must share the same set of endpoints, providing a simple way to identify them. In other words, there is a one-to-one correspondence between an equivalence class for edge configurations $[\mathfrak{D}]$ and the \textit{set of endpoints} of the representative configuration $\mathfrak{D}$, denoted by $\mrm{EP}\lr{\mathfrak{D}}$. 
-
-
-
-Aside from the convenience that endpoint sets uniquely determine the \alert{equivalence class}, the physical picture of the equivalence classes and endpoint sets also implies that a Pauli string in the spin representation is identical to the two Majorana fermions residing at the endpoints of the string. This can be seen in the \textit{commutation} among the endpoints of strings~\cite{Kitaev_2006, Kawagoe-Levin_2020, fermion-and-string}. More details will be discussed in Sec.~\ref{sec:Emergent-Fermions-at-the-Endpoints}. 
+Equivalent configurations are collected into \emph{equivalence classes} $[\mathfrak{D}^c]=\lrg{\mathfrak{D}:\mathfrak{D}\sim\mathfrak{D}^c}$ characterized by each representative $\mathfrak{D}^c$. At the same time, \alert{the left panel} of Fig.~\ref{fig.equivalent} shows that the two equivalent edge configurations must share the same set of endpoints, providing a simple way to identify them. In other words, there is a one-to-one correspondence between an equivalence class for edge configurations $[\mathfrak{D}]$ and the \textit{set of endpoints} of the representative configuration $\mathfrak{D}$, denoted by $\mrm{EP}\lr{\mathfrak{D}}$. Aside from the convenience that endpoint sets uniquely determine the \alert{equivalence class}, the physical picture of the equivalence classes and endpoint sets also implies that a Pauli string in the spin representation is identical to the two Majorana fermions residing at the endpoints of the string. This can be seen in the \textit{commutation} among the endpoints of strings~\cite{Kitaev_2006, Kawagoe-Levin_2020, fermion-and-string}. \alert{In fact, the physical interpretation of the properties of string operators listed from Eq.~\eqref{equ.lattice-Stokes} to Eq.~\eqref{eq.W_absorb} is that the system can be separated into the gauge and matter parts, in which the gauge part is governed by the projector $\mathcal{P}^{(p)}$ while the matter part is encoded in the endpoints of string operators. The only difference is that this fact is demonstrated entirely using spin operators throughout this work. More details will be presented in Sec.~\ref{sec:Emergent-Fermions-at-the-Endpoints}.} 
 

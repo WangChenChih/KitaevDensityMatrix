@@ -4,7 +4,9 @@ The ground state of Hamiltonian \eqref{equ.MF-Hamiltonian} reads~\cite{Yao-Qi_20
 \begin{equation}\label{equ.fermion-state}
     \ket{\psi} = \sqrt{2^{N-1}} \mathcal{P}_G\ket{u}\ket{M}
 \end{equation}
-The Gutzwiller projector $\mathcal{P}_G=\prod_{i}\lr{\frac{\mathds{1}+D_i}{2}}$ implements the Gauss law of the $\mathbb{Z}_2$ gauge theory in the Majorana representation of the Kitaev model, and $D_i = b^x_ib^y_ib^z_i c_i$ is the generator of the $\mathbb{Z}_2$ gauge transform. The Gutzwiller projector can also be expanded in the following way~\cite{Pedrocchi-Chesi-Loss_2011, Zschocke-Vojta_2015, Fu-Knolle-Perkins-2018}
+The Gutzwiller projector $\mathcal{P}_G=\prod_{i}\lr{\frac{\mathds{1}+D_i}{2}}$ implements the Gauss law of the $\mathbb{Z}_2$ gauge theory in the Majorana representation of the Kitaev model, and $D_i = b^x_ib^y_ib^z_i c_i$ is the generator of the $\mathbb{Z}_2$ gauge transform. \alert{Aside from the gauge theory perspective, the physical meaning of a Gutzwiller projection is to project states in the enlarged parton Hilbert space back to the physical space. As mentioned in Sec.~\ref{sec:model-intro}, the Pauli spin operators must satisfy $-i\sigma^x\sigma^y\sigma^z = \mathds{1}$. Substituting the Majorana representation of the Pauli spin operators into this relation leads to the physical constraint for partons $D_i = b^x_ib^y_ib^z_i c_i = \mathds{1}$ in the physical sector.} 
+
+The Gutzwiller projector can also be expanded in the following way~\cite{Pedrocchi-Chesi-Loss_2011, Zschocke-Vojta_2015, Fu-Knolle-Perkins-2018}
 \[
 \mathcal{P}_G = \prod_{i}\lr{\frac{\mathds{1} + D_i}{2}}= \frac{1}{2^{N-1}}\lr{\frac{\mathds{1} + \prod_iD_i}{2}}\sum_{\lrg{i}}'\prod_{j\in\lrg{i}}D_j
 \]
@@ -37,7 +39,7 @@ where $\lrg{i}$ stands for the set of lattice points. The normalization factor $
 \[
 \rho_F = \frac{1}{2^{N/2}}\sum_{\mrm{EP}(\mathfrak{D})}\anglelr{\mathcal{M}_{\mathfrak{D}}}\mathcal{M}_{\mathfrak{D}}.
 \]
-Because $\anglelr{\mathcal{M}_{\mathfrak{D}}} = \mathfrak{C}_{\mathfrak{D}}$ in the Kitaev model, and an endpoint set $\mrm{EP}(\mathfrak{D})$ uniquely corresponds to an equivalence class $[\mathfrak{D}]$, the DM can finally be written in the form of Eq.~\eqref{equ.rho-F}. 
+Because $\anglelr{\mathcal{M}_{\mathfrak{D}}} = \mathfrak{C}_{\mathfrak{D}}$ in the pure Kitaev model, and an endpoint set $\mrm{EP}(\mathfrak{D})$ uniquely corresponds to an equivalence class $[\mathfrak{D}]$, the DM can finally be written in the form of Eq.~\eqref{equ.rho-F}. 
 
 Combining these results, we ultimately obtain the DM of the ground state
 \begin{equation}\label{equ.Majorana-density-matrix}
@@ -74,7 +76,8 @@ because $\mathcal{M}_\mathfrak{D}$ is physical only when $\mathfrak{D}\sim\varno
     &= \frac{1}{2^{N/2}}\sum_{[\mathfrak{D}']} \varphi(\mathfrak{D},\mathfrak{D}') \mathfrak{C}_{\mathfrak{D}'} \mathcal{P}_G \mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'} \mathcal{P}_G \\
     &= \frac{1}{2^{N/2}} \mathfrak{C}_{\mathfrak{D}} \mathcal{P}_G
 \end{align*}
-Notice that the factor $\varphi(\mathfrak{D},\mathfrak{D})=+1$ when the number of $A$-sublattice points and that of $B$-sublattice points in $\mrm{EP}(\mathfrak{D})$ are identical. Otherwise, it will be equal to $-1$. We simply reduce $\varphi(\mathfrak{D},\mathfrak{D})$ to $+1$ directly because only those configurations satisfying $\varphi(\mathfrak{D},\mathfrak{D})=+1$ have finite values of $\mathfrak{C}_\mathfrak{D}$. Combining this result with the DM obtained previously, we obtain the following result
+%Notice that the factor $\varphi(\mathfrak{D},\mathfrak{D})=+1$ when the number of $A$-sublattice points and that of $B$-sublattice points in $\mrm{EP}(\mathfrak{D})$ are identical. Otherwise, it will be equal to $-1$. 
+The phase factors $\varphi(\mathfrak{D},\mathfrak{D})$ reduce to $+1$ because only those configurations satisfying $\varphi(\mathfrak{D},\mathfrak{D})= \eta_\mathfrak{D} = +1$ have finite values of $\mathfrak{C}_\mathfrak{D}$. See Definition~\ref{def:good-def} and Theorem~\ref{thm:phi-self}. Combining this result with the DM obtained previously, we obtain the following result
 \begin{equation}\label{equ.spin-rho-from-fermion}
     \rho = \frac{1}{2^{N+1}} \sum_{\mathfrak{D}} \mathfrak{C}_\mathfrak{D} \Sigma_\mathfrak{D}. 
 \end{equation}

@@ -1,13 +1,21 @@
 \section{Introduction}
-The Kitaev honeycomb model~\cite{Kitaev_2006} is a paradigmatic example of an exactly solvable quantum spin system hosting a quantum spin liquid ground state. It exhibits a range of remarkable features, including fractionalization of degrees of freedom, nontrivial topological order, and anyonic excitations~\cite{Savary-Balent_2017, Zhou-Kanoda-Ng_2017}, with growing experimental relevance~\cite{Matsuda-Shibauchi-Kee_2025, Kasahara-etal_2018, Sandilands-Tian-Plumb-Kim-Burch_2015, Nasu-Knolle-Kovrizhin-Motome-Moessner_2016}. 
 
-Quantum entanglement provides a powerful framework for characterizing such exotic phases of matter beyond the conventional Ginzburg–Landau paradigm~\cite{ZengChenZhouWen2019, Wen_2017, Laflorencie_2016, Amico-Fazio-Osterloh-Vedral_2008, Eisert-Cramer-Plenio_2010}. 
-%
-In particular, the reduced density matrix (RDM) encodes all entanglement properties of a subsystem, including the entanglement entropy (EE) and entanglement spectrum (ES), which have been widely used to diagnose topological order and bulk-boundary correspondence~\cite{Li-Haldane, Li-Haldane-1, Li-Haldane-2}. 
-%
-Therefore, obtaining an explicit and physically transparent form of the density matrix (DM) is essential for understanding the microscopic origin of entanglement structures in quantum many-body systems.
+\valert{
+Quantum spin liquid (QSL), a novel phase of matter lying beyond the conventional Ginzburg–Landau paradigm, has attracted central interest in modern strongly correlated physics due to its fascinating topological features and fractionalized excitations~\cite{Savary-Balent_2017, Zhou-Kanoda-Ng_2017}. The theoretical analysis of QSLs is inherently challenging,  as the absence of local order parameters and strong correlations render several standard approaches ineffective.} 
 
-For the Kitaev model, substantial progress has been made in understanding its entanglement properties within the fermionic formulation, such as parton construction and Jordan-Wigner transformation~\cite{Kitaev_2006, Burnell-Nayak_2011, Feng-Zhang-Xiang_2007, Chen-Hu_2007, Chen-Nussinov_2008, Fu-Knolle-Perkins-2018}, where the system is mapped to exactly solvable free Majorana fermions coupled to a static $\mathbb{Z}_2$ gauge field. 
+Quantum entanglement provides a powerful framework for characterizing exotic phases of matter~\cite{ZengChenZhouWen2019, Wen_2017, Laflorencie_2016, Amico-Fazio-Osterloh-Vedral_2008, Eisert-Cramer-Plenio_2010}. 
+%
+In particular, the reduced density matrix (RDM) encodes all entanglement properties of a subsystem, including the entanglement entropy (EE) and entanglement spectrum (ES), which have been widely used to diagnose topological order~\cite{Levin-Wen_2006, Kitaev-Preskill_2006} and bulk-boundary correspondence~\cite{Li-Haldane, Li-Haldane-1, Li-Haldane-2}. 
+%
+\valert{Quantum entanglement is incorporated into a broader quantum resource theory~\cite{Chitambar-Gour}. In this theory, non-stabilizerness or magic~\cite{Bravyi-Gosset_2016, Bravyi-Kitaev_2005} and its application to spin systems~\cite{Viscardi-Dalmonte-Hamma-Tirrito_2026, Fu-Li-Luo_2022} has drawn considerable attention from the quantum computation and quantum matter communities for its ability of characterizing the classical simulability of quantum systems~\cite{Gottesman_1998, Bravyi-Gosset_2016, Gottesman_1998, Veitch-Hamed-Gottesman-Emerson_2014}. Some recent works exploited these properties to optimize the simulation of quantum spin system~\cite{Li-Qian-Qin_2026, Qian-Huang-Qin_2024}. These discoveries not only open a new possibility of simplifying the simulation of QSL states, but also provide a new perspective on the structure of quantum matter. 
+In practice, the description of both the quantum entanglement and magic information often relies on explicit information of quantum states, which are often formulated using density matrices (DM), represented in terms of spins~\cite{Hamma-Ionicioiu-Zanardi_2005, Leone-Oliviero-Hamma_2022, Leone-Bittel_2024}.
+%
+Regarding these important developments, a physically transparent form of the DM in the spin formulation is essential for understanding the quantum features of spin systems. Following this narrative, an explicit form of the DM represented in the spin formulation is crucial for investigating the deeper structure of QSL states from the quantum resource theory perspective, and an exactly solvable model that hosts a QSL ground state would be a feasible starting point for exploring a systematic approach to constructing a DM of a QSL state in the spin formulation, among which the Kitaev model is by far the simplest non-trivial model that hosts a QSL ground state.
+}
+
+\valert{
+The Kitaev honeycomb model~\cite{Kitaev_2006} is a paradigmatic example of an exactly solvable quantum spin system hosting a QSL ground state. It exhibits a range of remarkable features, including fractionalization of degrees of freedom, nontrivial topological order, and anyonic excitations~\cite{Savary-Balent_2017, Zhou-Kanoda-Ng_2017}, with growing experimental relevance~\cite{Matsuda-Shibauchi-Kee_2025, Kasahara-etal_2018, Sandilands-Tian-Plumb-Kim-Burch_2015, Nasu-Knolle-Kovrizhin-Motome-Moessner_2016}.}
+Substantial progress has been made in understanding the entanglement properties of the Kitaev ground state within the fermionic formulation, such as parton construction and Jordan-Wigner transformation~\cite{Kitaev_2006, Burnell-Nayak_2011, Feng-Zhang-Xiang_2007, Chen-Hu_2007, Chen-Nussinov_2008, Fu-Knolle-Perkins-2018}, where the system is mapped to exactly solvable free Majorana fermions coupled to a static $\mathbb{Z}_2$ gauge field. 
 %
 In this representation, the EE is known to separate into contributions from matter (fermionic) and gauge degrees of freedom~\cite{Yao-Qi_2010}, and the ES can be obtained from fermionic correlation functions using standard techniques for free fermion systems~\cite{Jin-Korepin_2004, Vidal-Latorre-Rico-Kitaev_2003, Latorre-Rico-Vidal_2004, Peschel_2003, Peschel-Eisler_2009, Chung-Peschel_2001, Cheong-Henley_2004}. 
 %
@@ -21,7 +29,7 @@ In addition, existing approaches often treat gauge and matter sectors asymmetric
 %
 Furthermore, the fermion representation has a weakness in entanglement analysis, which is the difficulty of cutting the gauge field living on edges when performing a bipartition. Although a clever way to avoid this problem by redefining the gauge degrees of freedom at the boundary has been invented~\cite{Yao-Qi_2010}, the treatment of subsystems with an odd number of lattice sites still introduces additional subtleties that have not been fully resolved within a unified framework.
 %
-Together, these issues point to the need for an explicit formulation of the DM in the spin representation that can directly reveal the microscopic origin of entanglement structures, such as the separability of entropy and the degeneracy of the ES.
+These issues again point to the need for an explicit formulation of the DM in the spin representation that can directly reveal the microscopic origin of entanglement structures, such as the separability of entropy and the degeneracy of the ES.
 
 
 
