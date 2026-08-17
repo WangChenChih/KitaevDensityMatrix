@@ -19,9 +19,9 @@ Details of the derivations are presented in Appendix \ref{appendix:Majorana-deri
 %
 . To manifest the similarity between the spin DM \eqref{equ.density-matrix} and the Majorana DM \eqref{equ.rho-F}, we define a set of operators $\mathcal{S}_{\mathfrak{D}}$ for each operator that corresponds to an edge configuration
 \begin{equation}\label{equ.S-def}
-    \mathcal{S}_\mathfrak{D} \equiv \mathcal{P}^{(p)}\Sigma_\mathfrak{D}
+    \mathcal{S}_\mathfrak{D} \equiv \hat{\Pi}\Sigma_\mathfrak{D}
 \end{equation}
-Given Eq.~\eqref{equ.Sigma-representation} and the fact that $[\alert{\mathcal{P}^{(p)}},\Sigma_{\mathfrak{D}}]=0$, the set of operators $\lrg{\mathcal{S}_{\mathfrak{D}}}$ also forms a representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$, 
+Given Eq.~\eqref{equ.Sigma-representation} and the fact that $[\alert{\hat{\Pi}},\Sigma_{\mathfrak{D}}]=0$, the set of operators $\lrg{\mathcal{S}_{\mathfrak{D}}}$ also forms a representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$, 
 \begin{equation}\label{equ.U-rep-algebra}
     \mathcal{S}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{S}_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
@@ -32,11 +32,11 @@ With the string representation \eqref{equ.S-def} and \eqref{equ.U-rep-algebra}, 
 which is of a form similar to Eq.~\eqref{equ.rho-F} if those $\mathcal{S}$-operators are replaced by $\mathcal{M}$-operators. This is reminiscent of different representations of the same algebra.
 If we use the Majorana fermions to represent spin operators as $\sigma^\mu\to ib^\mu c$, then 
 \begin{align*}
-    \mathcal{S}_\mathfrak{D} &\to \mathcal{P}^{(p)} \prod_{\anglelr{ij}\in \mathfrak{D}}\lr{\hat{u}_{ij}ic_jc_i} \\
-    &= \mathcal{P}^{(p)} \lrm{\prod_{\anglelr{ij}\in \mathfrak{D}}\hat{u}_{ij}} \mathcal{M}_{\mathfrak{D}}
+    \mathcal{S}_\mathfrak{D} &\to \hat{\Pi} \prod_{\anglelr{ij}\in \mathfrak{D}}\lr{\hat{u}_{ij}ic_jc_i} \\
+    &= \hat{\Pi} \lrm{\prod_{\anglelr{ij}\in \mathfrak{D}}\hat{u}_{ij}} \mathcal{M}_{\mathfrak{D}}
 \end{align*}
-The first two products completely consist of $\hat{u}_{ij}$'s, which commute with each other as well as the $c$-Majorana fermion operators~\footnote{Note that the projector $\mathcal{P}^{(p)}$ becomes
-\[\mathcal{P}^{(p)} \to \prod_{ p}\lr{\frac{\mathds{1} + \prod_{\anglelr{ij}\in p}\hat{u}_{ij}}{2}}\]
+The first two products completely consist of $\hat{u}_{ij}$'s, which commute with each other as well as the $c$-Majorana fermion operators~\footnote{Note that the projector $\hat{\Pi}$ becomes
+\[\hat{\Pi} \to \prod_{ p}\lr{\frac{\mathds{1} + \prod_{\anglelr{ij}\in p}\hat{u}_{ij}}{2}}\]
 in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit{those edges of the plaquette $p$}.}. Therefore, they will not contribute to the phase factor $\varphi\lr{\mathfrak{D},\mathfrak{D}'}$ at all. So, we know that the anti-commutation relations among $c$-Majorana fermions are encoded in the phase factor $\varphi\lr{\mathfrak{D},\mathfrak{D}'}$. In view of this, we conclude that the operators $\mathcal{M}_\mathfrak{D}$ defined by Eq.~\eqref{equ.V-rep-def} also form a projective representation of the edge configuration algebra and share the same phase factor $\varphi\lr{\mathfrak{D},\mathfrak{D}'}$ with the representation $\mathcal{S}$
 \begin{equation}\label{equ.V-rep-algebra}
     \mathcal{M}_{\mathfrak{D}}\mathcal{M}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'}
@@ -44,7 +44,7 @@ in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit
 
 A similar picture also holds for the RDM. we can  define a set of $\mathcal{S}$-operators
 \begin{equation}\label{equ.U-A-def}
-    \mathcal{S}^{(A)}_\mathfrak{D} \equiv \mathcal{P}^{(p)}_A\Sigma_\mathfrak{D}
+    \mathcal{S}^{(A)}_\mathfrak{D} \equiv \hat{\Pi}_A\Sigma_\mathfrak{D}
 \end{equation}
 supported on the subregion $A$. With these newly defined operators, the RDM becomes
 \begin{equation}\label{equ.red-DM-new}

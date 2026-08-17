@@ -10,16 +10,16 @@ We start from the fundamental properties of the DM. A DM must be Hermitian, and 
 \begin{equation}\label{equ.class-sum}
     \sum_{\mathfrak{D}}\mathfrak{C}_{\mathfrak{D}}\Sigma_\mathfrak{D} = \sum_{[\mathfrak{D}^c]}\sum_{\mathfrak{D}\in[\mathfrak{D}^c]}\mathfrak{C}_{\mathfrak{D}}\Sigma_\mathfrak{D}.
 \end{equation}
-We denote by $\mathfrak{C}_{\mathfrak{D}} \equiv \anglelr{\Sigma_\mathfrak{D}}$ the expectation value of the string operators. According to Eq.~\eqref{equ.string-operator-equivalent}, all terms in an equivalence class can be related to each other via the projector $\mathcal{P}^{(p)}$. Thus, the summation in \eqref{equ.class-sum} can be factorized into groups by multiplying $\mathcal{P}^{(p)}$. Therefore, we anticipate that the DM would be of the following form
+We denote by $\mathfrak{C}_{\mathfrak{D}} \equiv \anglelr{\Sigma_\mathfrak{D}}$ the expectation value of the string operators. According to Eq.~\eqref{equ.string-operator-equivalent}, all terms in an equivalence class can be related to each other via the projector $\hat{\Pi}$. Thus, the summation in \eqref{equ.class-sum} can be factorized into groups by multiplying $\hat{\Pi}$. Therefore, we anticipate that the DM would be of the following form
 \begin{equation}\label{equ.rho-factorization}
-    \rho = C \mathcal{P}^{(p)} \sum_{[\mathfrak{D}]} \mathfrak{C}_{\mathfrak{D}} \Sigma_{\mathfrak{D}}.
+    \rho = C \hat{\Pi} \sum_{[\mathfrak{D}]} \mathfrak{C}_{\mathfrak{D}} \Sigma_{\mathfrak{D}}.
 \end{equation}
 The constant $C$ is the normalization factor determined by imposing the constraint $\Tr\rho = 1$. Performing the trace, we have 
 \begin{align}\label{equ.rho-direct-trace-1}
-    \Tr\rho &= \alert{C} \sum_{[\mathfrak{D}]} \mathfrak{C}_{\mathfrak{D}} \Tr\lr{\mathcal{P}^{(p)}\Sigma_{\mathfrak{D}}} \nonumber\\
+    \Tr\rho &= \alert{C} \sum_{[\mathfrak{D}]} \mathfrak{C}_{\mathfrak{D}} \Tr\lr{\hat{\Pi}\Sigma_{\mathfrak{D}}} \nonumber\\
     &= \alert{\frac{1}{2^2}}\frac{C}{2^{N_p}} \sum_{[\mathfrak{D}]} \sum_{\mathcal{A}}'\Tr\lrm{ \lr{2\prod_{p\in\mathcal{A}} W_p}\Sigma_{\mathfrak{D}}},
 \end{align}
-\alert{where $N_p$ represents the total number of hexagons in the lattice~\footnote{For a honeycomb lattice on a torus, the relationship between the total number of lattice sites and the total number of hexagons is $N = 2N_p$}.} The coefficient $1/2^2$ in the \alert{second} line originates from the denominator of projectors provided by the two non-contractible Wilson loops. The two non-contractible Wilson-loop operators drop out because neither the local plaquette operators nor the string operators can annihilate them to yield the identity. Consequently, their contributions vanish upon taking the trace. The summation of plaquette operators arises from the expansion of $\mathcal{P}^{(p)}$
+\alert{where $N_p$ represents the total number of hexagons in the lattice~\footnote{For a honeycomb lattice on a torus, the relationship between the total number of lattice sites and the total number of hexagons is $N = 2N_p$}.} The coefficient $1/2^2$ in the \alert{second} line originates from the denominator of projectors provided by the two non-contractible Wilson loops. The two non-contractible Wilson-loop operators drop out because neither the local plaquette operators nor the string operators can annihilate them to yield the identity. Consequently, their contributions vanish upon taking the trace. The summation of plaquette operators arises from the expansion of $\hat{\Pi}$
 \begin{align}\label{equ.W-prod-expansion}
     \prod_{p}\lr{\mathds{1}+W_p} &= \lr{\mathds{1}+\prod_{p}W_p}\sum'_{\mathcal{A}}\prod_{p\in\mathcal{A}}W_p \nonumber\\
     &= 2\sum'_{\mathcal{A}}\prod_{p\in\mathcal{A}}W_p,
@@ -31,7 +31,7 @@ with $\mathcal{A}$ denoting different sets of plaqette configurations defined in
 To make the trace equal to $1$, we require $C = 2^{-N+N_p}$. 
 In the end, we obtain the exact form of the DM
 \begin{equation}\label{equ.density-matrix}
-    \rho =  \frac{1}{2^{N-N_p}}\mathcal{P}^{(p)}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}},
+    \rho =  \frac{1}{2^{N-N_p}}\hat{\Pi}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}},
 \end{equation}
-\alert{with $N$ denoting the number of lattice sites and $N_p$ the number of hexagons (plaquettes) in the lattice}. As indicated in Sec.~\ref{sec:density-matrix-whole}, there is a one-to-one correspondence between sets of endpoints and equivalence classes. Therefore, the sum in Eq.~\eqref{equ.density-matrix} can also be understood as summing over sets of endpoints. This implies that the details of the strings are smeared out, and only the information of their endpoints remains important. All the information about the details of strings is grouped and stored in the projector $\mathcal{P}^{(p)}$. The separation between the string details and endpoints manifests the separability of the matter sector from the gauge sector.
+\alert{with $N$ denoting the number of lattice sites and $N_p$ the number of hexagons (plaquettes) in the lattice}. As indicated in Sec.~\ref{sec:density-matrix-whole}, there is a one-to-one correspondence between sets of endpoints and equivalence classes. Therefore, the sum in Eq.~\eqref{equ.density-matrix} can also be understood as summing over sets of endpoints. This implies that the details of the strings are smeared out, and only the information of their endpoints remains important. All the information about the details of strings is grouped and stored in the projector $\hat{\Pi}$. The separation between the string details and endpoints manifests the separability of the matter sector from the gauge sector.
 
