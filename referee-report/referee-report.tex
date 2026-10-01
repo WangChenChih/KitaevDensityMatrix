@@ -2,6 +2,7 @@
 \usepackage[margin=2cm]{geometry}
 \usepackage{color}
 \usepackage{amsfonts}
+\usepackage{amsmath}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -47,139 +48,221 @@ American Physical Society
 
 \noindent\alert{\textbf{\underline{Note:} The labeling of equations and sections mentioned in our response is based on the revised version of the manuscript. }}
 
+\section*{General remarks}
+
+We sincerely thank all three Referees for their careful reading of our manuscript and for their constructive comments and suggestions. We are grateful for the thoughtful assessments, which have helped us improve both the presentation and the positioning of the manuscript. 
+%
+The reports collectively highlight the importance of clarifying the scope of the present work relative to previous studies of the Kitaev spin liquid, particularly Ref.~[22]( \href{https://doi.org/10.1103/PhysRevLett.105.080501}{Phys. Rev. Lett. 105, 080501}). 
+%
+We therefore carefully reconsidered the presentation of the manuscript and have substantially revised the Introduction and Discussion to clarify the scientific question addressed in this work, to better distinguish our approach from previous Majorana-based formulations, and to separate the immediate results of the present work from broader motivations and possible future applications.
+
+The revised manuscript emphasizes more clearly that, although both Ref.~[22] and the present work ultimately reproduce the same ground-state entanglement entropy, the two works address different theoretical questions. Ref.~[22] starts from the Majorana-fermion representation and derives the entanglement entropy through a boundary-variable rearrangement together with the replica construction. In contrast, the central objective of the present work is to construct the physical density matrix and reduced density matrices directly within the original spin Hilbert space through their spin-string operator content. Consequently, the previously known entanglement entropy emerges as one consequence of the spectrum of the explicitly constructed physical reduced density matrix, rather than serving as the primary object of the calculation.
+
+This distinction is reflected not only in the derivation itself, but also in the scope of the results. The explicit construction of the physical reduced density matrix naturally provides access to the complete entanglement spectrum in the spin basis and reveals its exact block-diagonal structure and degeneracies through the underlying gauge constraints and higher-form symmetry. Moreover, the spin formulation applies uniformly to subsystems containing both even and odd lattice sites, allowing us to uncover the role of subsystem fermion parity in the odd case. We believe that these revisions make the conceptual contribution and positioning of the present work substantially clearer.
+
+In the following, we respond to each Referee's comments individually and indicate the corresponding revisions made in the manuscript.
 
 
 \section*{First Referee}
 
-% {\color{blue} 
-
-
-%     [YP: I suggest to point out the difference of the chain of logic first. The purpose of this part is why the present paper contains new physics (we use one-form symmetry to establish a more fundamental object than just the EE) and a logically different derivation relative to Yao–Qi. Not a simple rewriting of majorana in terms of spins.]
     
-    
-    
-%     [YP: Next, we point out why having the density matrix in the physical spin basis matters beyond this particular entropy calculation. We got the fundamental object, rather than just the EE. This is much more useful for finite T generalization, perturbation, and connection to quantum resources.]
-    
-%     }
-    
-%     \sout{First, our work does not simply reproduce the result proposed in Ref.~[21]. Despite the cleverness of the method proposed in this earlier work, some important problems remain unclear. The first problem, which we think is the most important part that is missed in Ref.~[21], is the validity of Eq.~(42) of our work (or Eq.~(5) in Ref.~[21]) for the cases where the subregion has an odd number of lattice sites. The method proposed in Ref.~[21] and its supplementary material began with a special technique of reshuffling gauge fields crossing the boundary of the subregion. The validity of this clever trick is based on the assumption that the subregion has an even number of lattice sites. Otherwise, we could not bypass the difficulties of \textit{cutting the gauge fields} that cross the entanglement cut, which has been notoriously confusing in analyzing the entanglement of systems with gauge degrees of freedom. A consequence of this even-odd effect is that the fermion parity is crucial in the entanglement spectrum. This reflects two contributions of our work. One is that (i) our approach incorporates the entire entanglement spectrum in the physical spin basis rather than focusing only on the matter sector, and (ii) the demonstration of the interplay between fermion parity and entanglement. The former is discussed in Sec.~IV.C and D, and the latter is discussed in Sec.~IV.B and E. Also, rather than using the replica trick to compute the entanglement entropy, our approach allows us to obtain the entanglement spectrum, which contains richer information than the entropy. Furthermore, the entanglement spectrum obtained through our approach is based on a more insightful physical picture involving higher-form symmetry and lattice gauge theory inspired by Ref.~[45] in the manuscript (discussed in Sec.~IV.C), which has become central to modern condensed matter and even high-energy physics. Although this framework cannot apply to general QSLs directly, it applies to states that possess exact 1-form Wilson symmetry. In other words, from the gauge theory perspective, it applies to states whose gauge flux is static. This is also the reason why we did not discuss the matter sector in detail, because this work aims to uncover the common fundamental properties of QSLs with these features, which is more universal in the sense that it does not depend on the details of the model's coupling parameters.}   
+%     \sout{First, our work does not simply reproduce the result proposed in Ref.~[22]. Despite the cleverness of the method proposed in this earlier work, some important problems remain unclear. The first problem, which we think is the most important part that is missed in Ref.~[22], is the validity of Eq.~(42) of our work (or Eq.~(5) in Ref.~[22]) for the cases where the subregion has an odd number of lattice sites. The method proposed in Ref.~[22] and its supplementary material began with a special technique of reshuffling gauge fields crossing the boundary of the subregion. The validity of this clever trick is based on the assumption that the subregion has an even number of lattice sites. Otherwise, we could not bypass the difficulties of \textit{cutting the gauge fields} that cross the entanglement cut, which has been notoriously confusing in analyzing the entanglement of systems with gauge degrees of freedom. A consequence of this even-odd effect is that the fermion parity is crucial in the entanglement spectrum. This reflects two contributions of our work. One is that (i) our approach incorporates the entire entanglement spectrum in the physical spin basis rather than focusing only on the matter sector, and (ii) the demonstration of the interplay between fermion parity and entanglement. The former is discussed in Sec.~IV.C and D, and the latter is discussed in Sec.~IV.B and E. Also, rather than using the replica trick to compute the entanglement entropy, our approach allows us to obtain the entanglement spectrum, which contains richer information than the entropy. Furthermore, the entanglement spectrum obtained through our approach is based on a more insightful physical picture involving higher-form symmetry and lattice gauge theory inspired by Ref.~[45] in the manuscript (discussed in Sec.~IV.C), which has become central to modern condensed matter and even high-energy physics. Although this framework cannot apply to general QSLs directly, it applies to states that possess exact 1-form Wilson symmetry. In other words, from the gauge theory perspective, it applies to states whose gauge flux is static. This is also the reason why we did not discuss the matter sector in detail, because this work aims to uncover the common fundamental properties of QSLs with these features, which is more universal in the sense that it does not depend on the details of the model's coupling parameters.}   
     
 %     \sout{Second, this work is intended to provide insight into how to construct the density matrix of QSLs in terms of spin operators. The value of this attempt lies in the need for density matrices in quantum resource theory and quantum information theory. Because of this, we revise the first few paragraphs in the introductory section to guide the reader in this direction. In these research areas, the most fundamental operational elements are spins, also known as qubits, rather than Majorana fermions. Without the density matrix explicitly represented in terms of spins, it would be difficult to formulate how the quantum gates and quantum channels act on the state. At the same time, the experimental operation of states in the area of quantum resources is often performed by manipulating spins rather than the derived abstract degrees of freedom such as Majorana fermions. The mathematical form of the density matrix proposed in our work can also serve as a benchmark for future theoretical research on Kitaev spin liquids at finite temperature and for numerical studies of the generalized Kitaev model with non-Kitaev interactions included in the Hamiltonian. In other words, this work provides a starting point for extending it to the general cases.
 % }
 
-We thank the Referee for the careful reading and constructive assessment of our manuscript. We appreciate the Referee's recognition of the mathematical relation between spin-string operators and Majorana strings developed in Sec.~III.A. Before addressing the specific comments, we would like to clarify one point concerning the scope of the present work, particularly in relation to Ref.~[21].
+We thank the Referee for the careful reading and constructive assessment of our manuscript. We appreciate the Referee's recognition of the mathematical relation between spin-string operators and Majorana strings developed in Sec.~III.A. Before addressing the specific comments, we would like to clarify one point concerning the scope of the present work, particularly in relation to Ref.~[22].
 
-Our work does not simply reproduce the result of Ref.~[21] using a different representation. The two approaches have different logical starting points. Ref.~[21] starts from the Majorana-fermion representation and employs a rearrangement of the gauge variables crossing the entanglement boundary, together with a replica trick, to obtain the entanglement entropy. In contrast, we start directly from the physical spin Hilbert space and construct the reduced density matrix through its spin-string operator content. Neither the replica trick nor the boundary-variable rearrangement is required. The previously known entanglement entropy therefore appears as one consequence of the spectrum of the explicitly constructed physical RDM, rather than as the primary object of the calculation. This distinction has a concrete consequence for subsystems containing an odd number of lattice sites: the boundary-variable rearrangement of Ref.~[21] is limited to even subsystems, whereas our formulation treats even and odd subsystems within a unified framework. The odd case further reveals a nontrivial interplay between subsystem fermion parity and the entanglement spectrum, as discussed in Secs.~IV.B and IV.E.
+Our work does not simply reproduce the result of Ref.~[22] using a different representation. The two approaches have different logical starting points. Ref.~[22] starts from the Majorana-fermion representation and employs a rearrangement of the gauge variables crossing the entanglement boundary, together with a replica trick, to obtain the entanglement entropy. In contrast, we start directly from the physical spin Hilbert space and construct the reduced density matrix through its spin-string operator content. Neither the replica trick nor the boundary-variable rearrangement is required. The previously known entanglement entropy therefore appears as one consequence of the spectrum of the explicitly constructed physical RDM, rather than as the primary object of the calculation. This distinction has a concrete consequence for subsystems containing an odd number of lattice sites: the boundary-variable rearrangement of Ref.~[22] is limited to even subsystems, whereas our formulation treats even and odd subsystems within a unified framework. The odd case further reveals a nontrivial interplay between subsystem fermion parity and the entanglement spectrum, as discussed in Secs.~IV.B and IV.E.
 
 More broadly, an explicit RDM gives access to information beyond the entropy. In particular, we obtain the complete entanglement spectrum in the physical spin basis and show that its block-diagonal structure and degeneracies can be understood through the underlying gauge constraints and higher-form symmetry. From this perspective, the matter-gauge separation entering the previous entropy calculation emerges from the organization of the physical RDM itself. Constructing the density matrix is also useful because it is the natural language for both pure and mixed states. Although we do not address finite temperature in the present work, the exact ground state obtained here provides a reference point for asking how these structures evolve when different flux sectors become thermally populated. Similarly, expressing the density matrix in terms of the physical spin basis provides a natural starting point for quantum-information and quantum-resource questions formulated in terms of physical spin operations. We emphasize that these latter directions are motivations and possible extensions rather than rephrasing the results of the present work. For this reason, we revise the Introduction to make the immediate contributions and broader motivation of our density-matrix formulation clearer.
 
-In the following, we address each of the Referee's minor points concerning readability in detail, and we indicate the corresponding changes made in the revised manuscript.
+We would also like to clarify the level at which we seek generality in the present work. Our objective is not to obtain model-specific values of the entanglement entropy for different Kitaev-like models. Such values depend on the detailed properties of the matter sector, including its spectrum and correlation functions, and are therefore generally model dependent. Instead, we seek to identify the organizing principles of the physical density matrix that underlie the entanglement structure of the Kitaev spin liquid. In the present case, the spin-string equivalence classes, together with Gauss’s law and the exact $\mathbb{Z}_2$ one-form Wilson symmetry, organize the boundary degrees of freedom into sectors and give rise to the block structure and degeneracy of the RDM. These structural properties, rather than a particular numerical value of the matter contribution to the EE, are the aspects for which our formulation provides a natural route toward generalization to other Kitaev-like models. We have revised the manuscript to make this distinction between transferable structure and model-dependent matter-sector details more explicit.
+
+
+In the following, we address each of the Referee's points in detail and indicate the corresponding revisions made in the manuscript.
 
 \begin{enumerate}
     \item \textbf{\textit{One important question regarding the central equations Eq. 13 and Eq. 21. Is this writing of the DM general or only working for the Kitaev model. It seems to me that it only holds for a set of operators $\mathcal{O}_n$ with $\mathrm{Tr}(\mathcal{O}_n \mathcal{O}_m)=0$ when $n$ is different from $m$, the authors use the word "independent observables". I think this equation needs more justification/explanation.}}
 
-    Thanks for pointing out the confusion. Eq~(13) is a general identity for expanding a density matrix in terms of a set of \textit{orthonormal Hermitian basis operators}. To avoid possible confusion, we emphasize this fact in the the paragraph under Eq.~(13), which is rephrased into ``\textit{Following this narrative, in general, a DM can be expanded by a set of orthonormal Hermitian basis operators $\{\mathcal{O}_n \}$ as follows (Eq.(13)), where $N$ is the total number of spins in the system. In constructing the above equation, the operators $\mathcal{O}_n$ are chosen as Pauli group elements composed of Pauli spin operators, for every observable in a spin-1/2 system can be expanded in terms of Pauli group elements.}'' In the revised version, we specify the operators as \textit{elements in the Pauli group}. In this way, the term \textit{independent} becomes stronger, because every independent operator is exactly a Pauli group element, whose properties are well established in the literature. 
+    We thank the Referee for pointing out the lack of explanation of the equations and their relations in the manuscript. Eq~(14) (Eq.~(13) in the old version) is a general identity for expanding a density matrix in terms of a set of \textit{orthonormal Hermitian basis operators}. To avoid possible confusion, we emphasize this fact in the the paragraph under Eq.~(14), which is rephrased into ``\textit{Following this narrative, in general, a DM can be expanded by a set of orthonormal Hermitian basis operators $\{\mathcal{O}_n \}$ as follows (Eq.(14)), where $N$ is the total number of spins in the system. In constructing the above equation, the operators $\mathcal{O}_n$ are chosen as Pauli group elements composed of Pauli spin operators, since every observable in a spin-1/2 system can be expanded in terms of Pauli group elements.}'' In the revised version, we specify the operators as \textit{elements in the Pauli group}. In this way, the generality of the expression is made explicit, since the Pauli group provides a complete orthogonal operator basis for operators acting on $N$ spin-$\frac{1}{2}$ degrees of freedom.
 
-    \item \textbf{\textit{Some notations are left undefined and remain unclear to me. In particular, what are the constants $N$, $N_p$ and $N^A_p$ as appearing in Eq. 16 and Eq. 21 for example? The authors may need to repeat their meanings in different places to avoid confusion.}}
+    \item \textbf{\textit{Some notations are left undefined and remain unclear to me. In particular, what are the constants $N$, $N_p$ and $N^A_p$ as appearing in Eq. 16 and Eq. 22 for example? The authors may need to repeat their meanings in different places to avoid confusion.}}
 
-    Sorry for my neglect. We have added the definitions of these notations below Eq.~(13) and above Eq.~(20). We also mentioned them once again below Eq.~(18) and Eq.~(21). 
+    We thank the Referee for carefully reading the manuscript and pointing out this ambiguity. We have added the definitions of these notations near Eqs.~(17), (19), (21), and (22). 
 
     \item \textbf{\textit{Between Eq. 35 and Eq. 36, the authors perform some calculations, and there is a term proportional to $\ln2$ appearing in $\rho^F \ln\rho^F$. I think the authors need to provide more details on these equations as it seems the $\ln2$ term is central to the area law part of the EE.}}
 
-    Thanks for your advice. We have added a paragraph following Eq.~(38), in which we emphasize that the term proportional to $\ln 2$ arises from the mismatch between the Hilbert space dimensions. Such a term was later converted into the area-law entropy using identity (37).
+    We thank the Referee for pointing out that this step requires further clarification.
+    %
+    We have modified the paragraphs at the end of Sec.~IV.A (marked in red). 
+    %
+    In the paragraph discussing the gauge contribution to the entanglement entropy, we emphasize that the term proportional to $\ln 2$ arises from the mismatch between the Hilbert space dimensions. 
+    %
+    Such a term was later converted into the area-law formula using identity (38).
+
+
 
     \item \textbf{\textit{The authors did not give a discussion on the EE results. From what I can see, it looks like Eq. 37 and Eq. 45 can be taken as their final results for EE? Does the "area law" part mainly come from the gauge contribution? What is the implications? What is the form of the fermion part? Although these may have been discussed in Ref. 21, it's still better to have such a discussion here.}}
 
-    Regarding the question that \textit{the authors did not give a discussion on the EE result}, we actually spend an entire section (Sec.~IV) to address this question. Here, we explain this more clearly.
-    
-    From our point of view, both even and odd cases are included in Eq.~(42). In odd cases, Eq.~(46) is the form before unpacking the enlarged correlation matrix $\tilde{\Gamma}^{(c)}$. Following Eq.~(46) and the discussion below the equation, we pointed out that the form of the EE reduces to Eq~(46). Therefore, Eq.~(46) is the \textit{only} final result.
+    We thank the Referee for pointing out that the discussion of the EE results and their physical implications was not sufficiently explicit. 
+    %
+    We have substantially expanded Sec.~IV.A to clarify these points.
 
-    Regarding the area law part, the manuscript explicitly demonstrates the area law in the gauge part, which has already been discussed in \href{https://doi.org/10.1103/PhysRevLett.105.080501}{Phys. Rev. Lett. 105, 080501}. This manuscript focuses on the origin of the degeneracy in the ES and how to uncover this structure by exploiting spin formulation. Therefore, we wouldn't say that the area-law part mainly comes from the gauge contribution. The only conclusion drawn in this manuscript is that the matter sector of the EE arises from the identical blocks, and the gauge sector arises from the degeneracy in the ES. 
+    First, Eq.~(43) should be regarded as the final expression for the EE in our formulation, and it applies to both even- and odd-sized subsystems. 
+    %
+    For an odd-sized subsystem, Eq.~(47) is an intermediate expression written in terms of the enlarged correlation matrix $\tilde{\Gamma}^{(c)}$. 
+    %
+    As explained below Eq.~(47), after resolving the additional mode introduced in the enlarged correlation matrix, the entropy reduces again to Eq.~(43).
 
-    The implication of the form of EE is discussed in many paragraphs scattered throughout the manuscript. It is discussed mainly in Sec.~IV, where we demonstrated that the degeneracy in the ES yields the mathematical form of EE. The logic is that the mathematical form of the EE (Eq.~(42)) implies the degeneracy in the ES (Sec.~IV.A and B). Following this intuition, our approach (Sec.~IV.C, D, and E) successfully proves such a degeneracy, and the proof is based on the gauge structure hidden in the Kitaev ground state that can be fully uncovered using the spin formulation. 
+    Second, regarding the Referee's question about the area law, the gauge contribution is explicitly $(|\partial A|/2-1)\ln 2$ and therefore has an area-law form, consistent with Ref.~[21]. 
+    %
+    However, this should not be interpreted as implying that the area-law scaling of the total EE originates exclusively, or necessarily predominantly, from the gauge sector.
+    %
+    The matter contribution is determined by the Majorana correlation matrix, $-\text{tr}[\Gamma^{(c)}\ln\Gamma^{(c)}]$, and its detailed behavior therefore depends on the model-specific matter correlations and subsystem geometry.
+    %
+    Since this part is model-dependent, we do not make a general statement about its scaling in the present work.
+
+    The main implication of the EE decomposition for the present work is instead its structural origin. 
+    %
+    As demonstrated in the subsequent sections, the matter contribution is encoded in the eigenvalue spectrum within each identical block of the physical RDM, whereas the gauge contribution originates from the exact multiplicity of these blocks and hence from the associated degeneracy of the entanglement spectrum. 
+    %
+    This block organization is enforced by the gauge structure of the physical spin Hilbert space, in particular the Gauss's-law constraint and the exact 1-form Wilson symmetry. 
+    %
+    In the spin representation this symmetry structure acts directly on physical spin-string operators and is therefore explicit, whereas in the Majorana representation the physical spin Hilbert space is recovered only after imposing the gauge constraint and projection from the enlarged fermionic Hilbert space.
+
+    Thus, while the matter--gauge separation of the EE itself was established in Ref.~[21], our result identifies how this separation is encoded in the physical RDM and traces the gauge contribution to an exact entanglement-spectrum degeneracy originating from the gauge and 1-form symmetry structure. 
+    %
+    We have revised Sec.~IV.A to make both the explicit form of the matter contribution and this physical interpretation clear.
 
     \item \textbf{\textit{ In the discussion the authors state that the method works for all "Kitaev-like" models, including the chiral spin liquid models like: \href{https://doi.org/10.1103/PhysRevB.100.195131}{Phys. Rev. B 100, 195131(2019)}, \href{https://doi.org/10.1103/PhysRevB.101.041114}{Phys. Rev. B 101, 041114(R) (2020)} etc. I think it is essential to mention these works in the text and discuss/predict how the EE in these chiral spin liquid models differ from the original Kitaev model. Should the difference come mainly from the fermion part or gauge part? Would the topological nature of the fermion add some interesting features?}}
 
-    Thanks for providing these two insightful papers. We have included them as references in the paragraph about chiral spin liquids. We also added a little explanation on the validity of the spin formulation for Kitaev-like models and how the time-reversal symmetry is implied by the plaquette projector affected by the lattice geometry. 
-    
-    However, the main goal of the paragraph is to emphasize the \textit{similarity} instead of the \textit{differences} from the Kitaev model. In the meantime, the spin formulation offers little additional insight into the fermion sector. Therefore, we do not focus extensively on the fermion sector or the differences in it among these models.
+    We thank the Referee for bringing these two relevant works to our attention. 
+    %
+    We have included them as references in the revised manuscript and expanded the Discussion to clarify both the applicability of our spin formulation to Kitaev-like models and the respective roles of the gauge and matter sectors when comparing different models.
+
+    The Referee's question about whether the differences in the EE should arise mainly from the fermion or gauge sector is particularly useful. 
+    %
+    Within the class of exactly solvable Kitaev-like models to which our construction applies, our results suggest a natural distinction. 
+    %
+    The gauge contribution is controlled by the common gauge structure of the physical spin Hilbert space, including the Gauss's-law constraint and the 1-form Wilson symmetry that organize the spin-string operators and generate the corresponding block structure and degeneracy of the RDM. 
+    %
+    Within this class of exactly solvable Kitaev-like models sharing the same gauge structure, these structural properties do not depend on the detailed form of the matter Hamiltonian.
+    %
+    In contrast, the matter contribution is determined by the spectrum of the model-specific Majorana correlation matrix. 
+    %
+    Therefore, differences in the EE among different Kitaev-like models with the same underlying gauge structure are expected to enter primarily through the matter sector.
+
+    This distinction is particularly relevant for the chiral spin-liquid models mentioned by the Referee. 
+    %
+    The topological character of the Majorana matter sector can modify its correlation spectrum and hence the matter contribution to the EE and entanglement spectrum. 
+    %
+    Our formulation separates such model-dependent matter physics from the gauge contribution associated with the common RDM organization. 
+    %
+    Determining the detailed fermionic entanglement structure of each chiral model, however, requires the corresponding model-specific Majorana correlation matrix and is beyond the scope of the present work.
+
+    We have revised the Discussion to make this distinction explicit. In particular, we now emphasize that the transferable content of our construction is the exact organization of the physical RDM associated with the gauge and 1-form-symmetry structure, whereas the detailed fermionic entanglement properties remain model dependent. 
+    %
+    We have also clarified how the plaquette projectors and their symmetry properties depend on the lattice geometry, including their relation to time-reversal symmetry in the corresponding Kitaev-like models.
     
 \end{enumerate}
 
+% \section*{Second Referee}
+
+% We thank the Referee for their careful reading of our manuscript and for their positive and encouraging assessment of our work. We are grateful that the Referee recognizes the value of formulating the density matrix and entanglement structure of the Kitaev spin liquid ground state directly in terms of spins, and for highlighting the significance of expressing the matter–gauge separation of the entanglement entropy and the origin of the entanglement spectrum degeneracy entirely within the spin formulation. We also appreciate the Referee's comment on the potential broader applicability of our approach to other systems such as chiral spin liquids, which we believe strengthens the relevance of this work beyond the pure Kitaev model. In the following, we address each of the Referee's minor points concerning readability in detail, and we indicate the corresponding changes made in the revised manuscript.
+
 \section*{Second Referee}
 
-We thank the Referee for their careful reading of our manuscript and for their positive and encouraging assessment of our work. We are grateful that the Referee recognizes the value of formulating the density matrix and entanglement structure of the Kitaev spin liquid ground state directly in terms of spins, and for highlighting the significance of expressing the matter–gauge separation of the entanglement entropy and the origin of the entanglement spectrum degeneracy entirely within the spin formulation. We also appreciate the Referee's comment on the potential broader applicability of our approach to other systems such as chiral spin liquids, which we believe strengthens the relevance of this work beyond the pure Kitaev model. In the following, we address each of the Referee's minor points concerning readability in detail, and we indicate the corresponding changes made in the revised manuscript.
+We sincerely thank the Referee for the careful reading of our manuscript and for the highly positive and encouraging assessment of our work. We are particularly grateful that the Referee recognizes the importance of understanding the Kitaev spin liquid directly within its physical spin Hilbert space, without relying on the Majorana-fermion representation. We also appreciate the Referee's recognition that our spin-based formulation provides an exact construction of the density matrix and reduced density matrix, and thereby offers a physical interpretation of the matter--gauge separation of the entanglement entropy and the origin of the entanglement-spectrum degeneracy entirely within the spin language.
+
+We are also encouraged by the Referee's observation that the present formulation may be applicable to a broader class of Kitaev-like systems. Although the present work focuses on the Kitaev honeycomb model, we agree that the underlying spin-based formulation provides a useful framework for exploring related models in future studies.
+
+The Referee's comments mainly concern improving the clarity and presentation of the manuscript. We have carefully revised the manuscript accordingly, and below we respond to each comment in detail, indicating the corresponding changes made in the revised manuscript.
 
 \begin{enumerate}
     \item \textbf{\textit{On page 3, in the left column, the authors introduce $b_i^x b_i^y b_i^z c_i = 1$ as the Gauss-law constraint in the Majorana representation. As far as I understand, this constraint is closely related to the Gutzwiller projection onto the physical Hilbert space discussed immediately before. It may be helpful for readers if the authors could clarify this relation explicitly.}}
 
-    Thanks for the suggestion. Here is the revision. Because the relation between the Gutzwiller projection and the Gauss-law constraint, bridged through the constraint $b_i^x b_i^y b_i^z c_i = 1$, has been briefly discussed in Appendix~D of the revised version (Appendix~C in the original version), We did not add much additional explanation in the main text, partly because the Gutzwiller projection is not crucial in this research. We refer readers to Appendix~D of the revised version in case they don't have a spin-liquid background. we also emphasize the relation between the Gutzwiller projection and the Gauss-law constraint in a standard mathematical formalism to make the information as clear as possible. All edits are marked in red.
+    %We thank the Referee for pointing out the connection between the Gutzwiller projection and Gauss's law. We have revised the text to clarify this relation explicitly. Because the relation between the Gutzwiller projection and the Gauss-law constraint, bridged through the constraint $b_i^x b_i^y b_i^z c_i = 1$, has been briefly discussed in Appendix~D of the revised version (Appendix~C in the original version), We did not add much additional explanation in the main text, partly because the Gutzwiller projection is not crucial in this research. We refer readers to Appendix~D of the revised version in case they don't have a spin-liquid background. we also emphasize the relation between the Gutzwiller projection and the Gauss-law constraint in a standard mathematical formalism to make the information as clear as possible. All edits are marked in red.
+
+    We thank the Referee for pointing out the connection between the Gutzwiller projection and the Gauss-law constraint. 
+    %
+    We have revised the main text to state explicitly that the local constraint $b_i^x b_i^y b_i^z c_i = 1$ selects the physical subspace of the enlarged Majorana Hilbert space and is therefore the local constraint implemented by the Gutzwiller projection. 
+    %
+    A more detailed discussion is provided in Appendix D of the revised manuscript. The corresponding changes are marked in red.
 
     \item \textbf{\textit{For the phase factor $\varphi(\mathfrak{D},\mathfrak{D}')$ appearing in Eq. (6), it would be helpful to state explicitly how it transforms under the interchange of $\mathfrak{D}$ and $\mathfrak{D}'$, in particular, whether or not it changes sign.}}
 
-    Thanks for this interesting question. We added a new appendix (Appendix A of the revised version) to address this issue with mathematical rigor. A short answer to this question is that the phase factor can change sign if the two configurations are exchanged. The relation between $\varphi(\mathfrak{D}, \mathfrak{D}')$ and $\varphi(\mathfrak{D}', \mathfrak{D})$ is shown in Theorem A.7 in Appendix A of the revised version.
+    We thank the Referee for raising this insightful question. We added a new appendix (Appendix A of the revised version) to address this issue with mathematical rigor. A short answer to this question is that the phase factor can change sign if the two configurations are exchanged. The relation between $\varphi(\mathfrak{D}, \mathfrak{D}')$ and $\varphi(\mathfrak{D}', \mathfrak{D})$ is shown in Theorem A.7 in Appendix A of the revised version.
 
     \item \textbf{\textit{ On page 4, in the right column, below the four conditions (i)–(iv), the authors write, “At the same time, the right panel of Fig. 1 shows that …” Should “the right panel” instead read “the left panel”?}}
 
-    Thanks for pointing out the typo. The correction is marked in red in the revised version.
+    We thank the Referee for spotting this error. The correction is marked in red in the revised version.
 
     \item \textbf{\textit{ In the first line of Eq. (16), the factor $1/2^2$ appears to be unnecessary if $P^{(p)}$ is defined as in Eq. (11). The second line of Eq. (16), however, appears to be correct. The authors may wish to check this equation.}}
     
-    Thanks for pointing out the typo. The coefficients are corrected (marked in red) to ensure the equations are consistent.
+    We thank the Referee for noting this typo. The coefficients have been corrected (marked in red) to ensure the equations are consistent.
 
     \item \textbf{\textit{On the left-hand side of Eq. (22), the density matrix is written as $\rho^F$. Should this instead be $\rho_F$, with F as a subscript?}}
 
-    In our notation, the subscript is left for the indicators of the subregions. A reduced density matrix of the fermion system in a subregion $A$ is denoted by $\rho^F_A$. Therefore, we choose $\rho^F$ to denote the fermionic density matrix instead of $\rho_F$ to unify the notation throughout the manuscript and to avoid possible confusion of the fermion indicator `\textit{F}' with the subregion subscript.
+    We thank the Referee for raising this question. In our notation, the subscript indicates the subregion. For example, we denote the reduced density matrix of the fermion system in a subregion $A$ by $\rho^F_A$. Here, the superscript $F$ indicates the \textit{fermion (matter)} sector, reserving the subscript exclusively for the subregion index $A$. Accordingly, we choose $\rho^F$ to denote the fermionic density matrix instead of $\rho_F$ to unify the notation throughout the manuscript and avoid confusion between the fermion indicator `\textit{F}' and the subregion index.
 
     \item \textbf{\textit{In Sec. III A, the separation into matter and gauge contributions is explained only in the fermionic language at this point. Since one of the central aims of the manuscript is to reinterpret these properties entirely in terms of spin degrees of freedom, it may be useful to indicate here that a spin-based interpretation will be developed later in the manuscript. This would help guide the reader and clarify the connection between this section and the subsequent analysis.}}
 
-    Thanks for the suggestion. We have added a paragraph ``\textit{In fact, the physical interpretation of the properties of string operators listed from Eq.~(7) to Eq.~(12) is that the system can be separated into the gauge and matter parts, in which the gauge part is governed by the projector $\mathcal{P}^{(p)}$ while the matter part is encoded in the endpoints of string operators. The only difference is that this fact is demonstrated entirely using spin operators throughout this work. More details will be presented in Sec.~III D.}'' at the end of Sec.~III A. to emphasize this aspect.
+    We appreciate the Referee's comment. To better guide the reader, we have added the following paragraph at the end of Sec. III A: ``\textit{In fact, the physical interpretation of the properties of string operators listed from Eq.~(8) to Eq.~(13) is that the system can be separated into the gauge and matter parts, in which the gauge part is governed by the projector $\hat{\Pi}$ while the matter part is encoded in the endpoints of string operators. The only difference is that this fact is demonstrated entirely using spin operators throughout this work. More details will be presented in Sec.~III D.}''. to emphasize this aspect. Note that we have replaced the notation $\mathcal{P}^{(p)}$ with $\hat{\Pi}$ in the revised manuscript.
 \end{enumerate}
+
+% \section*{Third Referee}
+
+% We thank the Referee for their careful reading of our manuscript and for their encouraging assessment of our work. We are grateful that the Referee recognizes our detailed comparison between the spin and fermionic representations of the density matrices as clarifying the origin of the matter-gauge separation of the entanglement entropy, and that the Referee highlights our identification of the block-diagonal structure of the RDMs and its connection to the underlying 1-form gauge symmetry as a valuable contribution. We also appreciate the Referee's acknowledgment of our treatment of subsystems with an odd number of sites, which extends beyond the approach proposed in \href{https://doi.org/10.1103/PhysRevLett.105.080501}{Phys. Rev. Lett. 105, 080501}. In the following, we address each of the Referee's minor points in detail, and we indicate the corresponding changes made in the revised manuscript.
 
 \section*{Third Referee}
 
-We thank the Referee for their careful reading of our manuscript and for their encouraging assessment of our work. We are grateful that the Referee recognizes our detailed comparison between the spin and fermionic representations of the density matrices as clarifying the origin of the matter-gauge separation of the entanglement entropy, and that the Referee highlights our identification of the block-diagonal structure of the RDMs and its connection to the underlying 1-form gauge symmetry as a valuable contribution. We also appreciate the Referee's acknowledgment of our treatment of subsystems with an odd number of sites, which extends beyond the approach proposed in \href{https://doi.org/10.1103/PhysRevLett.105.080501}{Phys. Rev. Lett. 105, 080501}. In the following, we address each of the Referee's minor points in detail, and we indicate the corresponding changes made in the revised manuscript.
+We sincerely thank the Referee for the careful reading of our manuscript and for the positive and insightful assessment of our work. We are particularly encouraged that the Referee recognizes the central contribution of this work: the exact organization of the density matrix and reduced density matrices in the physical spin representation, together with the explicit correspondence between the spin and Majorana formulations. We also appreciate the Referee's recognition that the block-diagonal structure and degeneracies of the reduced density matrix can be understood through the underlying gauge constraints and higher-form symmetry, thereby clarifying the physical origin of the matter--gauge separation of the entanglement entropy.
+
+We are also grateful that the Referee recognizes the significance of our unified treatment of both even and odd subsystems, which extends beyond the framework developed in Ref.~[22]. Finally, we appreciate the Referee's careful reading and numerous suggestions regarding notation, consistency, and presentation, all of which have helped improve the clarity and precision of the manuscript.
+
+Below we respond to each comment individually and describe the corresponding revisions made in the revised manuscript.
 
 \begin{enumerate}
     \item \textbf{\textit{Eq. (16): Taking the trace of Eq. (15) does not yield the first line of Eq. (16) directly. It appears that the definition of $\mathcal{P}^{(p)}$ changes between these equations. The authors should clarify or amend this step.}}
 
-    The second referee has also mentioned this typo. Thanks for pointing it out. The coefficients are corrected (marked in red).
+    We thank the Referee for spotting this discrepancy. We have corrected the coefficients in Eq. (16) (marked in red) to ensure consistency with Eq. (15).
 
     \item \textbf{\textit{Equation above Eq. (21): In the second line, should $\mathcal{A} \in A$ be corrected to $\mathcal{A} \subset A$?}}
 
-    Thanks for pointing out this typo. It has been corrected (marked in red).
+    We thank the Referee for pointing out this notation error. It has been corrected to $\mathcal{A} \subset A$ in the revised manuscript (marked in red).
 
     \item \textbf{\textit{Line below Eq. (24): Should $\mathcal{P}_G$ read $\mathcal{P}^{(p)}$?}}
 
-    Thanks for pointing out this typo. Regarding the notation $\mathcal{P}^{(p)}$ and the Gutzwiller projection $\mathcal{P}_G$ looking too similar, we replace $\mathcal{P}^{(p)}$ with $\hat{\Pi}$ to avoid the confusion. 
+    We appreciate the Referee highlighting this notation issue. To improve clarity and prevent potential confusion with the Gutzwiller projection $\mathcal{P}_G$, we have replaced $\mathcal{P}^{(p)}$ with $\hat{\Pi}$ throughout the manuscript. 
 
     \item \textbf{\textit{Five lines above Eq. (34): There appears to be a missing minus sign in the definition of the entanglement entropy (EE).}}
 
-    Thanks for pointing out this typo. It has been corrected (marked in red).
+    We thank the Referee for spotting this error. The missing minus sign in the entropy formula has been added in the revised manuscript (marked in red).
 
     \item \textbf{\textit{A few lines below Eq. (35): The authors state "we further define the following two functions", but I suggest rephrasing this to avoid presenting them as new definitions, as the function $f$ was already defined previously.}}
 
-    We agree with your opinion. The two functions in Eq.~(36) are not newly defined, since they are merely the integrands of the entropy. The message we want to convey is that both integrands can be represented in terms of the function $f$, but in different representations. Therefore, it has been rephrased to ``\textit{the following two functions that appear in the formula for computing the entropy can be expressed in terms of the function $f$ with different representations as the domain}.''
+    We thank the Referee for this thoughtful observation and fully agree with the assessment. To avoid suggesting that these are new definitions, we have rephrased the sentence in the revised manuscript as follows: ``\textit{the following two functions that appear in the formula for computing the entropy can be expressed in terms of the function $f$ with different representations as the domain}.''
 
     \item \textbf{\textit{Sec. IV C, 2nd paragraph: The authors write "Each residue Gauss law". Here, "residue" should be corrected to the adjective "residual". Please check for similar word choice issues elsewhere in the manuscript.}}
 
-    Thanks for pointing out this typo. It has been corrected (marked in red).
+    We thank the Referee for pointing out this typo. We have corrected it in the revised manuscript(marked in red).
 
     \item \textbf{\textit{Sec. IV D, 2nd paragraph: The text mentions "$2^L$ identical copies" and "$2^L$-fold degeneracy". Based on the argument below Eq. (54), should these factors of $2^L$ be $2^{L-1}$?}}
 
-    Thanks for pointing out the inconsistency. We thought it would be confusing to state that there is a $2^{L-1}$-fold degeneracy before explicitly demonstrating how the factor $2^{-1}$ arises. However, it seems that the inconsistency leads to more confusion. Therefore, we have changed $2^L$ to $2^{L-1}$ as you suggested.
+    We thank the Referee for pointing out this inconsistency. In the original manuscript, we used $2^L$ at this stage to postpone introducing the factor $2^{-1}$ until its origin was explicitly demonstrated. We agree, however, that this choice creates an unnecessary inconsistency and may cause confusion. We have therefore changed $2^L$ to $2^{L-1}$, as suggested by the Referee.
 
     \item \textbf{\textit{Sec. IV E, 2nd-to-last paragraph: The authors write "$2^{L+1}$ identical blocks". While there are $2^{L+1}$ blocks in total, my understanding is that the Wilson operators can only relate $2^L$ of them. Could the authors clarify whether all $2^{L+1}$ blocks are truly identical?}}
 
-    That is a typo. Thanks for pointing it out. To make this conclusion, along with the notation $L$, more understandable, we also included the analysis of the degeneracy shown in Eq.~(60). 
+    We thank the Referee for pointing out this error. The Referee is correct that the Wilson operators relate $2^L$ blocks, rather than all $2^{L+1}$ blocks. The statement ``$2^{L+1}$ identical blocks'' in the original manuscript was a typo, and we have corrected it accordingly in the revised manuscript(marked in red).
 
     \item \textbf{\textit{Sec. V, 3rd paragraph: In the phrase "an additional two-fold degeneracy in the EE", should "EE" be "ES" (entanglement spectrum)?}}
 
-    Thanks for pointing out the typo. It has been corrected (marked in red).
+    We thank the Referee for pointing out this typo. The Referee is correct that ``EE'' should read ``ES'' (entanglement spectrum). We have corrected this in the revised manuscript, with the corresponding change marked in red.
 
     \item \textbf{\textit{Terminology: The text occasionally uses "equivalent classes" instead of "equivalence classes". The latter should be used consistently throughout the manuscript.}}
 
-    Thanks for pointing out this typo. It has been corrected (marked in red).
+    We thank the Referee for pointing out this terminology inconsistency. We have replaced ``equivalent classes'' with ``equivalence classes'' throughout the manuscript to ensure consistent usage. The corresponding changes are marked in red in the revised manuscript.
     
 \end{enumerate}
 

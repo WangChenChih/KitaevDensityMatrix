@@ -1,28 +1,27 @@
 \subsection{Reduced Density Matrix}\label{sec:density-matrix-reduced}
 
-Understanding the RDM is the first step in investigating the entanglement structure since information about entanglement, such as ES and EE, is defined directly by the RDM. Here, we employ the method introduced in the previous section to obtain the RDM intuitively without performing the partial trace. Nevertheless, we still provide a rigorous derivation of how to perform the partial trace directly in Appendix~\ref{appendix:reduced-density0matrix}. 
+Understanding the RDM is the first step in analyzing the entanglement structure, as key quantities such as ES and EE are defined directly by the RDM. Here, we employ the method introduced in the previous section to obtain the RDM intuitively without performing the partial trace. Nevertheless, we still provide a rigorous derivation of how to perform the partial trace directly in Appendix~\ref{appendix:reduced-density0matrix}. 
 
-The property of a RDM is the same as the DM of the entire system, since both are Hermitian and are designed to give the expectation values of observables in the way that $\anglelr{\mathcal{O}_A}=\Tr\lr{\rho\mathcal{O}_A}=\Tr_A\lr{\rho_A\mathcal{O}_A}$, for any observable $\mathcal{O}_A$ with support $A$. In the Kitaev model, observables possessing finite expectation values are string operators. Therefore, the RDM can be expressed in terms of string operators $\Sigma_\mathfrak{D}$, with $\mathfrak{D}$ entirely inside $A$, accompanied by their expectation values $\mathfrak{C}_\mathfrak{D}$,
+Like the full DM of the entire system, a RDM should be Hermitian and yields the expectation values of subsystem observables via $\anglelr{\mathcal{O}_A}=\Tr\lr{\rho\mathcal{O}_A}=\Tr_A\lr{\rho_A\mathcal{O}_A}$ for any observable $\mathcal{O}_A$ support within $A$. In the Kitaev model, observables possessing finite expectation values are string operators. Consequently, the RDM can be expanded in terms of string operators $\Sigma_\mathfrak{D}$, with $\mathfrak{D}$ entirely within $A$, weighted by their respective expectation values $\mathfrak{C}_\mathfrak{D}$,
 \begin{equation}\label{equ.rho-A-raw-guess}
     \rho_A \propto\sum_{\mathfrak{D}\subset A}\mathfrak{C}_\mathfrak{D} \Sigma_\mathfrak{D}
 \end{equation}
-The equivalent configurations can be sorted in the same way as in the previous section. Owing to this, the summation can be rewritten as a summation of \alert{equivalence classes} with the projector $\hat{\Pi}_A$ of dimension $2^{N^A-N^A_p}$, \alert{where $N^A$ represents the number of lattice sites enclosed in the subregion $A$, and $N^A_p$ is the number of hexagons that lie entirely inside the subregion $A$},
+The equivalent configurations can be sorted in the same way as in the previous section. Owing to this, the summation can be rewritten as a summation of {equivalence classes} with the projector $\hat{\Pi}_A$ of dimension $2^{N^A-N^A_p}$, {where $N^A$ represents the number of lattice sites enclosed in the subregion $A$, and $N^A_p$ is the number of hexagons that lie entirely inside the subregion $A$},
 \begin{equation}\label{equ.p-proj-A}
     \hat{\Pi}_A \equiv \prod_{p\in A}\lr{\frac{\mathds{1}+W_p}{2}}.
 \end{equation}
-\alert{The subscript $p\in A$ stands for including only plaquettes that lie entirely inside $A$.} The final form of the RDM is then
+{The subscript $p\in A$ stands for including only plaquettes that lie entirely inside $A$.} The final form of the RDM is then
 \[
-\rho_A = C\hat{\Pi}_A\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}
+\rho_A = C\hat{\Pi}_A\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}}.
 \]
-The condition $[\mathfrak{D}]\subset A$ below the summation means choosing equivalence classes such that each class contains at least one edge configuration $\mathfrak{D}$ that lies entirely in $A$, and we will use it to define $\Sigma_\mathfrak{D}$ in the above formula to ensure that the RDM acts on states in the local Hilbert space supported on $A$. Recall the correspondence between endpoint sets and \alert{equivalence classes}; the condition is also equivalent to choosing classes $[\mathfrak{D}]$ such that $\mrm{EP}(\mathfrak{D})\subset A$. The constant $C$ is a normalization coefficient to be determined by imposing the normalization condition $\Tr_A\rho_A=1$,
+The condition $[\mathfrak{D}] \subset A$ restricts the summation to equivalence classes containing at least one edge configuration $\mathfrak{D}$ supported entirely within $A$. This choice ensures that $\Sigma_{\mathfrak{D}}$ is well-defined and acts purely on the local Hilbert space of subsystem $A$. Recalling the correspondence between endpoint sets and {equivalence classes}, this requirement is also equivalent to selecting equivalence classes $[\mathfrak{D}]$ such that $\mrm{EP}(\mathfrak{D})\subset A$. The constant $C$ is a normalization coefficient to be determined by imposing the normalization condition $\Tr_A\rho_A=1$,
 \begin{align*}
     \Tr_A\rho_A &= C\sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_\mathfrak{D} \Tr_A\lrm{\hat{\Pi}_A \Sigma_\mathfrak{D}} \\
-    &= \frac{C}{2^{N^A_p}} \sum_{\alert{\mathcal{A} \subset A}} \sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_\mathfrak{D} \Tr_A\lrm{ \lr{\prod_{p\in\mathcal{A}}W_p} \Sigma_\mathfrak{D}} \\
+    &= \frac{C}{2^{N^A_p}} \sum_{{\mathcal{A} \subset A}} \sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_\mathfrak{D} \Tr_A\lrm{ \lr{\prod_{p\in\mathcal{A}}W_p} \Sigma_\mathfrak{D}} \\
     &= \frac{C}{2^{N^A_p}}\Tr_A\mathds{1}_A = C2^{N^A - N^A_p} = 1
 \end{align*}
-Therefore, the final form of the RDM is as follows.
+Therefore, the final form of the RDM reads
 \begin{equation}\label{equ.red-den-mat-sim-con}
     \rho_A = \frac{1}{2^{N^A-N^A_p}} \hat{\Pi}_A\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}},
 \end{equation}
-\alert{with $N^A$ representing the number of lattice sites enclosed in the subregion $A$ and $N^A_p$ the number of hexagons that lie entirely inside the subregion $A$}. The form \eqref{equ.red-den-mat-sim-con} is the same as the DM \eqref{equ.density-matrix} as we anticipated. 
-
+{with $N^A$ representing the number of lattice sites enclosed in the subregion $A$ and $N^A_p$ the number of hexagons that lie entirely inside the subregion $A$}. As anticipated, the RDM \eqref{equ.red-den-mat-sim-con} takes the same form as the full DM in \eqref{equ.density-matrix}.

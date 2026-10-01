@@ -4,7 +4,7 @@ The ground state of Hamiltonian \eqref{equ.MF-Hamiltonian} reads~\cite{Yao-Qi_20
 \begin{equation}\label{equ.fermion-state}
     \ket{\psi} = \sqrt{2^{N-1}} \mathcal{P}_G\ket{u}\ket{M}
 \end{equation}
-The Gutzwiller projector $\mathcal{P}_G=\prod_{i}\lr{\frac{\mathds{1}+D_i}{2}}$ implements the Gauss law of the $\mathbb{Z}_2$ gauge theory in the Majorana representation of the Kitaev model, and $D_i = b^x_ib^y_ib^z_i c_i$ is the generator of the $\mathbb{Z}_2$ gauge transform. \alert{Aside from the gauge theory perspective, the physical meaning of a Gutzwiller projection is to project states in the enlarged parton Hilbert space back to the physical space. As mentioned in Sec.~\ref{sec:model-intro}, the Pauli spin operators must satisfy $-i\sigma^x\sigma^y\sigma^z = \mathds{1}$. Substituting the Majorana representation of the Pauli spin operators into this relation leads to the physical constraint for partons $D_i = b^x_ib^y_ib^z_i c_i = \mathds{1}$ in the physical sector.} 
+The Gutzwiller projector $\mathcal{P}_G=\prod_{i}\lr{\frac{\mathds{1}+D_i}{2}}$ implements the Gauss law of the $\mathbb{Z}_2$ gauge theory in the Majorana representation of the Kitaev model, and $D_i = b^x_ib^y_ib^z_i c_i$ is the generator of the $\mathbb{Z}_2$ gauge transform. {Aside from the gauge theory perspective, the physical meaning of a Gutzwiller projection is to project states in the enlarged parton Hilbert space back to the physical space. As mentioned in Sec.~\ref{sec:model-intro}, the Pauli spin operators must satisfy $-i\sigma^x\sigma^y\sigma^z = \mathds{1}$. Substituting the Majorana representation of the Pauli spin operators into this relation leads to the physical constraint for partons $D_i = b^x_ib^y_ib^z_i c_i = \mathds{1}$ in the physical sector.} 
 
 The Gutzwiller projector can also be expanded in the following way~\cite{Pedrocchi-Chesi-Loss_2011, Zschocke-Vojta_2015, Fu-Knolle-Perkins-2018}
 \[
@@ -37,49 +37,38 @@ The projector $\ket{M}\bra{M}$ is the DM of the ground state of the effective fr
 \]
 where $\lrg{i}$ stands for the set of lattice points. The normalization factor $1/2^{N/2}$ comes from the Hilbert space dimension of a Majorana fermion system. Furthermore, a product of Majorana fermions $\prod_{i\in\lrg{i}}c_i$ is equal to $\mathcal{M}_{\mathfrak{D}}$ defined by Eq.~\eqref{equ.V-rep-def} with $\mrm{EP}(\mathfrak{D}) = \lrg{i}$ up to a phase, because a Majorana fermion operator squares to one, and thus the Majorana fermion operators in $\mathcal{M}_{\mathfrak{D}}$ annihilate each other, except for those at the endpoints. Therefore, 
 \[
-\rho_F = \frac{1}{2^{N/2}}\sum_{\mrm{EP}(\mathfrak{D})}\anglelr{\mathcal{M}_{\mathfrak{D}}}\mathcal{M}_{\mathfrak{D}}.
+\rho_F = \frac{1}{2^{N/2}}\sum_{\mrm{EP}(\mathfrak{D})}
+\eta_{\mathfrak{D}} \anglelr{\mathcal{M}_{\mathfrak{D}}}\mathcal{M}_{\mathfrak{D}}.
 \]
-Because $\anglelr{\mathcal{M}_{\mathfrak{D}}} = \mathfrak{C}_{\mathfrak{D}}$ in the pure Kitaev model, and an endpoint set $\mrm{EP}(\mathfrak{D})$ uniquely corresponds to an equivalence class $[\mathfrak{D}]$, the DM can finally be written in the form of Eq.~\eqref{equ.rho-F}. 
-
-Combining these results, we ultimately obtain the DM of the ground state
+Because $\eta_\mathfrak{D} \anglelr{\mathcal{M}_{\mathfrak{D}}} = \mathfrak{C}_{\mathfrak{D}}$ in the pure Kitaev model, and an endpoint set $\mrm{EP}(\mathfrak{D})$ uniquely corresponds to an equivalence class $[\mathfrak{D}]$, the DM can finally be written in the form of Eq.~\eqref{equ.rho-F}. Combining these results, we ultimately obtain the DM of the ground state
 \begin{equation}\label{equ.Majorana-density-matrix}
     \rho = 2^{N-1}\mathcal{P}_G\prod_{\anglelr{ij}}\lr{\frac{\mathds{1} + \hat{u}_{ij}}{2}} \rho^F \mathcal{P}_G.
 \end{equation}
 
 Here, we also demonstrate that the DM in the spin representation can also be derived from the Majorana fermion representation \eqref{equ.Majorana-density-matrix}, We apply the following transformation
 \[
-\dimer{i}{j} = \mathcal{P}_G \hat{u}_{ij}ic_jc_i \mathcal{P}_G = \mathcal{P}_G\hat{u}_{ij}ic_jc_i,
+\dimer{i}{j} = \mathcal{P}_G \hat{u}_{ij}ic_jc_i \mathcal{P}_G,
 \]
 to transform the Majorana fermion operators back into spin operators. We have applied the fact that $ib^\mu_ic_i$ commutes with the $\mathbb{Z}_2$ gauge generator $D_i$, thus $[ib^\mu_i c_i, \mathcal{P}_G]=0$. In general, the above relation implies the direct correspondence between $\Sigma_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$
 \begin{equation}\label{equ.U-V-relation} 
-\mathcal{P}_G
-    \lr{\prod_{\anglelr{ij}\in\mathfrak{D}}\hat{u}_{ij}} \mathcal{M}_\mathfrak{D} = \Sigma_{\mathfrak{D}}\mathcal{P}_G.
+    \mathcal{P}_G \lr{\prod_{\anglelr{ij}\in\mathfrak{D}}\hat{u}_{ij}} \mathcal{M}_\mathfrak{D} \mathcal{P}_G 
+    = 
+    \Sigma_{\mathfrak{D}}\mathcal{P}_G.
 \end{equation}
-The Gutzwiller projection of the last term is actually redundant since $\Sigma_{\mathfrak{D}}$ is already physical. We add this here to emphasize that we restrict ourselves to physical space. With this equation, the gauge part, composed of gauge-field operators, can then be represented in terms of $\Sigma_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$. Therefore, Eq.~\eqref{equ.Majorana-density-matrix} can be rewritten as
+The Gutzwiller projection of the last term is actually redundant since $\Sigma_{\mathfrak{D}}$ is already physical. We add this term here to emphasize that we restrict ourselves to the physical sector. With this equation, the gauge part, composed of gauge-field operators, can then be represented in terms of $\Sigma_\mathfrak{D}$ and $\mathcal{M}_\mathfrak{D}$. Therefore, Eq.~\eqref{equ.Majorana-density-matrix} can be rewritten as
 \begin{align*}
-    \rho &= \frac{2^{N-1}}{2^{3N/2}} \sum_{\mathfrak{D}} \mathcal{P}_G \lr{\prod_{\anglelr{ij}\in\mathfrak{D}} \hat{u}_{ij}} \rho^F \mathcal{P}_G \\
-    &=\frac{1}{2^{N/2+1}} \sum_{\mathfrak{D}} \Sigma_\mathfrak{D} \mathcal{P}_G \mathcal{M}_\mathfrak{D} \rho^F\mathcal{P}_G
+    \rho &= \frac{2^{N-1}}{2^{3N/2}} \sum_{\mathfrak{D}} 
+    \mathcal{P}_G \lr{\prod_{\anglelr{ij}\in\mathfrak{D}} \hat{u}_{ij}} 
+    \rho^F 
+    \mathcal{P}_G \\
+    &=\frac{1}{2^{N+1}} \sum_{\mathfrak{D}} 
+    \sum_{\mrm{EP}(\mathfrak{D}')} \mathfrak{C}_{\mathfrak{D}'}
+    \mathcal{P}_G \lr{\prod_{\anglelr{ij}\in\mathfrak{D}} \hat{u}_{ij}} \mathcal{M}_{\mathfrak{D}'} \mathcal{P}_G
+    .
 \end{align*}
-Where the denominator $2^{3N/2}$ in the first line arises from the gauge field projector and the fact that the number of edges of a honeycomb lattice is three half that of the lattice sites. The Majorana part in the last line can be further simplified by expressing the Majorana DM using Eq.~\eqref{equ.rho-F} and 
-\[
-\mathcal{P}_G \mathcal{M}_\mathfrak{D} \mathcal{P}_G =
-\left\{
-    \begin{array}{ll}
-        \mathcal{P}_G & ;\;\text{if $\mathfrak{D}\sim \varnothing$} \\
-        0 & ;\;\text{otherwise}
-    \end{array}
-\right.
-\] 
-because $\mathcal{M}_\mathfrak{D}$ is physical only when $\mathfrak{D}\sim\varnothing$. So,
-\begin{align*}
-    \mathcal{P}_G \mathcal{M}_\mathfrak{D} \rho^F\mathcal{P}_G &= \frac{1}{2^{N/2}} \sum_{[\mathfrak{D}']} \mathfrak{C}_{\mathfrak{D}'} \mathcal{P}_G \mathcal{M}_\mathfrak{D} \mathcal{M}_{\mathfrak{D}'} \mathcal{P}_G \\
-    &= \frac{1}{2^{N/2}}\sum_{[\mathfrak{D}']} \varphi(\mathfrak{D},\mathfrak{D}') \mathfrak{C}_{\mathfrak{D}'} \mathcal{P}_G \mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'} \mathcal{P}_G \\
-    &= \frac{1}{2^{N/2}} \mathfrak{C}_{\mathfrak{D}} \mathcal{P}_G
-\end{align*}
-%Notice that the factor $\varphi(\mathfrak{D},\mathfrak{D})=+1$ when the number of $A$-sublattice points and that of $B$-sublattice points in $\mrm{EP}(\mathfrak{D})$ are identical. Otherwise, it will be equal to $-1$. 
-The phase factors $\varphi(\mathfrak{D},\mathfrak{D})$ reduce to $+1$ because only those configurations satisfying $\varphi(\mathfrak{D},\mathfrak{D})= \eta_\mathfrak{D} = +1$ have finite values of $\mathfrak{C}_\mathfrak{D}$. See Definition~\ref{def:good-def} and Theorem~\ref{thm:phi-self}. Combining this result with the DM obtained previously, we obtain the following result
+The denominator $2^{3N/2}$ in the first line arises from the gauge field projector and the fact that the number of edges of a honeycomb lattice is two-thirds the number of lattice sites. In the above derivation, the fermionic density matrix in the first line was substituted by Eq.~\eqref{equ.rho-F}. The term sandwiched by the Gutzwiller projection is non-vanishing only if $[\mathfrak{D}] = [\mathfrak{D}']$. If the condition is satisfied, the term along with the Gutzwiller projection reduces to the string operator $\Sigma_{\mathfrak{D}}$ according to Eq.~\eqref{equ.U-V-relation}. As a result, we obtain the following DM
 \begin{equation}\label{equ.spin-rho-from-fermion}
     \rho = \frac{1}{2^{N+1}} \sum_{\mathfrak{D}} \mathfrak{C}_\mathfrak{D} \Sigma_\mathfrak{D}. 
 \end{equation}
-The Gutzwiller projector has been omitted because we now completely restrict ourselves to physical space. The normalization factor is $1/2^{N+1}$ instead of $1/2^{N}$ because two different edge configurations $\mathfrak{D}_Z\ominus\mathfrak{D}$ and $\mathfrak{D}_{zz}\ominus\mathfrak{D}$ give the identical string operator $\Sigma_{\mathfrak{D}_Z\ominus\mathfrak{D}} = \Sigma_{\mathfrak{D}_{zz}\ominus\mathfrak{D}}$ for any $\mathfrak{D}$, as explained in Appendix~\ref{sec:fermion_parity_from_string_operators}. Thus, the result should be divided by two to avoid redundancy. Notice that we do not have this issue in $\rho^F$ since $\mathcal{M}_{\mathfrak{D}_Z}$ is not identical to $\mathcal{M}_{\mathfrak{D}_{zz}}$, which is proportional to identity $\mathcal{M}_{\mathfrak{D}_{zz}}\propto\mathds{1}$. Therefore, we have to treat them as two different components, and both should be included in $\rho^F$. After grouping the terms in Eq.~\eqref{equ.spin-rho-from-fermion} into equivalence classes, it will eventually reproduce Eq.~\eqref{equ.density-matrix}. 
+The Gutzwiller projector has been omitted because we now completely restrict ourselves to physical space. The normalization factor is $1/2^{N+1}$ instead of $1/2^{N}$ because two different edge configurations $\mathfrak{D}_Z\ominus\mathfrak{D}$ and $\mathfrak{D}_{zz}\ominus\mathfrak{D}$ give the identical string operator $\Sigma_{\mathfrak{D}_Z\ominus\mathfrak{D}} = \Sigma_{\mathfrak{D}_{zz}\ominus\mathfrak{D}}$ for any $\mathfrak{D}$, as explained in Appendix~\ref{sec:fermion_parity_from_string_operators}. Thus, the result should be divided by two to avoid redundancy. Notice that we do not have this issue in $\rho^F$ since $\mathcal{M}_{\mathfrak{D}_Z}$ is not identical to $\mathcal{M}_{\mathfrak{D}_{zz}}$, which is proportional to identity $\mathcal{M}_{\mathfrak{D}_{zz}}\propto\mathds{1}$. Therefore, we should treat them as two different components and include both of them in $\rho^F$. After grouping the terms in Eq.~\eqref{equ.spin-rho-from-fermion} into equivalence classes, it will eventually reproduce Eq.~\eqref{equ.density-matrix}. 
 

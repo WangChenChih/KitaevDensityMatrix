@@ -3,7 +3,7 @@ We follow the general reduced density matrix of a simply-connected region $A$ an
 \begin{align*}
 \rho_A &= \frac{1}{2^{N-N_p+2}}\Tr_{\overline{A}}\lrm{\hat{\Pi}_A\hat{\Pi}\sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D}\Sigma_\mathfrak{D}} \\
 &= 
-\frac{1}{2^{N+2}}\mathcal{P}_A^{(p)} \sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D} \Tr_{\overline{A}}\lrm{\prod_{p}\lr{\mathds{1}+W_p}\Sigma_\mathfrak{D}}
+\frac{1}{2^{N+2}}\hat{\Pi}_A \sum_{[\mathfrak{D}]}\mathfrak{C}_\mathfrak{D} \Tr_{\overline{A}}\lrm{\prod_{p}\lr{\mathds{1}+W_p}\Sigma_\mathfrak{D}}
 \end{align*}
 After that, we investigate what terms can survive after the following trace,
 \begin{align*}
@@ -11,7 +11,7 @@ After that, we investigate what terms can survive after the following trace,
 =&
 2\sum'_{\mathcal{A}}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}} \Tr_{\overline{A}}\lrm{ \lr{\prod_{p\in\mathcal{A}}W_p }\Sigma_{\mathfrak{D}}}
 \end{align*}
-As a reminder, we denote by $\mathcal{A}$ the sets of plaqettes as defined in Eq.~\eqref{equ.lattice-Stokes}. Since only two types of terms survive after taking the trace, which are those with (i) $\mathcal{A}\subset A$ and $[\mathfrak{D}]\subset A$ and (ii) $\mathcal{A}\ominus\mathfrak{P}\subset A$ and $[\mathfrak{D}\ominus\mathfrak{D}_Z]\subset A$, respectively. Both give the same contribution. The reduced density matrix is therefore
+As a reminder, we denote by $\mathcal{A}$ the set of plaquettes as defined in Eq.~\eqref{equ.lattice-Stokes}. Only two types of terms survive after taking the trace, which are those with (i) $\mathcal{A}\subset A$ and $[\mathfrak{D}]\subset A$ and (ii) $\mathcal{A}\ominus\mathfrak{P}\subset A$ and $[\mathfrak{D}\ominus\mathfrak{D}_Z]\subset A$, respectively. Both give the same contribution. The reduced density matrix is therefore
 \begin{align*}
 &2\sum'_{\mathcal{A}}\sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}} \Tr_{\overline{A}}\lrm{ \lr{\prod_{p\in\mathcal{A}}W_p } \Sigma_{\mathfrak{D}}} \\
 =& 2\prod_{p\in A}\lr{\mathds{1}+W_p}\lrm{ 2\sum_{[\mathfrak{D}]\subset A} \mathfrak{C}_{\mathfrak{D}}\Sigma_{\mathfrak{D}} 

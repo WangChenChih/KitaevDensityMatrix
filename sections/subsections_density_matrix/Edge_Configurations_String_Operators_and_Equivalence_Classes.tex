@@ -3,7 +3,7 @@
 The information of a state is stored in the correlation functions. In the Kitaev model, the form~\eqref{equ.only-finite-correlation} implies that the finite correlation functions are determined by string-like objects $\mathfrak{D}$. Thus, we need to discuss how to manipulate the fundamental string objects to further analyze the DM. In this section, we introduce the notions of the \textit{string operators} and their \textit{equivalence classes} to describe the spin correlation functions in the Kitaev model. Both will be the building blocks for the DM. We begin by introducing the algebraic rule of operating edge configurations, and then point out the structure of the equivalence classes from the algebra. 
 
 
-\textit{edge configurations}, denoted by $\mathfrak{D}$ as appeared in Eq.~\eqref{equ.only-finite-correlation}, are sets consisting of edges in the lattice. Their \textit{symmetric difference}, denoted by $\ominus$, is defined as
+\textit{Edge configurations}, denoted by $\mathfrak{D}$ as appeared in Eq.~\eqref{equ.only-finite-correlation}, are sets consisting of edges in the lattice. Their \textit{symmetric difference}, denoted by $\ominus$, is defined as
 \[
 \mathfrak{D}\ominus\mathfrak{D}' \equiv \mathfrak{D}\cup\mathfrak{D}'-\mathfrak{D}\cap\mathfrak{D}'
 \]
@@ -25,7 +25,7 @@ The order of multiplying dimer operators $\dimer{i}{j}$ in the above product is 
 \begin{equation}\label{equ.Sigma-representation}
 \Sigma_{\mathfrak{D}}\Sigma_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}') \Sigma_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
-\alert{Detailed discussions on the fundamental properties of the phase factor $\varphi(\mathfrak{D},\mathfrak{D}')$ are given in Appendix~\ref{appendix:projective-rep}}.
+Detailed discussions on the fundamental properties of the phase factor $\varphi(\mathfrak{D},\mathfrak{D}')$ are given in Appendix~\ref{appendix:projective-rep}.
 
 Compared to the open strings with endpoints, edge configurations composed of closed loops form a special class, since the expectation values of their corresponding string operators are equal to 1. For example, the simplest closed loop $\de p$ consists of six edges surrounding a plaquette $p$, and the corresponding string operator 
 \[
@@ -33,24 +33,25 @@ Compared to the open strings with endpoints, edge configurations composed of clo
 \]
 is a plaquette operator $W_p$ centered at $p$. From the property of $W_p$, string operators of larger loops, as well as edge configurations consisting of multiple loops, can be expressed as combinations of plaquette operators in a specific set $\mathcal{A}$ of plaquettes, in which the loop is the boundary of such a region
 \begin{equation}\label{equ.lattice-Stokes}
-    \Sigma_{\de\mathcal{A}} = \prod_{p\in\mathcal{A}}W_p
+    \Sigma_{\de\mathcal{A}} = \prod_{p\in\mathcal{A}}W_p,
 \end{equation}
 as illustrated in \autoref{fig.equivalent}. 
 %
-Since the Kitaev ground state is an eigenvector of plaquette operators with an eigenvalue $+1$, the expectation value of the string operator of the configuration $\mathfrak{D}$ is equal to another configuration $\mathfrak{D}\ominus\de\mathcal{A}$ constructed by adding a loop configuration $\de\mathcal{A}$ to the original one,
+Since the Kitaev ground state is an eigenvector of plaquette operators with an eigenvalue $+1$, the expectation value of the string operator of the configuration $\mathfrak{D}$ is equal to another configuration $\mathfrak{D}\ominus\de\mathcal{A}$ constructed by adding a loop configuration $\de\mathcal{A}$ to the original one up to a sign $\varphi$
 \[
-\abs{\anglelr{\Sigma_{\de\mathcal{A}\ominus\mathfrak{D}}}}
-=
-\abs{ \varphi(\de\mathcal{A},\mathfrak{D}) \anglelr{\Sigma_{\de\mathcal{A}}\Sigma_{\mathfrak{D}}}} = \abs{\anglelr{\Sigma_{\mathfrak{D}}}}
+\anglelr{\Sigma_{\de\mathcal{A}\ominus\mathfrak{D}}}
+= 
+\varphi(\de\mathcal{A},\mathfrak{D}) \anglelr{\Sigma_{\de\mathcal{A}}\Sigma_{\mathfrak{D}}} = 
+\varphi(\de\mathcal{A},\mathfrak{D}) \anglelr{\Sigma_{\mathfrak{D}}}.
 \]
-up to a sign $\varphi$. Such an equation is equivalent to 
+Such an equation is equivalent to 
 \begin{equation}\label{equ.one-loop-equivalence}
 \lr{\prod_{p\in\mathcal{A}}W_p}
 \anglelr{\Sigma_{\de\mathcal{A}\ominus\mathfrak{D}}}\Sigma_{\de\mathcal{A}\ominus\mathfrak{D}} = \anglelr{\Sigma_{\mathfrak{D}}}\Sigma_{\mathfrak{D}}
 \end{equation}
 for an arbitrary set $\mathcal{A}$ of plaquettes due to the $\mathbb{Z}_2$ nature of the string operators. Similarly, for the non-contractible loops $\mathcal{L}_v$ and $\mathcal{L}_h$ that circle the torus in the vertical and horizontal directions, we have
 \begin{equation}\label{equ.global-loop-equivalence}
-\Tilde{W}_{\mathcal{L}_{v/h}}\anglelr{\Sigma_{\mathcal{L}_{v/h}\ominus\mathfrak{D}}}\Sigma_{\mathcal{L}_{v/h}\ominus\mathfrak{D}} = \anglelr{\Sigma_{\mathfrak{D}}}\Sigma_{\mathfrak{D}} 
+\Tilde{W}_{\mathcal{L}_{v/h}}\anglelr{\Sigma_{\mathcal{L}_{v/h}\ominus\mathfrak{D}}}\Sigma_{\mathcal{L}_{v/h}\ominus\mathfrak{D}} = \anglelr{\Sigma_{\mathfrak{D}}}\Sigma_{\mathfrak{D}}, 
 \end{equation}
 where $\Tilde{W}_v\equiv\Sigma_{\mathcal{L}_v}$ and $\Tilde{W}_h\equiv\Sigma_{\mathcal{L}_h}$ are the corresponding string operators of non-contractible loops $\mathcal{L}_v$ and $\mathcal{L}_h$, respectively, as illustrated in the right panel of \autoref{fig.equivalent}.
 \begin{figure}
@@ -72,7 +73,7 @@ where
 \lr{\frac{\mathds{1} + \Tilde{W}_h}{2}}
 \prod_{p} \lr{\frac{\mathds{1} + W_p}{2}}
 \end{equation}
-is a projector onto the space with the flux-free constraint $\anglelr{W_p}=+1\forall p$ and one of the choices for non-contractible Wilson loops $\sanglelr{\Tilde{W}_v} = \sanglelr{\Tilde{W}_h} = +1$~\footnote{For a torus, there are four choices in total for non-contractible Wilson loops corresponding to $\sanglelr{\Tilde{W}_v}=\pm 1$ with $\sanglelr{\Tilde{W}_h}=\pm 1$. These four cases are equivalent for the analysis of the entanglement feature, but only in different topological sectors. In this work, we only consider one of the topological sectors.}. In other words, the projector $\hat{\Pi}$ can absorb a closed-loop string operator
+is a projector onto the space with the flux-free constraint $\anglelr{W_p}=+1\forall p$ and one of the choices for non-contractible Wilson loops $\sanglelr{\Tilde{W}_v} = \sanglelr{\Tilde{W}_h} = +1$~\footnote{For a torus, there are four choices in total for non-contractible Wilson loops corresponding to $\sanglelr{\Tilde{W}_v}=\pm 1$ with $\sanglelr{\Tilde{W}_h}=\pm 1$. These four cases are equivalent for the analysis of the entanglement feature, but only in different topological sectors. In this work, we only consider one of the topological sectors.}. In other words, the projector $\hat{\Pi}$ absorb a closed-loop string operator
 \begin{equation}\label{eq.W_absorb}
     \hat{\Pi}\Sigma_{\mathcal{C}} = \hat{\Pi}
 \end{equation}
@@ -83,5 +84,5 @@ for an arbitrary closed loop $\mathcal{C}$. Thus, only the information of config
     \item[(iii)] $\mathfrak{D}_1=\mathfrak{D}_2\ominus\de\mathcal{A}\ominus\mathcal{L}_h$
     \item[(iv)] $\mathfrak{D}_1=\mathfrak{D}_2\ominus\de\mathcal{A}\ominus\mathcal{L}_v\ominus\mathcal{L}_h$
 \end{enumerate} 
-Equivalent configurations are collected into \emph{equivalence classes} $[\mathfrak{D}^c]=\lrg{\mathfrak{D}:\mathfrak{D}\sim\mathfrak{D}^c}$ characterized by each representative $\mathfrak{D}^c$. At the same time, \alert{the left panel} of Fig.~\ref{fig.equivalent} shows that the two equivalent edge configurations must share the same set of endpoints, providing a simple way to identify them. In other words, there is a one-to-one correspondence between an equivalence class for edge configurations $[\mathfrak{D}]$ and the \textit{set of endpoints} of the representative configuration $\mathfrak{D}$, denoted by $\mrm{EP}\lr{\mathfrak{D}}$. Aside from the convenience that endpoint sets uniquely determine the \alert{equivalence class}, the physical picture of the equivalence classes and endpoint sets also implies that a Pauli string in the spin representation is identical to the two Majorana fermions residing at the endpoints of the string. This can be seen in the \textit{commutation} among the endpoints of strings~\cite{Kitaev_2006, Kawagoe-Levin_2020, fermion-and-string}. \alert{In fact, the physical interpretation of the properties of string operators listed from Eq.~\eqref{equ.lattice-Stokes} to Eq.~\eqref{eq.W_absorb} is that the system can be separated into the gauge and matter parts, in which the gauge part is governed by the projector $\hat{\Pi}$ while the matter part is encoded in the endpoints of string operators. The only difference is that this fact is demonstrated entirely using spin operators throughout this work. More details will be presented in Sec.~\ref{sec:Emergent-Fermions-at-the-Endpoints}.} 
+Equivalent configurations are collected into \emph{equivalence classes} $[\mathfrak{D}^c]=\lrg{\mathfrak{D}:\mathfrak{D}\sim\mathfrak{D}^c}$ characterized by each representative $\mathfrak{D}^c$. At the same time, {the left panel} of Fig.~\ref{fig.equivalent} shows that the two equivalent edge configurations must share the same set of endpoints, providing a simple way to identify them. In other words, there is a one-to-one correspondence between an equivalence class for edge configurations $[\mathfrak{D}]$ and the \textit{set of endpoints} of the representative configuration $\mathfrak{D}$, denoted by $\mrm{EP}\lr{\mathfrak{D}}$. Aside from the convenience that endpoint sets uniquely determine the {equivalence class}, the physical picture of the equivalence classes and endpoint sets also implies that a Pauli string in the spin representation is identical to the two Majorana fermions residing at the endpoints of the string. This can be seen in the \textit{commutation} among the endpoints of strings~\cite{Kitaev_2006, Kawagoe-Levin_2020, fermion-and-string}. {In fact, the physical interpretation of the properties of string operators listed from Eq.~\eqref{equ.lattice-Stokes} to Eq.~\eqref{eq.W_absorb} is that the system can be separated into the gauge and matter parts, in which the gauge part is governed by the projector $\hat{\Pi}$ while the matter part is encoded in the endpoints of string operators. The only difference is that this fact is demonstrated entirely using spin operators throughout this work. More details will be presented in Sec.~\ref{sec:Emergent-Fermions-at-the-Endpoints}.} 
 

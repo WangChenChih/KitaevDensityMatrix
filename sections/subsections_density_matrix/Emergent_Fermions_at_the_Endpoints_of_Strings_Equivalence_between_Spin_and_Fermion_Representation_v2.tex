@@ -5,7 +5,7 @@ The form of Eq.~\eqref{equ.density-matrix} and Eq.~\eqref{equ.red-den-mat-sim-co
 
 Starting from the Majorana representation, the ground state DM can also be represented as
 \[
-  \rho = 2^{N-1}\mathcal{P}_G\prod_{\anglelr{ij}}\lr{\frac{\mathds{1}+\hat{u}_{ij}}{2}}\rho_F\mathcal{P}_G
+  \rho = 2^{N-1}\mathcal{P}_G\prod_{\anglelr{ij}}\lr{\frac{\mathds{1}+\hat{u}_{ij}}{2}}\rho_F\mathcal{P}_G,
 \]
 where $\rho_F$ is the DM of the Kitaev ground state in the Majorana fermion representation. The Majorana DM $\rho_F$ can be constructed from a starting point similar to Eq.~\eqref{equ.rho-starting} that we have used in the beginning,
 \begin{equation}\label{equ.rho-F}
@@ -13,21 +13,21 @@ where $\rho_F$ is the DM of the Kitaev ground state in the Majorana fermion repr
 \end{equation}
 where
 \begin{equation}\label{equ.V-rep-def}
-    \mathcal{M}_\mathfrak{D} \equiv \prod_{\anglelr{ij}\in\mathfrak{D}}ic_jc_i
+    \mathcal{M}_\mathfrak{D} \equiv \prod_{\anglelr{ij}\in\mathfrak{D}}ic_jc_i.
 \end{equation}
 Details of the derivations are presented in Appendix \ref{appendix:Majorana-derivation}. In each dimer $\anglelr{ij}$ of the above product, the site $i$ belongs to sublattice $A$ and $j$ to sublattice $B$. The denominator of the normalization coefficient is $2^{N/2}$ instead of $2^N$ because a normal fermion $f$ is defined by two $c$-Majorana fermions
 %
 . To manifest the similarity between the spin DM \eqref{equ.density-matrix} and the Majorana DM \eqref{equ.rho-F}, we define a set of operators $\mathcal{S}_{\mathfrak{D}}$ for each operator that corresponds to an edge configuration
 \begin{equation}\label{equ.S-def}
-    \mathcal{S}_\mathfrak{D} \equiv \hat{\Pi}\Sigma_\mathfrak{D}
+    \mathcal{S}_\mathfrak{D} \equiv \hat{\Pi}\Sigma_\mathfrak{D}.
 \end{equation}
-Given Eq.~\eqref{equ.Sigma-representation} and the fact that $[\alert{\hat{\Pi}},\Sigma_{\mathfrak{D}}]=0$, the set of operators $\lrg{\mathcal{S}_{\mathfrak{D}}}$ also forms a representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$, 
+Given Eq.~\eqref{equ.Sigma-representation} and the fact that $[{\hat{\Pi}},\Sigma_{\mathfrak{D}}]=0$, the set of operators $\lrg{\mathcal{S}_{\mathfrak{D}}}$ also forms a representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$, 
 \begin{equation}\label{equ.U-rep-algebra}
     \mathcal{S}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{S}_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
-With the string representation \eqref{equ.S-def} and \eqref{equ.U-rep-algebra}, The form of the DM in Eq.~\eqref{equ.density-matrix} becomes
+With the string representation \eqref{equ.S-def} and \eqref{equ.U-rep-algebra}, the form of the DM in Eq.~\eqref{equ.density-matrix} becomes
 \begin{equation}\label{equ.rho-U}
-    \rho =  \frac{1}{2^{N-N_p}} \sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}}
+    \rho =  \frac{1}{2^{N-N_p}} \sum_{[\mathfrak{D}]}\mathfrak{C}_{\mathfrak{D}}\mathcal{S}_{\mathfrak{D}},
 \end{equation}
 which is of a form similar to Eq.~\eqref{equ.rho-F} if those $\mathcal{S}$-operators are replaced by $\mathcal{M}$-operators. This is reminiscent of different representations of the same algebra.
 If we use the Majorana fermions to represent spin operators as $\sigma^\mu\to ib^\mu c$, then 
@@ -39,7 +39,7 @@ The first two products completely consist of $\hat{u}_{ij}$'s, which commute wit
 \[\hat{\Pi} \to \prod_{ p}\lr{\frac{\mathds{1} + \prod_{\anglelr{ij}\in p}\hat{u}_{ij}}{2}}\]
 in the Majorana representation, where ``$\anglelr{ij}\in p$'' stands for \textit{those edges of the plaquette $p$}.}. Therefore, they will not contribute to the phase factor $\varphi\lr{\mathfrak{D},\mathfrak{D}'}$ at all. So, we know that the anti-commutation relations among $c$-Majorana fermions are encoded in the phase factor $\varphi\lr{\mathfrak{D},\mathfrak{D}'}$. In view of this, we conclude that the operators $\mathcal{M}_\mathfrak{D}$ defined by Eq.~\eqref{equ.V-rep-def} also form a projective representation of the edge configuration algebra and share the same phase factor $\varphi\lr{\mathfrak{D},\mathfrak{D}'}$ with the representation $\mathcal{S}$
 \begin{equation}\label{equ.V-rep-algebra}
-    \mathcal{M}_{\mathfrak{D}}\mathcal{M}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'}
+    \mathcal{M}_{\mathfrak{D}}\mathcal{M}_{\mathfrak{D}'} = \varphi(\mathfrak{D},\mathfrak{D}')\mathcal{M}_{\mathfrak{D}\ominus\mathfrak{D}'}.
 \end{equation}
 
 A similar picture also holds for the RDM. we can  define a set of $\mathcal{S}$-operators

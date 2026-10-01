@@ -1,12 +1,12 @@
-\subsection{Interplay between Entanglememt and Fermion Parity}\label{sec:EE-calculation-odd}
+\subsection{Interplay between Entanglement and Subsystem Fermion Parity}\label{sec:EE-calculation-odd}
 
-A subtlety arises in cases with an odd number of $N^A$, since a well-defined Hilbert space of a Majorana fermion system must have an even number of Majorana fermions. We address the problem in this section, and demonstrate how this even-odd problem, i.e., the \textit{fermion parity}, is intertwined with the entanglement structure. The notion of the fermion parity will give hints about how to formulate and resolve the subtlety in the spin representation. 
+A subtlety arises when the number of lattice sites in a subregion is odd, since a well-defined Hilbert space of a Majorana fermion system must have an even number of Majorana fermions. We address the problem in this section and demonstrate how this even-odd problem, i.e., the \textit{fermion parity}, is intertwined with the entanglement structure. Understanding subsystem fermion parity provides crucial insights into formulating and resolving this ambiguity directly within the physical spin representation.
 
-A trick that resolves the issue of odd $N^A$ is to add a redundant Majorana fermion, denoted by $c_{(N^A+1)}$, to the original system, making the number of Majorana fermions even, so that our previous approach works again~\cite{Lee-Wilczek_2013}. This redundant Majorana fermion is defined in such a way that it has no interaction with other Majorana fermions. In other words, $\sanglelr{ c_{(N^A+1)}c_i}=0\;\forall i\in A$. In this way, the dimension of the Hilbert space of the matter sector, including the redundant one, is $2^{(N^A+1)/2}$, and the RDM becomes
+To resolve the issue of odd $N^A$, we add a redundant Majorana fermion, denoted by $c_{(N^A+1)}$, to the original system, making the number of Majorana fermions even, so that our previous approach works again~\cite{Lee-Wilczek_2013}. We design the redundant Majorana fermion in such a way that it has no interaction with other Majorana fermions. Mathematically, we set $\sanglelr{ c_{(N^A+1)}c_i}=0\;\forall i\in A$. In this way, the dimension of the Hilbert space of the matter sector, including the redundant one, is $2^{(N^A+1)/2}$, and the RDM becomes
 \begin{equation}\label{equ.rho-A-F-odd}
     \rho_A^{F} = \frac{1}{2^{\lr{N^A+1}/2}}\sum_{[\mathfrak{D}]\in A}\mathfrak{C}_{\mathfrak{D}}\mathcal{M}_\mathfrak{D}
 \end{equation}
-The redundant Majorana fermion does not enter the DM. Thus, the form of $\rho^F_A$ remains the same, and only the normalization coefficient is changed. With the redundant Majorana fermion, the original correlation matrix $\Gamma^{(c)}$ must correspondingly be enlarged to $\Tilde{\Gamma}^{(c)}$ by one dimension. According to the definition of $c_{(N^A+1)}$, we get
+The redundant Majorana fermion does not enter the DM. Thus, the form of $\rho^F_A$ remains intact. Only the normalization coefficient is changed. With the redundant Majorana fermion, the original correlation matrix $\Gamma^{(c)}$ is correspondingly enlarged by one dimension to $\Tilde{\Gamma}^{(c)}$. According to the definition of $c_{(N^A+1)}$, we obtain
 \begin{equation}\label{equ.tilde-Gamma-corner}
     \Tilde{\Gamma}^{(c)} = 
 \lr{
@@ -15,11 +15,11 @@ The redundant Majorana fermion does not enter the DM. Thus, the form of $\rho^F_
     \hline
     0 & 1/2
 \end{array}
-}
+}.
 \end{equation}
-In the enlarged correlation matrix $\Tilde{\Gamma}^{(c)}$, the upper-left block is the original correlation matrix. The upper-right column and the lower-left row are zeros because the redundant Majorana fermion does not correlate with others. The element $1/2$ at the lower-right entry is given by the redundant Majorana fermion, $\frac{1}{2}=\frac{1}{2}\sanglelr{c_{(N^A+1)}c_{(N^A+1)}}$. 
+In the enlarged correlation matrix $\Tilde{\Gamma}^{(c)}$, the upper-left block is the original correlation matrix. The upper-right column and the lower-left row are zeros because the redundant Majorana fermion does not correlate with others. The element $1/2$ at the lower-right entry is given by the redundant Majorana fermion $\frac{1}{2}=\frac{1}{2}\sanglelr{c_{(N^A+1)}c_{(N^A+1)}}$. 
 
-Due to the change in the dimension of the Hilbert space of the matter sector, the relation \eqref{equ.U-V-trace-relation} needs to be modified to
+Due to the change in the dimension of the Hilbert space of the matter sector, the relation \eqref{equ.U-V-trace-relation} needs to be modified to the following
 \begin{equation}\label{equ.U-V-trace-relation-odd}
     \left\{
 \begin{aligned}
@@ -28,7 +28,7 @@ Due to the change in the dimension of the Hilbert space of the matter sector, th
 \end{aligned}
 \right..
 \end{equation}
-Performing the same calculation as we did in the cases with even $N^A$, we obtain a similar result to the EE 
+Performing the same calculation as we did in the cases with even $N^A$, we obtain a result similar to the EE 
 \begin{align}\label{equ.EE-odd-derive-1}
     S_A &= -\Tr_{A,F} \rho^F_A\ln\rho^F_A + \lr{\frac{N^A-1}{2}-N^A_p}\ln 2 \nonumber\\
     &= -\tr\lr{\Tilde{\Gamma}^{(c)}\ln \Tilde{\Gamma}^{(c)}} + \lr{\frac{1}{2}\abs{\de A} - \frac{3}{2}}\ln 2,
@@ -37,17 +37,17 @@ where the correlation matrix in Eq.~\eqref{equ.EE-corr-mat} is replaced by the e
 \begin{equation}\label{equ.EE-reduce}
     \tr\lr{\Tilde{\Gamma}^{(c)} \ln \Tilde{\Gamma}^{(c)}} = \tr\lr{\Gamma^{(c)} \ln \Gamma^{(c)}} - \frac{1}{2}\ln 2 .
 \end{equation}
-Substituting Eq.~\eqref{equ.EE-reduce} into Eq.~\eqref{equ.EE-odd-derive-1}, the last term $-\frac{1}{2}\ln 2$ in Eq.~\eqref{equ.EE-reduce} will cancel the term $-\frac{1}{2}\ln 2$ in Eq.~\eqref{equ.EE-odd-derive-1} arising from the enlarged dimension of the matter sector, and we ultimately obtain a result that is the same as Eq.~\eqref{equ.Yao-Qi-standard-form} in cases with even $N^A$. 
+Substituting Eq.~\eqref{equ.EE-reduce} into Eq.~\eqref{equ.EE-odd-derive-1}, the last term $-\frac{1}{2}\ln 2$ in Eq.~\eqref{equ.EE-reduce} will cancel the term $-\frac{1}{2}\ln 2$ in Eq.~\eqref{equ.EE-odd-derive-1} arising from the enlarged dimension of the matter sector, and we ultimately obtain a result that is the same as Eq.~\eqref{equ.Yao-Qi-standard-form} for even $N^A$. 
 
-From this derivation, we prove that the result obtained by \cite{Yao-Qi_2010} is still correct for cases with odd $N^A$. In the calculation, we first borrow dimension $2^{1/2}$ of a single Majorana fermion from the gauge sector to make the Hilbert space of the matter sector well-defined, and the additional term $-\frac{1}{2}\ln 2$ reflects such a borrowed dimension. Afterward, the redundant fermion yields the term $\frac{1}{2}\ln 2$ and then returns the dimension to the gauge sector, causing no net effect. %Ultimately, there is no net effect of the number of lattice sites, and the formula Eq.~\eqref{equ.Yao-Qi-standard-form} holds for both even and odd cases.
+The above derivation not only confirms that the result in Ref.~\cite{Yao-Qi_2010} remains valid for subsystems with an odd number of sites $N^A$, but also provides a new physical insight into the interplay between the matter and gauge sectors. Operationally, we first borrow a dimension $2^{1/2}$ of a single Majorana fermion from the gauge sector to make the Hilbert space of the matter sector well-defined. The resulting shift of $-\frac{1}{2}\ln 2$ reflects this borrowed dimension. Subsequently, the redundant fermion yields the term $+\frac{1}{2}\ln 2$, effectively restoring the dimension back to the gauge sector and leaving no net change. 
 
-As shown in Eq.~\eqref{equ.gamma-eigenvalue}, the elements in the single-particle ES come in pairs. Since the lower-right corner of Eq.~\eqref{equ.tilde-Gamma-corner} provides an eigenvalue $1/2$, there must be another identical eigenvalue $\frac{1}{2}=1-\frac{1}{2}$ in the original single-particle ES. Therefore, the many-body ES can be written as 
+Having established the entropy formula for odd $N^A$, we now examine the ES in this situation and its intimate connection with the subsystem fermion parity. As shown in Eq.~\eqref{equ.gamma-eigenvalue}, the elements in the single-particle ES come in pairs. Since the lower-right corner of Eq.~\eqref{equ.tilde-Gamma-corner} provides an eigenvalue $1/2$, there must be another identical eigenvalue $\frac{1}{2}=1-\frac{1}{2}$ in the original single-particle ES. Therefore, the many-body ES can be written as 
 \begin{equation}\label{equ.many-body-entanglement-spectrum-odd}
 \lambda_{n_1,n_2,\cdots,n_{(N^A+1)/2}} = \frac{1}{2}\prod_{k=1}^{\frac{N^A-1}{2}}\gamma_{k,n_k}
 \end{equation}
-The formula shows that the many-body ES depends on only $(N^A-1)/2$ quantum numbers, although the complete labeling contains $(N^A+1)/2$ of them. In other words, there is a twofold degeneracy in the ES of the matter sector, thus we only have $2^{\frac{N^A-1}{2}}$ distinct values of $\lambda_{\lrg{n}}$. The degree of degeneracy for each distinct eigenvalue is therefore $2^{\frac{N^A+1}{2}-N^A_p}$ because the total number of eigenvalues is equal to the number of distinct eigenvalues multiplied by the number of degeneracies
+The formula shows that the many-body ES depends on only $(N^A-1)/2$ quantum numbers, although the complete labeling contains $(N^A+1)/2$ of them. In other words, there is a twofold degeneracy in the ES of the matter sector. Thus, we only have $2^{\frac{N^A-1}{2}}$ distinct values of $\lambda_{\lrg{n}}$. The degree of degeneracy for each distinct eigenvalue is therefore $2^{\frac{N^A+1}{2}-N^A_p}$ because the total number of eigenvalues is equal to the number of distinct eigenvalues multiplied by the number of degeneracies
 \[
 2^{N^A-N^A_p} = 2^{\frac{N^A-1}{2}}\times 2^{\frac{N^A+1}{2}-N^A_p}.
 \]
-Due to the conservation of the fermion parity in the subregion $A$, the fermion parity operator, defined by $\hat{\bog{\pi}}^{(A)} = i^{N^{A}}\prod_{j\in A}c_j$, commutes with the RDM. From the fermion-parity point of view, the twofold degeneracy in the matter sector can be understood as a block-diagonalization that depends on the total fermion parity in the subregion $A$. As we have seen, the value of $\lambda_{\lrg{n}}$ is independent of the last fermion number $n_{(N^A+1)/2}$. At the same time, $\hat{\bog{\pi}}^{(A)}$ commutes with the entanglement Hamiltonian, hence also commutes with $\rho_A$. Therefore, the ES can be separated into even and odd sectors, and these two identical sectors correspond to $\lrg{n}$ with $n_{(N^A+1)/2}=0,1$, respectively, giving a twofold degeneracy in the ES of the matter sector. 
+Due to the conservation of fermion parity in the subregion $A$, the fermion parity operator, defined by $\hat{\bog{\pi}}^{(A)} = i^{N^{A}}\prod_{j\in A}c_j$, commutes with the RDM. From the fermion-parity point of view, the twofold degeneracy in the matter sector can be understood as a block-diagonalization that depends on the subsystem fermion parity. As we have seen, the value of $\lambda_{\lrg{n}}$ is independent of the last fermion number $n_{(N^A+1)/2}$. At the same time, $\hat{\bog{\pi}}^{(A)}$ commutes with the entanglement Hamiltonian, and hence also commutes with $\rho_A$. Therefore, ES divides into even and odd sectors, and these two identical sectors correspond to $\lrg{n}$ with $n_{(N^A+1)/2}=0,1$, respectively, giving a twofold degeneracy in ES of the matter sector. The microscopic origin of this degeneracy in terms of the physical spin RDM is discussed in Sec.~\ref{sec:origin_degeneracy_odd}.
 

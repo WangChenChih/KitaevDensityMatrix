@@ -4,7 +4,7 @@ In this section, the EE of the Kitaev ground state is calculated using the DM an
 
 
 
-Due to the equivalence of the representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ in the region $A$, plus the similarity of the forms of Eq.~\eqref{equ.red-DM-new} and \eqref{equ.rho-F-reduced}, the EE of the spin system $\alert{S_A = -\Tr_A\rho_A\ln\rho_A}$ can be calculated using the Majorana DM \eqref{equ.rho-F-reduced} as an alternative. Inspired by this insight, we first observe that both representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ consist of traceless operators and the identity. Therefore, their trace satisfies 
+Due to the equivalence of the representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ in the region $A$, plus the similarity of the forms of Eq.~\eqref{equ.red-DM-new} and \eqref{equ.rho-F-reduced}, the EE of the spin system ${S_A = -\Tr_A\rho_A\ln\rho_A}$ can be calculated using the Majorana DM \eqref{equ.rho-F-reduced} as an alternative. Inspired by this insight, we first observe that both representations $\mathcal{S}^{(A)}$ and $\mathcal{M}$ consist of traceless operators and the identity. Therefore, their trace satisfies 
 \begin{equation}\label{equ.U-V-trace-relation}
     \left\{
 \begin{aligned}
@@ -15,14 +15,14 @@ Due to the equivalence of the representations $\mathcal{S}^{(A)}$ and $\mathcal{
 \end{equation}
 where $\Tr_{A,F}$ stands for taking the trace over the matter sector in the region $A$. For simplicity, we assume the subregion $A$ contains an even number of lattice sites $N^A$. Cases with an odd number of lattice sites will be discussed in later sections. Given that the two representations are identical, the following identity holds for an arbitrary analytic function $f$: 
 \begin{equation}\label{equ.identity}
-    \Tr_A f(\{\mathcal{S}^{(A)}\}) = \frac{1}{2^{N^A/2 - N^A_p}}\Tr_{A,F} f(\lrg{\mathcal{M}})
+    \Tr_A f(\{\mathcal{S}^{(A)}\}) = \frac{1}{2^{N^A/2 - N^A_p}}\Tr_{A,F} f(\lrg{\mathcal{M}}).
 \end{equation}
 Given this property, we can define a function
 \begin{align*}
-    &f(\lrg{W}) \\
-    \equiv& \lrm{\frac{1}{2^{N^A-N^A_p}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_\mathfrak{D}W_{\mathfrak{D}}}\ln\lrm{\frac{1}{2^{N^A-N^A_p}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_\mathfrak{D}W_{\mathfrak{D}}}
+    &f(\lrg{\mathcal{R}}) \\
+    \equiv& \lrm{\frac{1}{2^{N^A-N^A_p}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_\mathfrak{D}\mathcal{R}_{\mathfrak{D}}}\ln\lrm{\frac{1}{2^{N^A-N^A_p}}\sum_{[\mathfrak{D}]\subset A}\mathfrak{C}_\mathfrak{D}\mathcal{R}_{\mathfrak{D}}},
 \end{align*}
-where $W$ stands for an arbitrary representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$. With this, \alert{the following two functions that appear in the formula for computing the entropy can be expressed in terms of the function $f$ with different representations as the domain}.
+where $\mathcal{R}$ stands for an arbitrary representation of the algebra $\anglelr{\lrg{\mathfrak{D}},\ominus}$. With this,{the following two functions that appear in the formula for computing the entropy can be expressed in terms of the function $f$ with different representations as the domain}.
 \begin{equation}\label{eq:rholnrho}
     \left\{
     \begin{aligned}
@@ -39,7 +39,7 @@ The EE can be written in terms of the above functions, and the trace over the sp
     &= -\frac{1}{2^{N^A/2 - N^A_p}}\Tr_{A,F} f(\lrg{\mathcal{M}}) \\
     &= -\Tr_{A,F} \rho^F_A\ln\rho^F_A + \lr{\frac{N^A}{2}-N^A_p}\ln 2.
 \end{align*}
-\alert{The last term proportional to $\ln 2$ can be converted to the area-law entanglement.} To this end, we introduce a relation that bridges $N^A$, $N^A_p$, and $\abs{\de A}$ together (its proof is given in Appendix~\ref{appendix:Pick}),
+{The last term proportional to $\ln 2$ can be converted to the area-law entanglement.} To demonstrate this, we introduce a geometric relation connecting $N^A$, $N^A_p$, and $\abs{\de A}$ (the proof is given in Appendix~\ref{appendix:Pick}),
 \begin{equation}\label{equ.Pick_sim-con}
     \abs{\de A} = N^A - 2N^A_p + 2.
 \end{equation}
@@ -47,11 +47,24 @@ Due to this relation, the term proportional to $\ln 2$ in the last line of the a
 \begin{equation}\label{equ.EE-separation}
     S_A = \underbrace{-\Tr_{A,F}\lr{\rho_A^F\ln\rho_A^F}}_{\equiv S_A^F} + \underbrace{\lr{\frac{1}{2}\abs{\de A}-1}\ln 2}_{\equiv S_A^G}.
 \end{equation}
-This formula shows that the EE can be separated into the matter part $S^F_A$ and the gauge part, $S^G_A$, in agreement with the result obtained in \cite{Yao-Qi_2010}.
+This formula shows that the EE can be separated into the matter part $S^F_A$ and the gauge part $S^G_A$, in agreement with the result in Ref.~\cite{Yao-Qi_2010}. 
+%
+{
+The decomposition in Eq.~\eqref{equ.EE-separation} has a direct structural interpretation at the level of the physical RDM. 
+%
+As we demonstrate in the following sections, the matter contribution is encoded in the eigenvalue spectrum within each identical block of the RDM, whereas the gauge contribution originates from the exact multiplicity of these blocks and therefore from the associated degeneracy of the entanglement spectrum.
+%
+This block organization is enforced by the gauge structure of the physical spin Hilbert space, which becomes explicit through the Gauss-law constraint and the exact 1-form Wilson symmetry introduced in sections following Sec.~\ref{sec:block-diagonal-structure}.   
+%
+Thus, the gauge--matter separation of the EE is not merely an entropy-level identity, but reflects a more fundamental organization of the physical RDM.
+%
+Below, we discuss the two contributions separately.
+}
+%
 
-We summarize our discussion on the origin of the gauge part of the EE. \alert{The identity~\eqref{equ.Pick_sim-con} for honeycomb lattices, together with the second term of $\rho^F\ln\rho^F$ that is proportional to $\ln 2$ shown in Eq.~\eqref{eq:rholnrho}, suggests that the area-law scaling of the gauge contribution to the entanglement entropy originates from the mismatch between the dimension of the physical spin Hilbert space and the Hilbert space of the Majorana fermions.} This comparison is justified by the algebraic equivalence between the spin representation $\mathcal{S}$ and the Majorana representation $\mathcal{M}$ of the Kitaev ground state, established via equivalent edge configurations, which yield identical spin correlation functions within each class, and can be factorized as manifested by Eq.~\eqref{equ.rho-factorization}. 
 
-The matter part of the EE can be computed exactly using the method proposed by Ref.~\cite{Jin-Korepin_2004, Vidal-Latorre-Rico-Kitaev_2003, Latorre-Rico-Vidal_2004, Peschel_2003, Peschel-Eisler_2009, Chung-Peschel_2001, Cheong-Henley_2004} because the Kitaev ground state is equivalent to a free fermion system, in which all the information about the state is encoded in the two-point correlation functions, including the entanglement. The single-particle ES is the eigenvalue spectrum of the correlation matrix $\Gamma^{(c)}$, which is of size $N^A\times N^A$, defined as
+{
+The matter contribution to the EE calculated from Eq.~\eqref{equ.rho-F-reduced} depends on the model details encoded in the spin correlation functions. It can be computed exactly in the Kitaev model because the equivalent Majorana fermion system is free, where all information about the state is encoded in the two-point correlation functions~\cite{Jin-Korepin_2004, Vidal-Latorre-Rico-Kitaev_2003, Latorre-Rico-Vidal_2004, Peschel_2003, Peschel-Eisler_2009, Chung-Peschel_2001, Cheong-Henley_2004}. The single-particle ES is the eigenvalue spectrum of the correlation matrix $\Gamma^{(c)}$, which is of size $N^A\times N^A$, defined as
 \begin{equation}
     [\Gamma^{(c)}]_{ij} \equiv \frac{1}{2}\anglelr{c_ic_j}\quad ;\quad i,j\in A.
 \end{equation}
@@ -59,18 +72,17 @@ The eigenvalues of $\Gamma^{(c)}$, denoted by $\gamma_{k,\pm}$, can be expressed
 \begin{equation}\label{equ.gamma-eigenvalue}
     \gamma_{k,\pm} = \frac{1 \pm \nu_k}{2} \quad ; \quad k = 1,2,\cdots, \frac{N^A}{2}.
 \end{equation}
-By this method, the fermion ES can be numerically computed if the exact form of the two-point fermion correlation functions is given, which can be obtained straightforwardly by exactly solving the Hamiltonian~\eqref{equ.MF-Hamiltonian}. The EE becomes 
+In this way, the contribution of the matter to EE becomes 
 \begin{equation}\label{equ.EE-corr-mat}
-    S_A^F = -\sum_{\lrg{n}}\lambda_{\lrg{n}}\ln \lambda_{\lrg{n}} = -\tr\lr{\Gamma^{(c)}\ln\Gamma^{(c)}}.
+    S_A^F = -\tr\lr{\Gamma^{(c)}\ln\Gamma^{(c)}}.
 \end{equation}
 The trace ``$\tr$'' is written in lowercase here to distinguish it from the trace ``$\Tr$'' over the Hilbert space of the quantum many-body system. This quantity can be computed via numerically diagonalizing the correlation matrix $\Gamma^{(c)}$. In terms of the correlation matrix, Eq.~\eqref{equ.EE-separation} can be written as
 \begin{equation}\label{equ.Yao-Qi-standard-form}
-    S_A = -\tr\lr{\Gamma^{(c)} \ln \Gamma^{(c)}} + \lr{\frac{1}{2}\abs{\de A} - 1}\ln 2
+    S_A = -\tr\lr{\Gamma^{(c)} \ln \Gamma^{(c)}} + \lr{\frac{1}{2}\abs{\de A} - 1}\ln 2.
 \end{equation}
-where the first term is identified as the fermion part $S^F_A$, while the other is the gauge part $S^G_A$.
 
-The separability of the gauge and fermion degrees of freedom is based on two crucial properties: $[W_p, W_{p'}]=0\;\forall p,p'$ and $[W_p,\Sigma_{\mathfrak{D}}]=0\; \forall p,\mathfrak{D}$. The latter guarantees the decomposition of the spin system into gauge and matter sectors controlled by $W_p$ and $\Sigma_\mathfrak{D}$, respectively, whereas the former implies the gauge has no dynamics. 
-
+The gauge contribution, by contrast, originates from the mismatch in dimension between the physical spin Hilbert space and the equivalent Majorana-fermion Hilbert space justified by the algebraic equivalence between the spin representation $\mathcal{S}$ and the Majorana representation $\mathcal{M}$ of the Kitaev ground state, as represented by the term proportional to $\ln 2$ appearing in Eq.~\eqref{eq:rholnrho}. This holds independently of specific model details such as coupling constants or lattice geometry. This Hilbert-space dimensional mismatch, combined with the geometric relation~\eqref{equ.Pick_sim-con}, naturally gives rise to the area-law scaling of $S^G_A$. Here, the scaling coefficient $1/2$ indicates that each gauge degree of freedom residing on the edges crossing the entanglement cut contributes only half a bit of entropy, as the other half is accounted for by the fractionalized matter fermions. At this stage, the topological entanglement entropy $-\ln 2$ appearing in $S^G_A$ originates from the geometric relation~\eqref{equ.Pick_sim-con}. We elucidate its physical interpretation and its connection to the boundary-variable parity in sections following Sec.~\ref{sec:block-diagonal-structure}. Unlike the matter contribution $S^F_A$, which depends on model details, the explicit derivation of $S^G_A$ indicates that the gauge contribution to the EE relies on a more fundamental property: namely, the block organization of the physical RDM, as mentioned earlier.
+}
 
 
 

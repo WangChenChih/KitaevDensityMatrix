@@ -1,12 +1,12 @@
 \subsection{Origin of Degeneracy}\label{sec:origin_of_degeneracy}
 
-The block-diagonal structure of $\rho_A$ implies a massive degeneracy in the ES, since all the blocks in the DM are identical, which will be proved in this section. We also interpret the gauge part of the entanglement as corresponding to the degeneracy in the ES. We also explain the emergence of the matter part of the entanglement.
+The block-diagonal structure of $\rho_A$ implies a massive degeneracy in the ES, since all the blocks in the DM are identical, which will be proved in this section. Furthermore, we interpret the gauge part of the entanglement as corresponding to the degeneracy in the ES. We also explain the emergence of the matter part of the entanglement.
 
-The $\hat{\xi}$-operators defined in Sec.~\ref{sec:block-diagonal-structure} block-diagonalize the RDM, with each block labeled by a binary string $\lrg{\xi}$. Inspired by \cite{Xu-Rakovszky-Knap-Pollmann_2025}. \alert{Proving that all blocks are identical implies that the RDM comprises $2^{L-1}$ identical copies, leading to a $2^{L-1}$-fold degeneracy in the ES.} To prove this, we have to construct unitary transforms that relate different blocks and commute with the DM. In a $\mathbb{Z}_2$ gauge theory with an exact 1-form Wilson symmetry, the operators that relate all the blocks are the non-contractible Wilson operators $\hat{W}_{\mathcal{C}}$, defined in the same way as the $\hat{\xi}$-operators, 
+The $\hat{\xi}$-operators defined in Sec.~\ref{sec:block-diagonal-structure} block-diagonalize the RDM, with each block labeled by a binary string $\lrg{\xi}$ inspired by \cite{Xu-Rakovszky-Knap-Pollmann_2025}. {Proving that all blocks are identical implies that the RDM comprises $2^{L-1}$ identical copies, leading to a $2^{L-1}$-fold degeneracy in the ES.} To prove this, we have to construct unitary transforms that relate different blocks and commute with the DM. In a $\mathbb{Z}_2$ gauge theory with an exact 1-form Wilson symmetry, the operators that relate all the blocks are the non-contractible Wilson operators $\hat{W}_{\mathcal{C}}$, defined in the same way as the $\hat{\xi}$-operators, 
 \begin{equation}\label{eq.regional-global-wilson-def}
     \hat{W}_\mathcal{C} \equiv \sigma^{\mu_i}_{i}\Sigma_{\mathcal{C}}\sigma^{\mu_f}_{f}.
 \end{equation}
-An example is illustrated in \autoref{fig.xi-def}. The two endpoints $i,f$ of the path $\mathcal{C}$ are attached to the boundary of the subregion, and $\mu_{i,f}$ are the directions of the residual gauge field at sites $i$ and $j$ that cross the boundary, respectively. In \autoref{fig.xi-def}, if $\hat{W}_{\mathcal{C}}$ and $\hat{\xi}_{\ell}$ have a common endpoint, the Wilson operators would not commute with $\hat{\xi}_\ell$ and can flip its sign 
+An example is illustrated in \autoref{fig.xi-def}. The two endpoints $i,f$ of the path $\mathcal{C}$ are attached to the boundary of the subregion, and $\mu_{i,f}$ are the directions of the residual gauge field at sites $i$ and $f$ that cross the boundary, respectively. In \autoref{fig.xi-def}, if $\hat{W}_{\mathcal{C}}$ and $\hat{\xi}_{\ell}$ have a common endpoint, the Wilson operators would anti-commute with $\hat{\xi}_\ell$ and flip its sign:
 \begin{equation}\label{eq.wilson-xi-flip}
     \hat{W}_\mathcal{C} \hat{\xi}_{\ell}\hat{W}_{\mathcal{C}}^\dagger = -\hat{\xi}_{\ell}.
 \end{equation}
@@ -33,7 +33,7 @@ Therefore, the non-contractible Wilson operator defined in the subregion relates
 
 Based on the block-diagonal structure \eqref{equ.rho-block-diagonal-structure} of $\rho_A$ and the fact that non-contractible Wilson operators relate different blocks in a way given by Eq.~\eqref{equ.related-blocks}, we conclude that there are 
 \[2^{L-1} = 2^{\abs{\de A}/2 - 1}\] 
-identical blocks in $\rho_A$. The factor $2^{-1}$ arises from the fixed parity of quantum numbers, which can also be understood a consequence of the exact 1-form Wilson symmetry~\cite{Xu-Rakovszky-Knap-Pollmann_2025}. Based on the block-diagonal structure of $\rho_A$, it can be expressed as
+identical blocks in $\rho_A$. The factor $2^{-1}$ arises from the fixed parity of quantum numbers, which can also be understood as a consequence of the exact 1-form Wilson symmetry~\cite{Xu-Rakovszky-Knap-Pollmann_2025}. Based on this block-diagonal structure, $\rho_A$ can be expressed as
 \begin{equation}\label{equ.block-rho-final}
     \rho_A = \frac{1}{2^{L-1}}\bigoplus_{n=1}^{2^{L-1}}\varrho^{(n)}_A
 \end{equation}
@@ -46,12 +46,12 @@ with all the blocks $\varrho_A^{(n)}$ identical. Substitution of such an express
 \end{align}
 Comparing Eq.~\eqref{equ.EE-from-blocks} with Eq.~\eqref{equ.EE-separation}, we find that each block $\Tilde{\rho}_A$ corresponds to the Majorana RDM $\rho_A^F$. At the same time, the gauge part $S^G_A$ measures the number of identical blocks in $\rho_A$, which is exactly the degree of degeneracy in the ES. This agrees with the gauge nature of such a contribution since the degeneracy 
 %arises from the block-diagonal structure of $\rho_A$ along with the fact that every block is identical, and the presence of block-diagonal structure is due to the residual electric field from the 
-is yielded by the residual Gauss law after the environment is traced out. Finally, the topological EE $-\ln 2$ is a consequence of the topological constraint that the total parity of the quantum numbers, $\prod_{n=1}^L\xi_n$, is fixed, originating from the exact 1-form Wilson symmetry. 
+is yielded by the residual Gauss law after the environment is traced out. Finally, the topological EE $-\ln 2$ is a consequence of the topological constraint that the total parity of quantum numbers, $\prod_{n=1}^L\xi_n$, is fixed, originating from the exact 1-form Wilson symmetry. 
 
 \begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{figures/block-diag-illust.pdf}
-    \caption{An illustration of the block-diagonal structure of the spin representation. An operator $\mathcal{S}_\mathfrak{D}$ can be seen as a composition of $2^{L-1}$ copies of Majorana systems $\mathcal{M}_{\mathfrak{D}}$ with the identical set of endpoints $\mrm{EP}(\mathfrak{D})$. Therefore, an algebraic operation of $\mathcal{S}_\mathfrak{D}$ is equivalent to that of $2^{L-1}$ copies of the corresponding $\mathcal{M}_\mathfrak{D}$, which makes the spin representation identical to the Majorana fermion representation.}
+    \caption{An illustration of the block-diagonal structure of the spin representation. An operator $\mathcal{S}_\mathfrak{D}$ can be seen as an assembly of $2^{L-1}$ copies of Majorana systems $\mathcal{M}_{\mathfrak{D}}$ with the identical set of endpoints $\mrm{EP}(\mathfrak{D})$. Therefore, an algebraic operation of $\mathcal{S}_\mathfrak{D}$ is equivalent to that of $2^{L-1}$ copies of the corresponding $\mathcal{M}_\mathfrak{D}$, which makes the spin representation identical to the Majorana fermion representation.}
     \label{fig:block-diag-illustration}
 \end{figure}
 From a more fundamental point of view, the set of $\hat{\xi}$-operators block-diagonalizes every string operator in a way identical to what we have for $\rho_A$ because each of them commutes with every string operator, hence so is $\mathcal{S}^{(A)}_{\mathfrak{D}}$
